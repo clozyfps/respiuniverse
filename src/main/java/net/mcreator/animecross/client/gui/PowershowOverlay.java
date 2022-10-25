@@ -42,25 +42,36 @@ public class PowershowOverlay {
 			if (true) {
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power) + "",
-						posX + -214, posY + 104, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + -177, posY + 105, -12829636);
+								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power) + "/"
+								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_power)
+								+ "",
+						posX + -207, posY + 106, -12840381);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_power) + "",
-						posX + -159, posY + 105, -1);
+								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power) + "/"
+								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_power)
+								+ "",
+						posX + -208, posY + 105, -1);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina) + "",
-						posX + -212, posY + 86, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + -183, posY + 86, -1);
-				Minecraft.getInstance().font
-						.draw(event.getMatrixStack(),
-								"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_stamina) + "",
-								posX + -169, posY + 87, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Stamina", posX + -151, posY + 76, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Power", posX + -146, posY + 97, -1);
+								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina) + "/"
+								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_stamina)
+								+ "",
+						posX + -207, posY + 83, -12814622);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(),
+						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina) + "/"
+								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_stamina)
+								+ "",
+						posX + -208, posY + 82, -1);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Stamina", posX + -206, posY + 73, -12814622);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Stamina", posX + -207, posY + 72, -1);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Power", posX + -206, posY + 97, -12843183);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Power", posX + -207, posY + 96, -1);
 			}
 		}
 	}

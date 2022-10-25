@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.LargeFireball;
@@ -21,6 +22,7 @@ import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -1955,17 +1957,17 @@ public class UseAbilityOnKeyPressedProcedure {
 			}.start(world, 60);
 		}
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).rockswitchvar == 3
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 1
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 130
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 99
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fistofflowingrock == true
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
 				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("Fist of Flowing Water")) {
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("Bastet's Blessing")) {
 			{
 				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 130;
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 100;
 				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stamina = _setval;
 					capability.syncPlayerVariables(entity);
@@ -1974,11 +1976,137 @@ public class UseAbilityOnKeyPressedProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 2, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 15, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 9, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 7, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 4, (false), (false)));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 1, (false), (false)));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 3, (false), (false)));
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(true);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("\u00A7l\u00A71Bastet \u00A7rhas \u00A7l\u00A76Blessed\u00A7r you!"), (false));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 2
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 49
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("Bastet's Blessing")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 50;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.stamina = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 3, (false), (false)));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 2
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 99
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("Bastet's Blessing")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 100;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.stamina = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getX(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getY(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getZ())));
+				entityToSpawn.setVisualOnly(true);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getX(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getY(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getZ())));
+				entityToSpawn.setVisualOnly(true);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getX(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getY(),
+						entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getZ())));
+				entityToSpawn.setVisualOnly(true);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			{
+				final Vec3 _center = new Vec3(
+						(entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getX()),
+						(entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getY()),
+						(entity.level
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(50)),
+										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getZ()));
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(15 / 2d), e -> true).stream()
+						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				for (Entity entityiterator : _entfound) {
+					if (!(entity == entityiterator)) {
+						entityiterator.hurt(DamageSource.LIGHTNING_BOLT, 10);
+					}
+				}
+			}
 		}
 	}
 }

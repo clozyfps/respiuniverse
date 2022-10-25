@@ -185,11 +185,17 @@ public class AnimecrossworkspaceModVariables {
 			clone.OneForAll = original.OneForAll;
 			clone.Flamebreathinglevel = original.Flamebreathinglevel;
 			clone.akazacompassneedlecooldown = original.akazacompassneedlecooldown;
+			clone.sikusdevability = original.sikusdevability;
+			clone.sikusdevselected = original.sikusdevselected;
+			clone.logiacooldown = original.logiacooldown;
+			clone.logiamax = original.logiamax;
+			clone.df = original.df;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
 				clone.vampire = original.vampire;
 				clone.stringper = original.stringper;
+				clone.logiaamount = original.logiaamount;
 			}
 		}
 
@@ -468,6 +474,12 @@ public class AnimecrossworkspaceModVariables {
 		public boolean OneForAll = false;
 		public double Flamebreathinglevel = 0;
 		public boolean akazacompassneedlecooldown = false;
+		public boolean sikusdevability = false;
+		public double sikusdevselected = 0.0;
+		public double logiacooldown = 0;
+		public double logiaamount = 200.0;
+		public double logiamax = 200.0;
+		public String df = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -586,6 +598,12 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putBoolean("OneForAll", OneForAll);
 			nbt.putDouble("Flamebreathinglevel", Flamebreathinglevel);
 			nbt.putBoolean("akazacompassneedlecooldown", akazacompassneedlecooldown);
+			nbt.putBoolean("sikusdevability", sikusdevability);
+			nbt.putDouble("sikusdevselected", sikusdevselected);
+			nbt.putDouble("logiacooldown", logiacooldown);
+			nbt.putDouble("logiaamount", logiaamount);
+			nbt.putDouble("logiamax", logiamax);
+			nbt.putString("df", df);
 			return nbt;
 		}
 
@@ -701,6 +719,12 @@ public class AnimecrossworkspaceModVariables {
 			OneForAll = nbt.getBoolean("OneForAll");
 			Flamebreathinglevel = nbt.getDouble("Flamebreathinglevel");
 			akazacompassneedlecooldown = nbt.getBoolean("akazacompassneedlecooldown");
+			sikusdevability = nbt.getBoolean("sikusdevability");
+			sikusdevselected = nbt.getDouble("sikusdevselected");
+			logiacooldown = nbt.getDouble("logiacooldown");
+			logiaamount = nbt.getDouble("logiaamount");
+			logiamax = nbt.getDouble("logiamax");
+			df = nbt.getString("df");
 		}
 	}
 
@@ -836,6 +860,12 @@ public class AnimecrossworkspaceModVariables {
 					variables.OneForAll = message.data.OneForAll;
 					variables.Flamebreathinglevel = message.data.Flamebreathinglevel;
 					variables.akazacompassneedlecooldown = message.data.akazacompassneedlecooldown;
+					variables.sikusdevability = message.data.sikusdevability;
+					variables.sikusdevselected = message.data.sikusdevselected;
+					variables.logiacooldown = message.data.logiacooldown;
+					variables.logiaamount = message.data.logiaamount;
+					variables.logiamax = message.data.logiamax;
+					variables.df = message.data.df;
 				}
 			});
 			context.setPacketHandled(true);
