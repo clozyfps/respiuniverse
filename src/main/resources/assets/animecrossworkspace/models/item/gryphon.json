@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/shankssaber",
+  "textures": {
+    "0": "animecrossworkspace:blocks/shank_saber",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

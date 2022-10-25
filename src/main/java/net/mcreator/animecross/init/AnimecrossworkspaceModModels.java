@@ -45,6 +45,7 @@ import net.mcreator.animecross.client.model.Modelcrimsonlionsss;
 import net.mcreator.animecross.client.model.Modelblackwings;
 import net.mcreator.animecross.client.model.Modelblackslash1;
 import net.mcreator.animecross.client.model.Modelblackbullscloak;
+import net.mcreator.animecross.client.model.Modelbathollow;
 import net.mcreator.animecross.client.model.Modelalrightmihawkyugimme;
 import net.mcreator.animecross.client.model.ModelSSJPLAYER;
 import net.mcreator.animecross.client.model.ModelSSJGOKU;
@@ -67,6 +68,7 @@ public class AnimecrossworkspaceModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelcrimsonlionsss.LAYER_LOCATION, Modelcrimsonlionsss::createBodyLayer);
 		event.registerLayerDefinition(Modelkokudrip.LAYER_LOCATION, Modelkokudrip::createBodyLayer);
+		event.registerLayerDefinition(Modelbathollow.LAYER_LOCATION, Modelbathollow::createBodyLayer);
 		event.registerLayerDefinition(Modelfireball2.LAYER_LOCATION, Modelfireball2::createBodyLayer);
 		event.registerLayerDefinition(ModelSHARINGANNUMBERONE.LAYER_LOCATION, ModelSHARINGANNUMBERONE::createBodyLayer);
 		event.registerLayerDefinition(ModelDBZArmor1.LAYER_LOCATION, ModelDBZArmor1::createBodyLayer);

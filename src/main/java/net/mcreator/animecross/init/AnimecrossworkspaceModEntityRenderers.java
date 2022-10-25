@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.animecross.client.renderer.ZoroRenderer;
+import net.mcreator.animecross.client.renderer.ZenitsuRenderer;
 import net.mcreator.animecross.client.renderer.ZabuzaRenderer;
 import net.mcreator.animecross.client.renderer.YorRenderer;
 import net.mcreator.animecross.client.renderer.YamiRenderer;
@@ -25,12 +26,14 @@ import net.mcreator.animecross.client.renderer.TatsumakiRenderer;
 import net.mcreator.animecross.client.renderer.TanjiroKamadoRenderer;
 import net.mcreator.animecross.client.renderer.SukunaRenderer;
 import net.mcreator.animecross.client.renderer.StrongGoblinRenderer;
+import net.mcreator.animecross.client.renderer.SoulReaperRenderer;
 import net.mcreator.animecross.client.renderer.SonGokuRenderer;
 import net.mcreator.animecross.client.renderer.SisterLillyRenderer;
 import net.mcreator.animecross.client.renderer.SilverFangRenderer;
 import net.mcreator.animecross.client.renderer.SilverFangDojoStudentRenderer;
 import net.mcreator.animecross.client.renderer.ShinraRenderer;
 import net.mcreator.animecross.client.renderer.ShigeoRenderer;
+import net.mcreator.animecross.client.renderer.ShanksRenderer;
 import net.mcreator.animecross.client.renderer.ScoutRegimentMemberRenderer;
 import net.mcreator.animecross.client.renderer.SasukeUchihaRenderer;
 import net.mcreator.animecross.client.renderer.SaoFloor1BossRenderer;
@@ -93,6 +96,7 @@ import net.mcreator.animecross.client.renderer.BorosSecondFormRenderer;
 import net.mcreator.animecross.client.renderer.BorosRenderer;
 import net.mcreator.animecross.client.renderer.BlackslashsRenderer;
 import net.mcreator.animecross.client.renderer.BlackDivineDogRenderer;
+import net.mcreator.animecross.client.renderer.BatHollowRenderer;
 import net.mcreator.animecross.client.renderer.AstaRenderer;
 import net.mcreator.animecross.client.renderer.ArthurBoyleRenderer;
 import net.mcreator.animecross.client.renderer.ArkabilityrangeditemRenderer;
@@ -211,5 +215,11 @@ public class AnimecrossworkspaceModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.AIRTYPERANGED.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.ANNITYPE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.KOKUSHIBO.get(), KokushiboRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.SHANKS.get(), ShanksRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.ZENITSU.get(), ZenitsuRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.SOUL_REAPER.get(), SoulReaperRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.BAT_HOLLOW.get(), BatHollowRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.THUNDERCLAPANDFLASH.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.SIXFOLD.get(), ThrownItemRenderer::new);
 	}
 }

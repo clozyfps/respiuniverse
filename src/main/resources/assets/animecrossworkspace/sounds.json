@@ -17,5 +17,14 @@
         "stream": false
       }
     ]
+  },
+  "thunder": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "animecrossworkspace:electric_shock",
+        "stream": false
+      }
+    ]
   }
 }

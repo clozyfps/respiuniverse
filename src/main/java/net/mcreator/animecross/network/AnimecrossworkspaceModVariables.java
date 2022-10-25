@@ -190,6 +190,7 @@ public class AnimecrossworkspaceModVariables {
 			clone.logiacooldown = original.logiacooldown;
 			clone.logiamax = original.logiamax;
 			clone.df = original.df;
+			clone.thunderbreathinglevel = original.thunderbreathinglevel;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
@@ -480,6 +481,7 @@ public class AnimecrossworkspaceModVariables {
 		public double logiaamount = 200.0;
 		public double logiamax = 200.0;
 		public String df = "\"\"";
+		public double thunderbreathinglevel = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -604,6 +606,7 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putDouble("logiaamount", logiaamount);
 			nbt.putDouble("logiamax", logiamax);
 			nbt.putString("df", df);
+			nbt.putDouble("thunderbreathinglevel", thunderbreathinglevel);
 			return nbt;
 		}
 
@@ -725,6 +728,7 @@ public class AnimecrossworkspaceModVariables {
 			logiaamount = nbt.getDouble("logiaamount");
 			logiamax = nbt.getDouble("logiamax");
 			df = nbt.getString("df");
+			thunderbreathinglevel = nbt.getDouble("thunderbreathinglevel");
 		}
 	}
 
@@ -866,6 +870,7 @@ public class AnimecrossworkspaceModVariables {
 					variables.logiaamount = message.data.logiaamount;
 					variables.logiamax = message.data.logiamax;
 					variables.df = message.data.df;
+					variables.thunderbreathinglevel = message.data.thunderbreathinglevel;
 				}
 			});
 			context.setPacketHandled(true);

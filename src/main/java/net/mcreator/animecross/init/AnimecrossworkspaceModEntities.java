@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.animecross.entity.ZoroEntity;
+import net.mcreator.animecross.entity.ZenitsuEntity;
 import net.mcreator.animecross.entity.ZabuzaEntity;
 import net.mcreator.animecross.entity.YoruswingEntity;
 import net.mcreator.animecross.entity.YorEntity;
@@ -28,18 +29,22 @@ import net.mcreator.animecross.entity.WeakGoblinEntity;
 import net.mcreator.animecross.entity.VaccineManEntity;
 import net.mcreator.animecross.entity.UzuiTengenEntity;
 import net.mcreator.animecross.entity.TogeInumakiEntity;
+import net.mcreator.animecross.entity.ThunderclapandflashEntity;
 import net.mcreator.animecross.entity.TatsumakiEntity;
 import net.mcreator.animecross.entity.TanjiroKamadoEntity;
 import net.mcreator.animecross.entity.SukunaEntity;
 import net.mcreator.animecross.entity.StrongGoblinEntity;
+import net.mcreator.animecross.entity.SoulReaperEntity;
 import net.mcreator.animecross.entity.SonGokuEntity;
 import net.mcreator.animecross.entity.SmackDownArrowEntity;
 import net.mcreator.animecross.entity.SleepEntity;
+import net.mcreator.animecross.entity.SixfoldEntity;
 import net.mcreator.animecross.entity.SisterLillyEntity;
 import net.mcreator.animecross.entity.SilverFangEntity;
 import net.mcreator.animecross.entity.SilverFangDojoStudentEntity;
 import net.mcreator.animecross.entity.ShinraEntity;
 import net.mcreator.animecross.entity.ShigeoEntity;
+import net.mcreator.animecross.entity.ShanksEntity;
 import net.mcreator.animecross.entity.ScoutRegimentMemberEntity;
 import net.mcreator.animecross.entity.SasukeUchihaEntity;
 import net.mcreator.animecross.entity.SaoFloor1BossEntity;
@@ -117,6 +122,7 @@ import net.mcreator.animecross.entity.BorosSecondFormEntity;
 import net.mcreator.animecross.entity.BorosEntity;
 import net.mcreator.animecross.entity.BlackslashsEntity;
 import net.mcreator.animecross.entity.BlackDivineDogEntity;
+import net.mcreator.animecross.entity.BatHollowEntity;
 import net.mcreator.animecross.entity.AstaEntity;
 import net.mcreator.animecross.entity.ArthurBoyleEntity;
 import net.mcreator.animecross.entity.ArkabilityrangeditemEntity;
@@ -621,6 +627,33 @@ public class AnimecrossworkspaceModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KokushiboEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ShanksEntity>> SHANKS = register("shanks",
+			EntityType.Builder.<ShanksEntity>of(ShanksEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(ShanksEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ZenitsuEntity>> ZENITSU = register("zenitsu",
+			EntityType.Builder.<ZenitsuEntity>of(ZenitsuEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(ZenitsuEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SoulReaperEntity>> SOUL_REAPER = register("soul_reaper",
+			EntityType.Builder.<SoulReaperEntity>of(SoulReaperEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SoulReaperEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BatHollowEntity>> BAT_HOLLOW = register("bat_hollow",
+			EntityType.Builder.<BatHollowEntity>of(BatHollowEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BatHollowEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ThunderclapandflashEntity>> THUNDERCLAPANDFLASH = register("projectile_thunderclapandflash",
+			EntityType.Builder.<ThunderclapandflashEntity>of(ThunderclapandflashEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(ThunderclapandflashEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SixfoldEntity>> SIXFOLD = register("projectile_sixfold",
+			EntityType.Builder.<SixfoldEntity>of(SixfoldEntity::new, MobCategory.MISC).setCustomClientFactory(SixfoldEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -708,6 +741,10 @@ public class AnimecrossworkspaceModEntities {
 			AkazaEntity.init();
 			RengokuEntity.init();
 			KokushiboEntity.init();
+			ShanksEntity.init();
+			ZenitsuEntity.init();
+			SoulReaperEntity.init();
+			BatHollowEntity.init();
 		});
 	}
 
@@ -792,5 +829,9 @@ public class AnimecrossworkspaceModEntities {
 		event.put(AKAZA.get(), AkazaEntity.createAttributes().build());
 		event.put(RENGOKU.get(), RengokuEntity.createAttributes().build());
 		event.put(KOKUSHIBO.get(), KokushiboEntity.createAttributes().build());
+		event.put(SHANKS.get(), ShanksEntity.createAttributes().build());
+		event.put(ZENITSU.get(), ZenitsuEntity.createAttributes().build());
+		event.put(SOUL_REAPER.get(), SoulReaperEntity.createAttributes().build());
+		event.put(BAT_HOLLOW.get(), BatHollowEntity.createAttributes().build());
 	}
 }

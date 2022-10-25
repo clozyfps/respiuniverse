@@ -22,6 +22,7 @@ public class AnimecrossworkspaceModSounds {
 				new SoundEvent(new ResourceLocation("animecrossworkspace", "theworldsound")));
 		REGISTRY.put(new ResourceLocation("animecrossworkspace", "kiblastsond"),
 				new SoundEvent(new ResourceLocation("animecrossworkspace", "kiblastsond")));
+		REGISTRY.put(new ResourceLocation("animecrossworkspace", "thunder"), new SoundEvent(new ResourceLocation("animecrossworkspace", "thunder")));
 	}
 
 	@SubscribeEvent

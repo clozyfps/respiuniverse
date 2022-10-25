@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "animecrossworkspace:items/bleach_zanpakuto_128x_fixed_again_xd"
+  }
+}

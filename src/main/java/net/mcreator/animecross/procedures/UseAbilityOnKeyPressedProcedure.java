@@ -1959,7 +1959,7 @@ public class UseAbilityOnKeyPressedProcedure {
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 1
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 99
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 100
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
@@ -1997,7 +1997,7 @@ public class UseAbilityOnKeyPressedProcedure {
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 2
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 49
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 50
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
@@ -2017,7 +2017,7 @@ public class UseAbilityOnKeyPressedProcedure {
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevselected == 2
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 99
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 100
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).sikusdevability == true
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()

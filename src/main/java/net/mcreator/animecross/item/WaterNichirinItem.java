@@ -34,7 +34,7 @@ public class WaterNichirinItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 10f;
 			}
 
 			public int getLevel() {
