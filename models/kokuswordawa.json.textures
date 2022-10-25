@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "",
+        "9": "kokuswordtexture"
+      },
+      "name": "default"
+    }
+  }
+}

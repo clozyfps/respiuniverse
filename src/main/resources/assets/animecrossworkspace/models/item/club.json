@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/club",
+  "textures": {
+    "2": "animecrossworkspace:blocks/club",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "pika_pika_sword:default",
+    "name": "Pika Saber",
+    "specialInfo": [
+      "The sword of pika pika"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:OnePiece"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 2,
+    "damageVsEntity": 12.0,
+    "usageCount": 9999,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

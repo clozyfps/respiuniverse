@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/demon_dweller_swordfix1",
+  "textures": {
+    "0": "animecrossworkspace:blocks/demondwellersword",
+    "particle": "animecrossworkspace:items/demon_dweller_sword_black_clover"
+  }
+}

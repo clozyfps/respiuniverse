@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecrossworkspace:blocks/purplecobble",
+    "up": "animecrossworkspace:blocks/purplecobble",
+    "north": "animecrossworkspace:blocks/purplecobble",
+    "east": "animecrossworkspace:blocks/purplecobble",
+    "south": "animecrossworkspace:blocks/purplecobble",
+    "west": "animecrossworkspace:blocks/purplecobble",
+    "particle": "animecrossworkspace:blocks/purplecobble"
+  }
+}

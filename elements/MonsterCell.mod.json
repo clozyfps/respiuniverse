@@ -1,0 +1,47 @@
+{
+  "_fv": 33,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "raw_monster_cell",
+    "customModelName": "Normal",
+    "name": "Monster Cell",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:OnePunchMan"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Eating this cell X5 all of your stats but 50% chance of death and inventory clear."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "MonsterCellPlayerFinishesUsingItem"
+    },
+    "isFood": true,
+    "nutritionalValue": 10,
+    "saturation": 0.5,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "gunbai2:default",
+    "name": "The Gunbai",
+    "specialInfo": [
+      "The fan of Madara Uchiha. Only available form killing Madara."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Naruto"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 16.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "TheGunbaiEntitySwingsItem"
+    }
+  }
+}

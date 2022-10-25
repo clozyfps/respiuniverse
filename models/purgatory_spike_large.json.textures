@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "purgatory_spike_large_texture"
+      },
+      "name": "default"
+    }
+  }
+}

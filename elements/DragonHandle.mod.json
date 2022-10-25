@@ -1,0 +1,30 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "espada_dem_nio_lostvayne",
+    "customModelName": "Normal",
+    "name": "Dragon Handle",
+    "specialInfo": [
+      "The Dragon Handle",
+      "It seals the gate to hell."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:SevenDeadlySins"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 6.0,
+    "enchantability": 10,
+    "damageVsEntity": 14.0,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

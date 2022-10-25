@@ -1,0 +1,63 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "HEY! GIVE ME 40 IRON FOR 20 RECRUIT PAPERS!",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "HEY! GIVE ME 40 IRON FOR 20 RECRUIT PAPERS!",
+          "x": 108,
+          "y": 22
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "BET BET",
+          "onClick": {
+            "name": "Giverecurit"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "BET BET",
+          "x": 176,
+          "y": 49
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "nah tbh",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "nah tbh",
+          "x": 175,
+          "y": 74
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

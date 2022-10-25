@@ -1,0 +1,86 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "meliodas-png-transparent.png",
+          "use1Xscale": true,
+          "name": "meliodas-png-transparent.png",
+          "x": -94,
+          "y": -48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Wanna get assault mode for 40 SP?",
+          "color": {
+            "value": -7680,
+            "falpha": 0.0
+          },
+          "name": "Wanna get assault mode for 40 SP?",
+          "x": 220,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(Requires Demon Race)",
+          "color": {
+            "value": -10148221,
+            "falpha": 0.0
+          },
+          "name": "(Requires Demon Race)",
+          "x": 253,
+          "y": 85
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "onClick": {
+            "name": "Yesassault"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 282,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "No",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "No",
+          "x": 284,
+          "y": 120
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/uzuiblade",
+  "textures": {
+    "0": "animecrossworkspace:blocks/uzui_sword",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

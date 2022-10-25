@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "club:default",
+    "name": "Club",
+    "specialInfo": [
+      "Big bat"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GoblinSlayer"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 7.3,
+    "usageCount": 900,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

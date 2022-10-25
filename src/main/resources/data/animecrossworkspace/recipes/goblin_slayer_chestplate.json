@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "2": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "3": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "4": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "5": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "6": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "7": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "8": {
+      "item": "animecrossworkspace:black_steel"
+    }
+  },
+  "result": {
+    "item": "animecrossworkspace:goblin_slayer_armor_chestplate",
+    "count": 1
+  }
+}

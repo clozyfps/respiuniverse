@@ -1,0 +1,73 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 311,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "I want to become stronger!",
+          "onClick": {
+            "name": "Iwantobestronger"
+          },
+          "width": 155,
+          "height": 20,
+          "name": "I want to become stronger!",
+          "x": 61,
+          "y": 24
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "I want money!",
+          "onClick": {
+            "name": "Iwantmoney"
+          },
+          "width": 92,
+          "height": 20,
+          "name": "I want money!",
+          "x": 61,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hurry up and choose human.",
+          "color": {
+            "value": -15952887,
+            "falpha": 0.0
+          },
+          "name": "Hurry up and choose human.",
+          "x": 225,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shenron-dragon-ball-dragon-de-dragon-ball-11562867803osejy5ngkp.png",
+          "use1Xscale": true,
+          "name": "shenron-dragon-ball-dragon-de-dragon-ball-11562867803osejy5ngkp.png",
+          "x": 223,
+          "y": 22
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

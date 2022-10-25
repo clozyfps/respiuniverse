@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/rasengan",
+  "textures": {
+    "1": "animecrossworkspace:blocks/rasengantexture",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

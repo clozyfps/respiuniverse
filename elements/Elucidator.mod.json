@@ -1,0 +1,32 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "elucidator:default",
+    "name": "Elucidator",
+    "specialInfo": [
+      "Kirito's Black Sword from sword art online"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:SwordArtOnling"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 2.0,
+    "attackSpeed": 5.0,
+    "enchantability": 78,
+    "damageVsEntity": 15.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ElucidatorRightclicked"
+    }
+  }
+}

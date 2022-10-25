@@ -1,0 +1,21 @@
+{
+  "theworldsound": {
+    "category": "player",
+    "subtitle": "subtitles.theworldsound",
+    "sounds": [
+      {
+        "name": "animecrossworkspace:dios_the_world_sound_effect_7kvqdmpvxxm",
+        "stream": false
+      }
+    ]
+  },
+  "kiblastsond": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "animecrossworkspace:kiblast",
+        "stream": false
+      }
+    ]
+  }
+}

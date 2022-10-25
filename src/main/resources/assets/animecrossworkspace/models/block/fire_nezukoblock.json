@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "animecrossworkspace:blocks/nezukofire",
+    "particle": "animecrossworkspace:blocks/nezukofire"
+  }
+}

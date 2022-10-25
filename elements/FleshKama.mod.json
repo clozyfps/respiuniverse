@@ -1,0 +1,35 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gyutaro_liem",
+    "customModelName": "Normal",
+    "name": "Flesh Kama",
+    "specialInfo": [
+      "A poisonous sickle that is able to control blood and flesh!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:DemonSlayer"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 5.0,
+    "enchantability": 100,
+    "damageVsEntity": 9.0,
+    "usageCount": 9999,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "FleshKamaLivingEntityIsHitWithTool"
+    },
+    "onEntitySwing": {
+      "name": "FleshKamaEntitySwingsItem"
+    }
+  }
+}

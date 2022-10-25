@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/demon_claw",
+  "textures": {
+    "0": "animecrossworkspace:blocks/demon_claw",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

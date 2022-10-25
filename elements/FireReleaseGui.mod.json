@@ -1,0 +1,181 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "|",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "|",
+          "x": 46,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "12 SP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "12 SP",
+          "x": 36,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "\\",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "\\",
+          "x": 71,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "|",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "|",
+          "x": 131,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "25 SP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "25 SP",
+          "x": 122,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "\\",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "\\",
+          "x": 154,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "|",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "|",
+          "x": 208,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "35 SP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "35 SP",
+          "x": 199,
+          "y": 151
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "More Coming in the future.",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "More Coming in the future.",
+          "x": 267,
+          "y": 145
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fire Ball Jutsu",
+          "onClick": {
+            "name": "Buyfireballjutsu"
+          },
+          "width": 103,
+          "height": 20,
+          "name": "Fire Ball Jutsu",
+          "x": 1,
+          "y": 9
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Phoenix Flower Jutsu",
+          "onClick": {
+            "name": "Phoenixflowerjutsubuy"
+          },
+          "width": 129,
+          "height": 20,
+          "name": "Phoenix Flower Jutsu",
+          "x": 80,
+          "y": 63
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dragon Flame Bomb",
+          "onClick": {
+            "name": "Givedragon"
+          },
+          "width": 113,
+          "height": 20,
+          "name": "Dragon Flame Bomb",
+          "x": 159,
+          "y": 114
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

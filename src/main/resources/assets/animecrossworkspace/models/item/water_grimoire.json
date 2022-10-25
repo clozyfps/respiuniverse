@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/water_grimoire",
+  "textures": {
+    "0": "animecrossworkspace:blocks/water_grimoire",
+    "particle": "animecrossworkspace:items/watergrimoire"
+  }
+}

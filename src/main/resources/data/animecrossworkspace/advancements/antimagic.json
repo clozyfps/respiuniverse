@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "animecrossworkspace:anti_magic_grimoire"
+    },
+    "title": {
+      "translate": "advancements.antimagic.title"
+    },
+    "description": {
+      "translate": "advancements.antimagic.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "antimagic": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "animecrossworkspace:killmadara"
+}

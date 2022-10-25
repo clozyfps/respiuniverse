@@ -1,0 +1,64 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "soulreaperoutfit",
+    "enableLeggings": true,
+    "textureLeggings": "soulreaperlegs",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "SoulReaperUniformBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "SoulReaperUniformBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Bleach"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Soul Reaper Uniform Helmet",
+    "bodyName": "Soul Reaper Uniform Body",
+    "leggingsName": "Soul Reaper Uniform Pants",
+    "bootsName": "Soul Reaper Uniform Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelgob",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "base_bleach.png",
+    "leggingsModelName": "Modelgob",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "base_bleach.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 7,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 2.4,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

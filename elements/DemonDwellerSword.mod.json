@@ -1,0 +1,35 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "demon_dweller_sword_black_clover",
+    "customModelName": "demon_dweller_swordfix1:default",
+    "name": "Demon Dweller Sword",
+    "specialInfo": [
+      "The Second Sword Of The Anti - MagicGrimoire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:BlackClover"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 25.0,
+    "usageCount": 99999,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "DemonDwellerSwordRightclicked"
+    },
+    "onEntitySwing": {
+      "name": "DemonSlayerSwordEntitySwingsItem"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "racegui.png",
+          "use1Xscale": true,
+          "name": "racegui.png",
+          "x": 95,
+          "y": 3
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Roll",
+          "onClick": {
+            "name": "Roll"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Roll",
+          "x": 241,
+          "y": 165
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Done",
+          "onClick": {
+            "name": "FINISHED"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Done",
+          "x": 282,
+          "y": 212
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:currentrace>",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "<VAR:currentrace>",
+          "x": 221,
+          "y": 187
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Rolls ",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "Rolls ",
+          "x": 212,
+          "y": 208
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:rollsleft>",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:rollsleft>",
+          "x": 203,
+          "y": 222
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

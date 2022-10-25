@@ -1,0 +1,171 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "yamao.png",
+          "use1Xscale": true,
+          "name": "yamao.png",
+          "x": 10,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "What do you want to buy?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "What do you want to buy?",
+          "x": 208,
+          "y": 31
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demonjuice.png",
+          "use1Xscale": false,
+          "name": "demonjuice.png",
+          "x": 207,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Humanity Restorement",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Humanity Restorement",
+          "x": 166,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10 SP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "10 SP",
+          "x": 202,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Remove the demon effect",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Remove the demon effect",
+          "x": 161,
+          "y": 123
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Pyro Fluid",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Pyro Fluid",
+          "x": 191,
+          "y": 141
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pyrojuice.png",
+          "use1Xscale": false,
+          "name": "pyrojuice.png",
+          "x": 208,
+          "y": 151
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "20 SP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "20 SP",
+          "x": 203,
+          "y": 167
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gain 3rd Generation Pyro abilities",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Gain 3rd Generation Pyro abilities",
+          "x": 131,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Buy",
+          "onClick": {
+            "name": "Buyhumaity"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Buy",
+          "x": 238,
+          "y": 99
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Buy",
+          "onClick": {
+            "name": "Buyfluidpyro"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Buy",
+          "x": 238,
+          "y": 153
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

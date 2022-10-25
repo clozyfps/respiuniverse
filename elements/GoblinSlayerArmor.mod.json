@@ -1,0 +1,67 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "goblinslayerhead",
+    "enableBody": true,
+    "textureBody": "knightchest",
+    "enableLeggings": true,
+    "textureLeggings": "goblinslayerarmor",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "GoblinSlayerArmorBodyTickEvent"
+    },
+    "onBodyTick": {
+      "name": "GoblinSlayerArmorBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "GoblinSlayerArmorBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:GoblinSlayer"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Goblin Slayer Armor Helmet",
+    "bodyName": "Goblin Slayer Armor Body",
+    "leggingsName": "Goblin Slayer Armor Leggings",
+    "bootsName": "Goblin Slayer Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelgob",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "goblin_slayer.png",
+    "bodyModelName": "Modelgob",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "goblin_slayer.png",
+    "leggingsModelName": "Modelgob",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "goblin_slayer.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 5,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 2.1,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

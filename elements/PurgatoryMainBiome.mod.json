@@ -1,0 +1,115 @@
+{
+  "_fv": 33,
+  "_type": "biome",
+  "definition": {
+    "name": "Purgatory Main Biome",
+    "groundBlock": {
+      "value": "CUSTOM:PurgatoryBlock"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:PurgatoryBlock"
+    },
+    "underwaterBlock": {
+      "value": "CUSTOM:PurgatoryLargeSpike"
+    },
+    "airColor": {
+      "value": -14344661,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -15199460,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -15199460,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -15199460,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -15199460,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:AntiMagicParticleBlack"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "EXTREME_HILLS",
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.3,
+    "heightVariation": 1.2,
+    "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 10,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 10,
+    "treeStem": {
+      "value": "CUSTOM:PurgatoryLargeSpike"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:PurgatoryLargeSpike"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "K",
+    "keyBindingName": "Ki Blast 15 Power",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "KiBlastOnKeyPressed"
+    }
+  }
+}

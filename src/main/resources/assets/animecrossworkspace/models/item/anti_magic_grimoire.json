@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/anti-demon_grimoire",
+  "textures": {
+    "0": "animecrossworkspace:blocks/anti-demon_grimoire",
+    "particle": "animecrossworkspace:items/fuiveleafclover"
+  }
+}

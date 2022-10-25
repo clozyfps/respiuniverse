@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "zorosword1:default",
+    "name": "Wado Ichimonji",
+    "specialInfo": [
+      "One of Zoro's Swords."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:OnePiece"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 6.0,
+    "enchantability": 2,
+    "damageVsEntity": 17.0,
+    "usageCount": 1600,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecrossworkspace:blocks/tv_topright",
+    "up": "animecrossworkspace:blocks/tv_topright",
+    "north": "animecrossworkspace:blocks/tv_topright",
+    "east": "animecrossworkspace:blocks/tv_single",
+    "south": "animecrossworkspace:blocks/tv_topright",
+    "west": "animecrossworkspace:blocks/tv_topright",
+    "particle": "animecrossworkspace:blocks/tv_topright"
+  }
+}

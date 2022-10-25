@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/bluelongsword",
+  "textures": {
+    "0": "animecrossworkspace:blocks/bluelongtext",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "pika_pika_sword"
+      },
+      "name": "default"
+    }
+  }
+}

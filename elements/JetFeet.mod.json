@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Pyro Jet Feet (Third Generation)",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "JetFeetOnKeyPressed"
+    }
+  }
+}

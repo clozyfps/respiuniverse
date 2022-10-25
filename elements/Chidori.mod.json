@@ -1,0 +1,35 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "chidori-png-transparent-image",
+    "customModelName": "Normal",
+    "name": "Chidori",
+    "specialInfo": [
+      "Power: 50 - Do 16 Damage if you have 50 power!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Naruto"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 99999,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Chidoriuse"
+    },
+    "onItemInUseTick": {
+      "name": "WaterNichirinToolInHandTick"
+    }
+  }
+}

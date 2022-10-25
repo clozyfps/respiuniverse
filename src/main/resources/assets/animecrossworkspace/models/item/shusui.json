@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/zorosword3",
+  "textures": {
+    "0": "animecrossworkspace:blocks/zorosword3",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "eckale_yami_sword",
+    "customModelName": "Normal",
+    "name": "Yami Sword",
+    "specialInfo": [
+      "The Dark Magic Sword of Yami."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:BlackClover"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 11.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

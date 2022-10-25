@@ -1,0 +1,64 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "saitamaoutfit",
+    "enableLeggings": true,
+    "textureLeggings": "saitamaoutfit",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "SaitamaUniformBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "SaitamaUniformBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:OnePunchMan"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Saitama Uniform Helmet",
+    "bodyName": "Saitama Uniform Body",
+    "leggingsName": "Saitama Uniform Leggings",
+    "bootsName": "Saitama Uniform Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelkimono1",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "saitama_one_punch_man_hero_for_fun_2.png",
+    "leggingsModelName": "Modelkimono1",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "saitama_one_punch_man_hero_for_fun_2.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 9,
+    "damageValueLeggings": 9,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 3.5,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

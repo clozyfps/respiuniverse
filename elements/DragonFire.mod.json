@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "air103_layer_2",
+    "customModelName": "Normal",
+    "name": "Dragon Fire",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 99999,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "DragonFireRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 11.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.LAVA"
+    },
+    "bulletModel": "Modelfireballjutsudra",
+    "customBulletModelTexture": "dragonfiretexture.png",
+    "onBulletHitsPlayer": {
+      "name": "DragonFireProjectileHitsLivingEntity"
+    },
+    "onBulletHitsEntity": {
+      "name": "DragonFireProjectileHitsLivingEntity"
+    }
+  }
+}

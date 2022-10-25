@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "zorosword1texture1",
+        "1": "zorosword1texture2"
+      },
+      "name": "default"
+    }
+  }
+}

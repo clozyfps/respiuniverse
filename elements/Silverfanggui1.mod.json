@@ -1,0 +1,73 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bang1.png",
+          "use1Xscale": true,
+          "name": "bang1.png",
+          "x": 28,
+          "y": -3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Want to join my dojo?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Want to join my dojo?",
+          "x": 246,
+          "y": 37
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "onClick": {
+            "name": "Bangquest"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 276,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "No",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "No",
+          "x": 278,
+          "y": 77
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

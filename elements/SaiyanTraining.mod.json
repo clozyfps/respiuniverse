@@ -1,0 +1,88 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "SSJ1",
+          "onClick": {
+            "name": "Buyssj1"
+          },
+          "displayCondition": {
+            "name": "Ssj1condi"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "SSJ1",
+          "x": 70,
+          "y": 23
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "SSJ2",
+          "width": 46,
+          "height": 20,
+          "name": "SSJ2",
+          "x": 70,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "SSJB",
+          "width": 46,
+          "height": 20,
+          "name": "SSJB",
+          "x": 70,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "UI",
+          "width": 35,
+          "height": 20,
+          "name": "UI",
+          "x": 75,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "300 Ki",
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Ssj1condi"
+          },
+          "name": "300 Ki",
+          "x": 119,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecrossworkspace:blocks/lightedplate",
+    "up": "animecrossworkspace:blocks/lightedplate",
+    "north": "animecrossworkspace:blocks/lightedplate",
+    "east": "animecrossworkspace:blocks/lightedplate",
+    "south": "animecrossworkspace:blocks/lightedplate",
+    "west": "animecrossworkspace:blocks/lightedplate",
+    "particle": "animecrossworkspace:blocks/lightedplate"
+  }
+}

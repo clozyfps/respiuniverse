@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fire"
+    },
+    "title": {
+      "translate": "advancements.the_fire_force.title"
+    },
+    "description": {
+      "translate": "advancements.the_fire_force.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_fire_force": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "animecrossworkspace:killmadara"
+}

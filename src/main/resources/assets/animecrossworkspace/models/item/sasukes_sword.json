@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/sasuke_sword",
+  "textures": {
+    "0": "animecrossworkspace:blocks/sasuke_sword_texture",
+    "particle": "animecrossworkspace:items/sasuke_s_kusanagi"
+  }
+}

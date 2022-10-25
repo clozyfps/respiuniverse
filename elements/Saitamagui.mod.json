@@ -1,0 +1,82 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "83f37a2ea093d2a8ce8887b87a7ed475.png",
+          "use1Xscale": true,
+          "name": "83f37a2ea093d2a8ce8887b87a7ed475.png",
+          "x": -30,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Oh- Hey Im trying to find the grocery store",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "Oh- Hey Im trying to find the grocery store",
+          "x": 186,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Think you can craft a coupon for me?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Think you can craft a coupon for me?",
+          "x": 205,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "screenshot_2022-09-21_115838.png",
+          "use1Xscale": true,
+          "name": "screenshot_2022-09-21_115838.png",
+          "x": 247,
+          "y": 90
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Give",
+          "onClick": {
+            "name": "Givesaitamacoupon"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Give",
+          "x": 271,
+          "y": 147
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

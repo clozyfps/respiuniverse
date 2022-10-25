@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/mihawkblade",
+  "textures": {
+    "3": "animecrossworkspace:blocks/stichedmihawktexture",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

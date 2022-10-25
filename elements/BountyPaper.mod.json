@@ -1,0 +1,58 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "wantedonepiec.png",
+          "use1Xscale": true,
+          "name": "wantedonepiec.png",
+          "x": 149,
+          "y": 13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:Bounty>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:Bounty>",
+          "x": 178,
+          "y": 173
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:user_name>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:user_name>",
+          "x": 178,
+          "y": 163
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

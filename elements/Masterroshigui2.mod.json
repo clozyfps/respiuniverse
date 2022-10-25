@@ -1,0 +1,112 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "5b071dc1a4bbb890d39a87c295e81683.png",
+          "use1Xscale": true,
+          "name": "5b071dc1a4bbb890d39a87c295e81683.png",
+          "x": -85,
+          "y": -94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ah,, Nice job!",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Ah,, Nice job!",
+          "x": 300,
+          "y": 25
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I will give you training paper",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "I will give you training paper",
+          "x": 266,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "So you can train",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "So you can train",
+          "x": 298,
+          "y": 56
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Thanks",
+          "onClick": {
+            "name": "Thanksroshi"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Thanks",
+          "x": 309,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Nvm",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Nvm",
+          "x": 315,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "He is waiting for you..",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "He is waiting for you..",
+          "x": 271,
+          "y": 162
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

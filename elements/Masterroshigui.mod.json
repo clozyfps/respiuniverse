@@ -1,0 +1,112 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ddxcvqx-2e194b3f-6e01-4eaf-b5c8-88d2816a2371.png",
+          "use1Xscale": true,
+          "name": "ddxcvqx-2e194b3f-6e01-4eaf-b5c8-88d2816a2371.png",
+          "x": -11,
+          "y": -16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hey wanna control your Ki",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Hey wanna control your Ki",
+          "x": 256,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "onClick": {
+            "name": "Givekitraining"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 296,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "No",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "No",
+          "x": 298,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Once you click yes, come back when you reach 100",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Once you click yes, come back when you reach 100",
+          "x": 170,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ki level.",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "ki level.",
+          "x": 272,
+          "y": 154
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Right click the item it gives you",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Right click the item it gives you",
+          "x": 212,
+          "y": 121
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

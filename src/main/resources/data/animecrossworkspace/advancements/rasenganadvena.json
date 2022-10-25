@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "animecrossworkspace:water_balloon"
+    },
+    "title": {
+      "translate": "advancements.rasenganadvena.title"
+    },
+    "description": {
+      "translate": "advancements.rasenganadvena.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rasenganadvena": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "animecrossworkspace:killmadara"
+}

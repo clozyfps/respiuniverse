@@ -1,0 +1,8 @@
+{
+  "parent": "animecrossworkspace:custom/purgatory_spike_med",
+  "textures": {
+    "all": "animecrossworkspace:blocks/purgatory_spike_med_texture",
+    "particle": "animecrossworkspace:blocks/purgatory_spike_med_texture",
+    "0": "animecrossworkspace:blocks/purgatory_spike_med_texture"
+  }
+}

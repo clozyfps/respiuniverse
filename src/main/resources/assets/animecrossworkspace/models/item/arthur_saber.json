@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/exmodel",
+  "textures": {
+    "2": "animecrossworkspace:blocks/stiched_texture",
+    "particle": "animecrossworkspace:items/arthursword"
+  }
+}

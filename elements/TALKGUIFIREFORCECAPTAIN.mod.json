@@ -1,0 +1,106 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "329605550033211.png",
+          "use1Xscale": true,
+          "name": "329605550033211.png",
+          "x": -48,
+          "y": -9
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "OH THANK GOODNESS!! DEFEAT THESE 3 INFERNOS AND I WILL",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "OH THANK GOODNESS!! DEFEAT THESE 3 INFERNOS AND I WILL",
+          "x": 141,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "MAKE YOU APART OF THE FIRE FORCE SQUAD!",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "MAKE YOU APART OF THE FIRE FORCE SQUAD!",
+          "x": 180,
+          "y": 65
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "329605550033211.png",
+          "use1Xscale": true,
+          "name": "329605550033211.png",
+          "x": -97,
+          "y": -3
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "329605550033211.png",
+          "use1Xscale": true,
+          "name": "329605550033211.png",
+          "x": -4,
+          "y": 6
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Accept",
+          "onClick": {
+            "name": "Closegui"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Accept",
+          "x": 255,
+          "y": 82
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Decline",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Decline",
+          "x": 253,
+          "y": 104
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

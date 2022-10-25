@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/gunbai2",
+  "textures": {
+    "1": "animecrossworkspace:blocks/texture33",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

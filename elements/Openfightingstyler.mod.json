@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Openfightingstylegui",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "OpenfightingstylerOnKeyPressed"
+    }
+  }
+}

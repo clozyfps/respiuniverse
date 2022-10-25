@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "1": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "2": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "3": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "5": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "6": {
+      "item": "animecrossworkspace:black_steel"
+    },
+    "8": {
+      "item": "animecrossworkspace:black_steel"
+    }
+  },
+  "result": {
+    "item": "animecrossworkspace:goblin_slayer_armor_leggings",
+    "count": 1
+  }
+}

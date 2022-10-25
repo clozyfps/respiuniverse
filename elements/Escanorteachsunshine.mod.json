@@ -1,0 +1,73 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "3355095-9894424742-chara.png",
+          "use1Xscale": true,
+          "name": "3355095-9894424742-chara.png",
+          "x": 18,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "For sunshine, it will be 30 SP",
+          "color": {
+            "value": -20992,
+            "falpha": 0.0
+          },
+          "name": "For sunshine, it will be 30 SP",
+          "x": 240,
+          "y": 66
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "onClick": {
+            "name": "Buysunshinenormal"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 294,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "No",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "No",
+          "x": 296,
+          "y": 103
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ddg5eja-83979c7a-d079-4bc4-8e07-e0c52646967d.png",
+          "use1Xscale": true,
+          "name": "ddg5eja-83979c7a-d079-4bc4-8e07-e0c52646967d.png",
+          "x": 7,
+          "y": 3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hey wanna learn rasengan?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Hey wanna learn rasengan?",
+          "x": 248,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sure",
+          "onClick": {
+            "name": "Surejiraiya"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Sure",
+          "x": 290,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Naurrr",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Naurrr",
+          "x": 285,
+          "y": 96
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

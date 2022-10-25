@@ -1,0 +1,110 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Gum Gum Mastery",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "Gum Gum Mastery",
+          "x": 110,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:gumgummastery>",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:gumgummastery>",
+          "x": 194,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:fireimmunitymastery>",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:fireimmunitymastery>",
+          "x": 224,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fire Immunity Mastery",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "Fire Immunity Mastery",
+          "x": 109,
+          "y": 42
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "animecrossingv2.png",
+          "use1Xscale": true,
+          "name": "animecrossingv2.png",
+          "x": 99,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Bald Head Mastery",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "Bald Head Mastery",
+          "x": 109,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:runtrainingnumber>",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:runtrainingnumber>",
+          "x": 202,
+          "y": 88
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

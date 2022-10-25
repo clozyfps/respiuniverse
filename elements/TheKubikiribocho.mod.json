@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "zabuza_sword:default",
+    "name": "The Kubikiribocho",
+    "specialInfo": [
+      "One of the seven swords of the mist and the is owned by Zabuza."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Naruto"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 9.0,
+    "attackSpeed": 0.7,
+    "enchantability": 9,
+    "damageVsEntity": 15.0,
+    "usageCount": 1900,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

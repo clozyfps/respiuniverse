@@ -1,0 +1,26 @@
+{
+  "_fv": 33,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "SSJ1",
+    "icon": "a2ie_layer_2.png",
+    "color": {
+      "value": -14080,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SSJ1EffectEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "SSJ1EffectOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "SSJ1EffectEffectExpires"
+    }
+  }
+}

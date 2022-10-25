@@ -1,0 +1,64 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "fuiveleafclover",
+    "enableBody": true,
+    "textureBody": "fuiveleafclover",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "DemonModeBodyTickEvent"
+    },
+    "onBodyTick": {
+      "name": "DemonModeBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Demon Mode Face",
+    "bodyName": "Demon Mode Body",
+    "leggingsName": "Demon Mode Leggings",
+    "bootsName": "Demon Mode Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelblackwings",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "blackwing.png",
+    "bodyModelName": "Modelblackwings",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "blackwing.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 5,
+    "damageValueBody": 5,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 2.3,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

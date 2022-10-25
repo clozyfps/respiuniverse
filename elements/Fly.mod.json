@@ -1,0 +1,15 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Fly (Keybind for every fly ability)",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "FlyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "FlyOnKeyReleased"
+    }
+  }
+}

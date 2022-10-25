@@ -1,0 +1,73 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "nobara5.png",
+          "use1Xscale": true,
+          "name": "nobara5.png",
+          "x": 14,
+          "y": 34
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Wanna learn the straw doll technique?",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Wanna learn the straw doll technique?",
+          "x": 204,
+          "y": 59
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "yes",
+          "onClick": {
+            "name": "Nobarates"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "yes",
+          "x": 275,
+          "y": 101
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "no",
+          "onClick": {
+            "name": "Closeanygui"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "no",
+          "x": 277,
+          "y": 129
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

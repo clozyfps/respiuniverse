@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Wado Bite Toggle",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "WadoBiteToggleOnKeyPressed"
+    }
+  }
+}

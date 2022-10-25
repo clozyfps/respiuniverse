@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/rhittaxe",
+  "textures": {
+    "1": "animecrossworkspace:blocks/rhittatexture",
+    "particle": "animecrossworkspace:items/escanor_axe"
+  }
+}

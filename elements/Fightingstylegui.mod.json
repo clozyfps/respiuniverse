@@ -1,0 +1,98 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "animecrossingv2.png",
+          "use1Xscale": true,
+          "name": "animecrossingv2.png",
+          "x": 115,
+          "y": 7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Caped Baldi",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Capedbaldicondition"
+          },
+          "name": "Caped Baldi",
+          "x": 127,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "onClick": {
+            "name": "Capedbaldifightingstyleselect"
+          },
+          "displayCondition": {
+            "name": "Capedbaldicondition"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 127,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fist of flowing water",
+          "color": {
+            "value": -16640,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Fistofflowingbuttoncond"
+          },
+          "name": "Fist of flowing water",
+          "x": 194,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "onClick": {
+            "name": "Fistofflowingrock"
+          },
+          "displayCondition": {
+            "name": "Fistofflowingbuttoncond"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 218,
+          "y": 67
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

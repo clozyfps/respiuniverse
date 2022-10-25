@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "diamond_block",
+        "2": "dark_repulser",
+        "3": "dark_repulser2"
+      },
+      "name": "default"
+    }
+  }
+}

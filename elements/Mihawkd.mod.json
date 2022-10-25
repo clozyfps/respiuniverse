@@ -1,0 +1,64 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "mihawkhat",
+    "enableBody": true,
+    "textureBody": "mihawkchest",
+    "enableLeggings": true,
+    "textureLeggings": "mihwakpants",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onHelmetTick": {
+      "name": "MihawkdHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "MihawkdBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:OnePiece"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Mihawk Hat",
+    "bodyName": "Mihawk Chest",
+    "leggingsName": "Mihawkd Leggings",
+    "bootsName": "Mihawkd Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelmihawkhatmodel",
+    "helmetModelPart": "bone",
+    "helmetModelTexture": "mihawkhattex.png",
+    "bodyModelName": "Modelmihawkdrippworkrn",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "mihawkdriptexture.png",
+    "leggingsModelName": "Modelmihawkdrippworkrn",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "mihawkdriptexture.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 4,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 1.7,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/pika_pika_sword",
+  "textures": {
+    "0": "animecrossworkspace:blocks/pika_pika_sword",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

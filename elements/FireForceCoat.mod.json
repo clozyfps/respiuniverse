@@ -1,0 +1,61 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "fireforcehcest",
+    "enableLeggings": true,
+    "textureLeggings": "fireforcecplan",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "FireForceCoatBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:FireForce"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Fire Force Coat Helmet",
+    "bodyName": "Fire Force Coat Body",
+    "leggingsName": "Fire Force Coat Leggings",
+    "bootsName": "Fire Force Coat Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModelFireForceChest",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "fireforcearmorchest.png",
+    "leggingsModelName": "Modelgob",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "fire_force_cloth.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

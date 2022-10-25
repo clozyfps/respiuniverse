@@ -1,0 +1,15 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Esper Float",
+    "keyBindingCategoryKey": "animecross",
+    "onKeyPressed": {
+      "name": "EsperFloatOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "EsperFloatOnKeyReleased"
+    }
+  }
+}

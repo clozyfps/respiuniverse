@@ -1,0 +1,187 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 230,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Big Bang Attack",
+          "width": 103,
+          "height": 20,
+          "name": "Big Bang Attack",
+          "x": 69,
+          "y": 13
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Instant Transmission",
+          "width": 129,
+          "height": 20,
+          "name": "Instant Transmission",
+          "x": 67,
+          "y": 174
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Death Impact",
+          "width": 87,
+          "height": 20,
+          "name": "Death Impact",
+          "x": 69,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "160 Ki",
+          "color": {
+            "value": -16713985,
+            "falpha": 0.0
+          },
+          "name": "160 Ki",
+          "x": 177,
+          "y": 18
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ki Blast",
+          "onClick": {
+            "name": "Buykiblast"
+          },
+          "displayCondition": {
+            "name": "Blastcondi"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "Ki Blast",
+          "x": 69,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "10 Ki",
+          "color": {
+            "value": -16713985,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Blastcondi"
+          },
+          "name": "10 Ki",
+          "x": 140,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "wip",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "wip",
+          "x": 160,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Find It.",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Find It.",
+          "x": 311,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "150 Ki",
+          "color": {
+            "value": -16713985,
+            "falpha": 0.0
+          },
+          "name": "150 Ki",
+          "x": 200,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Destructo Disk",
+          "onClick": {
+            "name": "BuyDestructoDisk"
+          },
+          "displayCondition": {
+            "name": "DestructoCondi"
+          },
+          "width": 98,
+          "height": 20,
+          "name": "Destructo Disk",
+          "x": 69,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "220 Ki",
+          "color": {
+            "value": -16713985,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DestructoCondi"
+          },
+          "name": "220 Ki",
+          "x": 169,
+          "y": 126
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Saiyans",
+          "onClick": {
+            "name": "Os"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Saiyans",
+          "x": 293,
+          "y": 12
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

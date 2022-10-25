@@ -1,0 +1,40 @@
+{
+  "_fv": 33,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "air103_layer_2",
+    "customModelName": "Normal",
+    "name": "Blackslashs",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 99999,
+    "actionSound": {
+      "value": "entity.firework.blast"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "Modelblackslash1",
+    "customBulletModelTexture": "blackslash.png",
+    "onBulletHitsEntity": {
+      "name": "BlackslashsProjectileHitsLivingEntity"
+    }
+  }
+}
