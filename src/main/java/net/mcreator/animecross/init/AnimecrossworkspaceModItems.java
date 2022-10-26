@@ -79,6 +79,7 @@ import net.mcreator.animecross.item.PurgatoryTravelItem;
 import net.mcreator.animecross.item.PurgatoryFlamesAbilityItem;
 import net.mcreator.animecross.item.PsychicEnergyAbsorptionItem;
 import net.mcreator.animecross.item.PrideFlairItem;
+import net.mcreator.animecross.item.PowerDevilHornsItem;
 import net.mcreator.animecross.item.PirateCutlassItem;
 import net.mcreator.animecross.item.PikaSaberItem;
 import net.mcreator.animecross.item.PikaPikaRangedItem;
@@ -176,6 +177,7 @@ import net.mcreator.animecross.item.ChidoriItem;
 import net.mcreator.animecross.item.BrokenSmallGourdItem;
 import net.mcreator.animecross.item.BrokenMediumGourdItem;
 import net.mcreator.animecross.item.BountyPosterItem;
+import net.mcreator.animecross.item.BloodHammerItem;
 import net.mcreator.animecross.item.BlackslashsItem;
 import net.mcreator.animecross.item.BlackSteelItem;
 import net.mcreator.animecross.item.BlackBullsItem;
@@ -700,6 +702,18 @@ public class AnimecrossworkspaceModItems {
 			() -> new RengokuOutfitItem.Chestplate());
 	public static final RegistryObject<Item> RENGOKU_OUTFIT_LEGGINGS = REGISTRY.register("rengoku_outfit_leggings",
 			() -> new RengokuOutfitItem.Leggings());
+	public static final RegistryObject<Item> DEKU = REGISTRY.register("deku_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.DEKU, -15319252, -8257536,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> POCHITA = REGISTRY.register("pochita_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.POCHITA, -7250367, -16777216,
+					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN)));
+	public static final RegistryObject<Item> POWER = REGISTRY.register("power_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.POWER, -12829887, -1188882,
+					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN)));
+	public static final RegistryObject<Item> POWER_DEVIL_HORNS_HELMET = REGISTRY.register("power_devil_horns_helmet",
+			() -> new PowerDevilHornsItem.Helmet());
+	public static final RegistryObject<Item> BLOOD_HAMMER = REGISTRY.register("blood_hammer", () -> new BloodHammerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

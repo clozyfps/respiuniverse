@@ -53,6 +53,8 @@ import net.mcreator.animecross.entity.SaitamaEntity;
 import net.mcreator.animecross.entity.RengokuEntity;
 import net.mcreator.animecross.entity.PyrobombEntity;
 import net.mcreator.animecross.entity.PurgatoryflamemoveEntity;
+import net.mcreator.animecross.entity.PowerEntity;
+import net.mcreator.animecross.entity.PochitaEntity;
 import net.mcreator.animecross.entity.PirateEntity;
 import net.mcreator.animecross.entity.PikaPikaRangedEntity;
 import net.mcreator.animecross.entity.OdmstringEntity;
@@ -112,6 +114,7 @@ import net.mcreator.animecross.entity.DontMoveEntity;
 import net.mcreator.animecross.entity.DioEntity;
 import net.mcreator.animecross.entity.DestructoDiskEntity;
 import net.mcreator.animecross.entity.DemonEntity;
+import net.mcreator.animecross.entity.DekuEntity;
 import net.mcreator.animecross.entity.CursedSpiritEntity;
 import net.mcreator.animecross.entity.CruelsunproEntity;
 import net.mcreator.animecross.entity.CosmicblastEntity;
@@ -658,6 +661,21 @@ public class AnimecrossworkspaceModEntities {
 	public static final RegistryObject<EntityType<HollowpurpleEntity>> HOLLOWPURPLE = register("projectile_hollowpurple",
 			EntityType.Builder.<HollowpurpleEntity>of(HollowpurpleEntity::new, MobCategory.MISC).setCustomClientFactory(HollowpurpleEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DekuEntity>> DEKU = register("deku",
+			EntityType.Builder.<DekuEntity>of(DekuEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DekuEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PochitaEntity>> POCHITA = register("pochita",
+			EntityType.Builder.<PochitaEntity>of(PochitaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(PochitaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PowerEntity>> POWER = register("power",
+			EntityType.Builder.<PowerEntity>of(PowerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(PowerEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -749,6 +767,9 @@ public class AnimecrossworkspaceModEntities {
 			ZenitsuEntity.init();
 			SoulReaperEntity.init();
 			BatHollowEntity.init();
+			DekuEntity.init();
+			PochitaEntity.init();
+			PowerEntity.init();
 		});
 	}
 
@@ -837,5 +858,8 @@ public class AnimecrossworkspaceModEntities {
 		event.put(ZENITSU.get(), ZenitsuEntity.createAttributes().build());
 		event.put(SOUL_REAPER.get(), SoulReaperEntity.createAttributes().build());
 		event.put(BAT_HOLLOW.get(), BatHollowEntity.createAttributes().build());
+		event.put(DEKU.get(), DekuEntity.createAttributes().build());
+		event.put(POCHITA.get(), PochitaEntity.createAttributes().build());
+		event.put(POWER.get(), PowerEntity.createAttributes().build());
 	}
 }

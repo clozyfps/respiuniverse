@@ -40,6 +40,8 @@ import net.mcreator.animecross.client.renderer.SaoFloor1BossRenderer;
 import net.mcreator.animecross.client.renderer.SandShinobiRenderer;
 import net.mcreator.animecross.client.renderer.SaitamaRenderer;
 import net.mcreator.animecross.client.renderer.RengokuRenderer;
+import net.mcreator.animecross.client.renderer.PowerRenderer;
+import net.mcreator.animecross.client.renderer.PochitaRenderer;
 import net.mcreator.animecross.client.renderer.PirateRenderer;
 import net.mcreator.animecross.client.renderer.NoelleSilvaRenderer;
 import net.mcreator.animecross.client.renderer.NobaraRenderer;
@@ -86,6 +88,7 @@ import net.mcreator.animecross.client.renderer.DragonFireRenderer;
 import net.mcreator.animecross.client.renderer.DioRenderer;
 import net.mcreator.animecross.client.renderer.DestructoDiskRenderer;
 import net.mcreator.animecross.client.renderer.DemonRenderer;
+import net.mcreator.animecross.client.renderer.DekuRenderer;
 import net.mcreator.animecross.client.renderer.CursedSpiritRenderer;
 import net.mcreator.animecross.client.renderer.CruelsunproRenderer;
 import net.mcreator.animecross.client.renderer.CosmicGarouRenderer;
@@ -222,5 +225,8 @@ public class AnimecrossworkspaceModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.THUNDERCLAPANDFLASH.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.SIXFOLD.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.HOLLOWPURPLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.DEKU.get(), DekuRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.POCHITA.get(), PochitaRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.POWER.get(), PowerRenderer::new);
 	}
 }

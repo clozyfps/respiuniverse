@@ -7,6 +7,7 @@ package net.mcreator.animecross.init;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -27,6 +28,7 @@ public class AnimecrossworkspaceModTabs {
 	public static CreativeModeTab TAB_SWORD_ART_ONLING;
 	public static CreativeModeTab TAB_SEVEN_DEADLY_SINS;
 	public static CreativeModeTab TAB_BLEACH;
+	public static CreativeModeTab TAB_CHAINSAW_MAN;
 
 	public static void load() {
 		TAB_AOT = new CreativeModeTab("tabaot") {
@@ -198,6 +200,17 @@ public class AnimecrossworkspaceModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(AnimecrossworkspaceModItems.ICHIGO_ZANPAKUTO.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_CHAINSAW_MAN = new CreativeModeTab("tabchainsaw_man") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(Blocks.REDSTONE_WIRE);
 			}
 
 			@OnlyIn(Dist.CLIENT)

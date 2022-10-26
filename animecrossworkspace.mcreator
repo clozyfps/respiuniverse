@@ -14125,6 +14125,162 @@
         ]
       },
       "path": "~/Demon Slayer"
+    },
+    {
+      "name": "Deku",
+      "type": "livingentity",
+      "sortid": 627,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "ChainsawMan",
+      "type": "tab",
+      "sortid": 628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainsaw_man",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "Pochita",
+      "type": "livingentity",
+      "sortid": 628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pochita",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "Power",
+      "type": "livingentity",
+      "sortid": 629,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "PowerDevilHornsHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 630,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_devil_horns_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "PowerDevilHorns",
+      "type": "armor",
+      "sortid": 630,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_devil_horns",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "BloodHammerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 631,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_hammer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "BloodHammer",
+      "type": "tool",
+      "sortid": 631,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_hammer",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "PowerEntityIsHurt",
+      "type": "procedure",
+      "sortid": 632,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "PowerEntityDies",
+      "type": "procedure",
+      "sortid": 633,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
     }
   ],
   "variable_elements": [
@@ -14865,28 +15021,29 @@
   ],
   "language_map": {
     "en_us": {
-      "item.animecross.arc_armor_boots": "Arc Armor Boots",
       "item.animecross.white_mikey_cloak_chestplate": "White Mikey Cloak",
+      "item.animecross.arc_armor_boots": "Arc Armor Boots",
       "item.animecross.demon_dweller_sword": "Demon Dweller Sword",
       "item.animecrossworkspace.assault_mode_chestplate": "Assault Mode ",
       "item.w.goblin_slayer_armor_helmet": "Goblin Slayer Armor Helmet",
       "item.animecross.slime_helmet": "Slime Helmet",
       "entity.w.levi": "Levi Ackerman",
+      "item.animecrossworkspace.blood_hammer": "Blood Hammer",
       "entity.animecross.boros_third_form": "Boros Third Form",
-      "item.animecross.sand_shinobi_spawn_egg": "Sand Shinobi Spawn Egg",
       "item.animecrossworkspace.smack_down_arrow": "Smack Down Arrow",
+      "item.animecross.sand_shinobi_spawn_egg": "Sand Shinobi Spawn Egg",
       "item.w.gum_gum_rocket": "Gum Gum Rocket",
       "item.w.boros_spawn_egg": "Boros Spawn Egg",
       "entity.animecrossworkspace.scout_regiment_member": "Scout Regiment Soldier",
       "item.animecrossworkspace.demon_mode_chestplate": "Demon Mode Body",
       "entity.w.sister_lilly": "Sister Lily",
-      "item.animecross.lady_tamayo_spawn_egg": "Lady Tamayo Spawn Egg",
-      "biome.animecrossworkspace.volcanic_grand_magic_zone": "Volcanic Grand Magic Zone",
       "item.animecrossworkspace.twenty_percent_off_coupon": "60% Off Coupon",
+      "biome.animecrossworkspace.volcanic_grand_magic_zone": "Volcanic Grand Magic Zone",
+      "item.animecross.lady_tamayo_spawn_egg": "Lady Tamayo Spawn Egg",
       "item.w.goblin_slayer_armor_boots": "Goblin Slayer Armor Boots",
       "item.animecrossworkspace.goddess_clan_wings_boots": "Goddess Clan Wings Boots",
-      "item.animecrossworkspace.kirito_spawn_egg": "Kirito Spawn Egg",
       "item.animecrossworkspace.zoro_spawn_egg": "Zoro Spawn Egg",
+      "item.animecrossworkspace.kirito_spawn_egg": "Kirito Spawn Egg",
       "item.w.jujutsu_sourcerer_chestplate": "Jujutsu Sourcerer Body",
       "item.animecross.demon_mode_boots": "Demon Mode Boots",
       "item.animecross.ichigo_spawn_egg": "Ichigo Spawn Egg",
@@ -14894,28 +15051,28 @@
       "item.animecross.nobara_spawn_egg": "Nobara Spawn Egg",
       "item.animecross.assault_mode_helmet": "Assault Mode Helmet",
       "item.animecrossworkspace.sharingan_1_tomoe_boots": "Sharingan 1 Tomoe Boots",
-      "item.animecross.kisuke_hat_chestplate": "Kisuke Hat Body",
       "item.animecrossworkspace.gum_gum_fruit": "Gum Gum Fruit",
+      "item.animecross.kisuke_hat_chestplate": "Kisuke Hat Body",
       "entity.animecross.leaf_shinobi": "Leaf Shinobi",
       "item.w.demon_dweller_sword": "Demon Dweller Sword",
       "item.animecross.steel_sword": "Steel Sword",
-      "item.animecrossworkspace.rasengan": "Rasengan",
-      "item.animecross.black_blindfold_helmet": "Black Blindfold",
       "item.animecross.saitama_uniform_boots": "Saitama Uniform Boots",
+      "item.animecross.black_blindfold_helmet": "Black Blindfold",
+      "item.animecrossworkspace.rasengan": "Rasengan",
       "item.animecross.black_bulls_chestplate": "Black Bulls ",
-      "effect.animecrossworkspace.maxpercent": "?????????????",
       "entity.animecrossworkspace.cloneeratheal": "Cloneeratheal",
+      "effect.animecrossworkspace.maxpercent": "?????????????",
       "item.animecrossworkspace.kokushiboarmor_leggings": "Kokushibo Pants",
       "item.animecross.cursed_spirit_spawn_egg": "Weak Cursed Spirit Spawn Egg",
       "item.animecross.fire_grimoire": "Fire Grimoire",
-      "item.animecross.pride_flair": "Pride Flair",
-      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
-      "item.w.katana": "Katana",
       "entity.w.boros_second_form": "Boros Second Form",
+      "item.w.katana": "Katana",
+      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
+      "item.animecross.pride_flair": "Pride Flair",
       "item.animecross.wind_bomb": "Wind Bomb",
       "biome.animecrossworkspace.shinobi_forest": "Shinobi Forest",
-      "item.w.jujutsu_sourcerer_helmet": "Jujutsu Sourcerer Helmet",
       "item.animecrossworkspace.odm_gear_armor_boots": "ODM Gear Armor Boots",
+      "item.w.jujutsu_sourcerer_helmet": "Jujutsu Sourcerer Helmet",
       "key.w.fly": "Fly (Keybind for every fly ability)",
       "item.w.assault_mode_helmet": "Assault Mode Helmet",
       "item.animecrossworkspace.uchiha_clan": "Uchiha Clan",
@@ -14954,19 +15111,19 @@
       "item.animecrossworkspace.uzui_tengen_drip_leggings": "Uzui Tengen Drip Leggings",
       "item.animecross.sister_lilly_spawn_egg": "Sister Lily Spawn Egg",
       "item.animecross.lost_vayne": "Lost Vayne",
-      "entity.w.grimoire_giver": "Grimoire Giver",
       "item.animecrossworkspace.pika_pika_fruit": "Pika Pika Fruit",
-      "item.animecross.leaf_shinobi_spawn_egg": "Leaf Shinobi Spawn Egg",
+      "entity.w.grimoire_giver": "Grimoire Giver",
       "entity.animecrossworkspace.tanjiro_kamado": "Tanjiro Kamado",
+      "item.animecross.leaf_shinobi_spawn_egg": "Leaf Shinobi Spawn Egg",
       "item.animecrossworkspace.grimoire_giver_spawn_egg": "Grimoire Giver Spawn Egg",
       "item.animecross.dragon_fire_technique": "Dragon Fire Technique",
-      "item.animecross.crazy_prominence": "Crazy Prominence",
-      "item.w.the_gunbai": "The Gunbai",
       "item.animecrossworkspace.muzan_kibutsuji_spawn_egg": "Muzan Kibutsuji Spawn Egg",
+      "item.w.the_gunbai": "The Gunbai",
+      "item.animecross.crazy_prominence": "Crazy Prominence",
       "item.animecross.small_gourd": "Small Gourd",
-      "itemGroup.tabfire_force": "Fire Force",
-      "item.animecrossworkspace.demon_dweller_sword": "Demon Dweller Sword",
       "item.animecrossworkspace.thunderclapandflash": "Thunderclapandflash",
+      "item.animecrossworkspace.demon_dweller_sword": "Demon Dweller Sword",
+      "itemGroup.tabfire_force": "Fire Force",
       "subtitles.thunder": "",
       "entity.w.mahito": "Mahito",
       "entity.w.cosmic_garou": "Cosmic Garou",
@@ -15018,6 +15175,7 @@
       "block.animecross.tvright": "Tvright",
       "item.animecross.shinra_spawn_egg": "Shinra Spawn Egg",
       "item.animecrossworkspace.dark_repulser": "Dark Repulser",
+      "item.animecrossworkspace.deku_spawn_egg": "Deku Spawn Egg",
       "item.animecross.stone_mask_helmet": "Stone Mask",
       "block.w.tvright": "Tvright",
       "item.animecrossworkspace.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings",
@@ -15274,6 +15432,7 @@
       "item.animecross.aircanister": "Air canister",
       "item.animecrossworkspace.slime_leggings": "Slime Leggings",
       "entity.animecrossworkspace.uzui_tengen": "Uzui Tengen",
+      "item.animecrossworkspace.power_devil_horns_leggings": "Power Devil Horns Leggings",
       "entity.animecross.cloneeratheal": "Cloneeratheal",
       "item.w.purgatory_travel": "Purgatory Travel",
       "item.animecrossworkspace.goblin_slayer_armor_chestplate": "Goblin Slayer Armor Body",
@@ -15316,6 +15475,7 @@
       "item.animecross.purgatory_flames_ability": "Purgatory Flames",
       "item.w.water_nichirin": "Water Nichirin",
       "item.animecross.mikey_spawn_egg": "Mikey White Cloak Spawn Egg",
+      "item.animecrossworkspace.power_spawn_egg": "Power Spawn Egg",
       "item.animecrossworkspace.destructo_disk_item": "Destructo Disk ",
       "entity.animecrossworkspace.sister_lilly": "Sister Lily",
       "item.w.cosmic_fear_garou_spawn_egg": "Cosmic Fear Garou Spawn Egg",
@@ -15442,6 +15602,7 @@
       "item.animecross.exploding_blood_bomb": "Exploding Blood Bomb",
       "item.animecrossworkspace.air_whip": "Air Whip",
       "item.animecross.jujutsu_sourcerer_leggings": "Jujutsu Sourcerer Leggings",
+      "item.animecrossworkspace.pochita_spawn_egg": "Pochita Spawn Egg",
       "key.w.switch_ability_bind": "Switch Ability (Grimoires, Breathings, etc)",
       "item.animecross.yor_spawn_egg": "Yor Forger Spawn Egg",
       "item.animecross.dragon_fire": "Dragon Fire",
@@ -15521,6 +15682,7 @@
       "entity.w.jiraiya": "Jiraiya",
       "item.w.dont_move_item": "Dont Move.",
       "item.animecross.sasukes_sword": "Sasukes Sword",
+      "item.animecrossworkspace.power_devil_horns_chestplate": "Power Devil Horns Body",
       "item.animecross.small_roots": "Small Roots",
       "item.animecrossworkspace.tatsumaki_spawn_egg": "Tatsumaki Spawn Egg",
       "entity.animecrossworkspace.mahito": "Mahito",
@@ -15536,6 +15698,7 @@
       "effect.animecross.evil_spirit": "Evil Spirit",
       "item.w.phoenix_flower_jutsu": "Phoenix Flower Jutsu",
       "entity.animecrossworkspace.bat_hollow": "Bat Hollow",
+      "entity.animecrossworkspace.deku": "Deku",
       "item.animecrossworkspace.human_restore": "Human Restore",
       "advancements.antimagic.descr": "Gain the anti magic grimoire",
       "item.w.stone_mask_leggings": "Stone Mask Leggings",
@@ -15552,6 +15715,7 @@
       "item.animecrossworkspace.soul_reaper_uniform_chestplate": "Soul Reaper Uniform Body",
       "item.w.ichigo_spawn_egg": "Ichigo Spawn Egg",
       "item.animecross.slime_leggings": "Slime Leggings",
+      "itemGroup.tabchainsaw_man": "Chainsaw Man",
       "item.animecrossworkspace.the_kubikiribocho": "The Kubikiribocho",
       "entity.animecrossworkspace.sukuna": "Sukuna",
       "itemGroup.tabseven_deadly_sins": "Seven Deadly Sins",
@@ -15576,6 +15740,7 @@
       "item.animecrossworkspace.saitama_uniform_leggings": "Saitama Uniform Leggings",
       "effect.animecrossworkspace.evil_spirit": "Evil Spirit",
       "item.animecross.chimera_shadow_garden": "Chimera Shadow Garden",
+      "item.animecrossworkspace.power_devil_horns_helmet": "Power Devil Horns ",
       "key.animecross.display_self_evil_spirit": "Show Yourself as a evil spirit",
       "item.w.white_mikey_cloak_helmet": "White Mikey Cloak Helmet",
       "entity.w.leaf_shinobi": "Leaf Shinobi",
@@ -15664,6 +15829,7 @@
       "effect.animecrossworkspace.light_flight_potion": "Pika Flight",
       "item.w.smack_down_arrow_ability": "Smack Down Arrow ",
       "item.animecrossworkspace.toge_inumaki_spawn_egg": "Toge Inumaki Spawn Egg",
+      "entity.animecrossworkspace.power": "Power",
       "entity.w.fire_force_captain": "Fire Force Captain",
       "block.animecross.fire_nezukoblock": "Fire Nezukoblock",
       "item.animecross.straw_doll": "Straw Doll",
@@ -15799,6 +15965,7 @@
       "item.animecrossworkspace.mihawk_spawn_egg": "Mihawk Spawn Egg",
       "item.animecrossworkspace.fire_force_coat_chestplate": "Fire Force Coat Body",
       "item.animecross.cursedenergyparticle": "Cursedenergyparticle",
+      "item.animecrossworkspace.power_devil_horns_boots": "Power Devil Horns Boots",
       "item.animecross.kirito_spawn_egg": "Kirito Spawn Egg",
       "block.animecross.purgatory_medium_spike": "Purgatory Medium Spike",
       "entity.animecrossworkspace.demon": "Demon",
@@ -15847,6 +16014,7 @@
       "item.w.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
       "item.animecrossworkspace.nezuko_spawn_egg": "Nezuko Kamado Spawn Egg",
       "effect.animecrossworkspace.red": "Red",
+      "entity.animecrossworkspace.pochita": "Pochita",
       "item.w.escanor_spawn_egg": "Escanor Spawn Egg",
       "item.animecrossworkspace.psychic_energy_absorption": "Psychic Energy Absorption",
       "item.w.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
