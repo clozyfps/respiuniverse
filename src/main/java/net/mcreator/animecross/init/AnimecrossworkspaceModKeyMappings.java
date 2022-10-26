@@ -18,7 +18,12 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.animecross.network.WadoBiteToggleMessage;
 import net.mcreator.animecross.network.UseAbilityMessage;
+import net.mcreator.animecross.network.TestingMessage;
+import net.mcreator.animecross.network.Testing4Message;
+import net.mcreator.animecross.network.Testing3Message;
+import net.mcreator.animecross.network.Testing2Message;
 import net.mcreator.animecross.network.SwitchAbilityBindMessage;
+import net.mcreator.animecross.network.StringSwingMessage;
 import net.mcreator.animecross.network.ShootODMStringMessage;
 import net.mcreator.animecross.network.OpenfightingstylerMessage;
 import net.mcreator.animecross.network.OpenInfoMessage;
@@ -53,8 +58,14 @@ public class AnimecrossworkspaceModKeyMappings {
 			"key.categories.animecross");
 	public static final KeyMapping WADO_BITE_TOGGLE = new KeyMapping("key.animecrossworkspace.wado_bite_toggle", GLFW.GLFW_KEY_H,
 			"key.categories.animecross");
+	public static final KeyMapping TESTING = new KeyMapping("key.animecrossworkspace.testing", GLFW.GLFW_KEY_G, "key.categories.misc");
+	public static final KeyMapping TESTING_2 = new KeyMapping("key.animecrossworkspace.testing_2", GLFW.GLFW_KEY_B, "key.categories.misc");
+	public static final KeyMapping TESTING_3 = new KeyMapping("key.animecrossworkspace.testing_3", GLFW.GLFW_KEY_X, "key.categories.misc");
+	public static final KeyMapping TESTING_4 = new KeyMapping("key.animecrossworkspace.testing_4", GLFW.GLFW_KEY_H, "key.categories.misc");
+	public static final KeyMapping STRING_SWING = new KeyMapping("key.animecrossworkspace.string_swing", GLFW.GLFW_KEY_Z, "key.categories.misc");
 	private static long ESPER_FLOAT_LASTPRESS = 0;
 	private static long FLY_LASTPRESS = 0;
+	private static long STRING_SWING_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
@@ -71,6 +82,11 @@ public class AnimecrossworkspaceModKeyMappings {
 		ClientRegistry.registerKeyBinding(FLY);
 		ClientRegistry.registerKeyBinding(OPENFIGHTINGSTYLER);
 		ClientRegistry.registerKeyBinding(WADO_BITE_TOGGLE);
+		ClientRegistry.registerKeyBinding(TESTING);
+		ClientRegistry.registerKeyBinding(TESTING_2);
+		ClientRegistry.registerKeyBinding(TESTING_3);
+		ClientRegistry.registerKeyBinding(TESTING_4);
+		ClientRegistry.registerKeyBinding(STRING_SWING);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -164,6 +180,41 @@ public class AnimecrossworkspaceModKeyMappings {
 					if (event.getAction() == GLFW.GLFW_PRESS) {
 						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new WadoBiteToggleMessage(0, 0));
 						WadoBiteToggleMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == TESTING.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new TestingMessage(0, 0));
+						TestingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == TESTING_2.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new Testing2Message(0, 0));
+						Testing2Message.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == TESTING_3.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new Testing3Message(0, 0));
+						Testing3Message.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == TESTING_4.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new Testing4Message(0, 0));
+						Testing4Message.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == STRING_SWING.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new StringSwingMessage(0, 0));
+						StringSwingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+						STRING_SWING_LASTPRESS = System.currentTimeMillis();
+					} else if (event.getAction() == GLFW.GLFW_RELEASE) {
+						int dt = (int) (System.currentTimeMillis() - STRING_SWING_LASTPRESS);
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new StringSwingMessage(1, dt));
+						StringSwingMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 					}
 				}
 			}

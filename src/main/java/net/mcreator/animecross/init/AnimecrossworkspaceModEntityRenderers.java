@@ -61,6 +61,7 @@ import net.mcreator.animecross.client.renderer.LeviRenderer;
 import net.mcreator.animecross.client.renderer.LeafShinobiRenderer;
 import net.mcreator.animecross.client.renderer.LadyTamayoRenderer;
 import net.mcreator.animecross.client.renderer.KokushiboRenderer;
+import net.mcreator.animecross.client.renderer.KnotEntityRenderer;
 import net.mcreator.animecross.client.renderer.KiritoRenderer;
 import net.mcreator.animecross.client.renderer.KidBuuRenderer;
 import net.mcreator.animecross.client.renderer.JiraiyaRenderer;
@@ -211,5 +212,6 @@ public class AnimecrossworkspaceModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.AIRTYPERANGED.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.ANNITYPE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.KOKUSHIBO.get(), KokushiboRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.KNOT_ENTITY.get(), KnotEntityRenderer::new);
 	}
 }

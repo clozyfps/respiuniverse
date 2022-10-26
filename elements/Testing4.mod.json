@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Testing",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StringAdd3"
+    }
+  }
+}

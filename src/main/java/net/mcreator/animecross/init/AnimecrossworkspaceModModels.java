@@ -13,6 +13,7 @@ import net.mcreator.animecross.client.model.Modelwingsofffreee;
 import net.mcreator.animecross.client.model.Modelwadobite;
 import net.mcreator.animecross.client.model.Modelvaccineman;
 import net.mcreator.animecross.client.model.Modeluzuiarmor;
+import net.mcreator.animecross.client.model.Modelstring2;
 import net.mcreator.animecross.client.model.Modelsteve5;
 import net.mcreator.animecross.client.model.Modelssj1;
 import net.mcreator.animecross.client.model.Modelodm;
@@ -69,6 +70,7 @@ public class AnimecrossworkspaceModModels {
 		event.registerLayerDefinition(Modelkokudrip.LAYER_LOCATION, Modelkokudrip::createBodyLayer);
 		event.registerLayerDefinition(Modelfireball2.LAYER_LOCATION, Modelfireball2::createBodyLayer);
 		event.registerLayerDefinition(ModelSHARINGANNUMBERONE.LAYER_LOCATION, ModelSHARINGANNUMBERONE::createBodyLayer);
+		event.registerLayerDefinition(Modelstring2.LAYER_LOCATION, Modelstring2::createBodyLayer);
 		event.registerLayerDefinition(ModelDBZArmor1.LAYER_LOCATION, ModelDBZArmor1::createBodyLayer);
 		event.registerLayerDefinition(Modelluffyfist.LAYER_LOCATION, Modelluffyfist::createBodyLayer);
 		event.registerLayerDefinition(ModelGoku.LAYER_LOCATION, ModelGoku::createBodyLayer);

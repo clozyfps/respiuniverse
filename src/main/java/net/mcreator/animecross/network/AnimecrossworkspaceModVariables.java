@@ -190,12 +190,15 @@ public class AnimecrossworkspaceModVariables {
 			clone.logiacooldown = original.logiacooldown;
 			clone.logiamax = original.logiamax;
 			clone.df = original.df;
+			clone.stringFruit = original.stringFruit;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
 				clone.vampire = original.vampire;
 				clone.stringper = original.stringper;
 				clone.logiaamount = original.logiaamount;
+				clone.stringactive = original.stringactive;
+				clone.SelectingTarget = original.SelectingTarget;
 			}
 		}
 
@@ -480,6 +483,9 @@ public class AnimecrossworkspaceModVariables {
 		public double logiaamount = 200.0;
 		public double logiamax = 200.0;
 		public String df = "\"\"";
+		public boolean stringactive = false;
+		public boolean SelectingTarget = false;
+		public boolean stringFruit = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -604,6 +610,9 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putDouble("logiaamount", logiaamount);
 			nbt.putDouble("logiamax", logiamax);
 			nbt.putString("df", df);
+			nbt.putBoolean("stringactive", stringactive);
+			nbt.putBoolean("SelectingTarget", SelectingTarget);
+			nbt.putBoolean("stringFruit", stringFruit);
 			return nbt;
 		}
 
@@ -725,6 +734,9 @@ public class AnimecrossworkspaceModVariables {
 			logiaamount = nbt.getDouble("logiaamount");
 			logiamax = nbt.getDouble("logiamax");
 			df = nbt.getString("df");
+			stringactive = nbt.getBoolean("stringactive");
+			SelectingTarget = nbt.getBoolean("SelectingTarget");
+			stringFruit = nbt.getBoolean("stringFruit");
 		}
 	}
 
@@ -866,6 +878,9 @@ public class AnimecrossworkspaceModVariables {
 					variables.logiaamount = message.data.logiaamount;
 					variables.logiamax = message.data.logiamax;
 					variables.df = message.data.df;
+					variables.stringactive = message.data.stringactive;
+					variables.SelectingTarget = message.data.SelectingTarget;
+					variables.stringFruit = message.data.stringFruit;
 				}
 			});
 			context.setPacketHandled(true);

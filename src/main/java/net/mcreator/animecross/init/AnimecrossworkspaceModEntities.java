@@ -77,6 +77,7 @@ import net.mcreator.animecross.entity.LeafShinobiEntity;
 import net.mcreator.animecross.entity.LadyTamayoEntity;
 import net.mcreator.animecross.entity.KokushiboEntity;
 import net.mcreator.animecross.entity.KoketsuArrowAwakeningEntity;
+import net.mcreator.animecross.entity.KnotEntityEntity;
 import net.mcreator.animecross.entity.KiritoEntity;
 import net.mcreator.animecross.entity.KidBuuEntity;
 import net.mcreator.animecross.entity.KiblastrangeditemEntity;
@@ -621,6 +622,9 @@ public class AnimecrossworkspaceModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KokushiboEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KnotEntityEntity>> KNOT_ENTITY = register("knot_entity",
+			EntityType.Builder.<KnotEntityEntity>of(KnotEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(KnotEntityEntity::new).fireImmune().sized(0.4f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -708,6 +712,7 @@ public class AnimecrossworkspaceModEntities {
 			AkazaEntity.init();
 			RengokuEntity.init();
 			KokushiboEntity.init();
+			KnotEntityEntity.init();
 		});
 	}
 
@@ -792,5 +797,6 @@ public class AnimecrossworkspaceModEntities {
 		event.put(AKAZA.get(), AkazaEntity.createAttributes().build());
 		event.put(RENGOKU.get(), RengokuEntity.createAttributes().build());
 		event.put(KOKUSHIBO.get(), KokushiboEntity.createAttributes().build());
+		event.put(KNOT_ENTITY.get(), KnotEntityEntity.createAttributes().build());
 	}
 }
