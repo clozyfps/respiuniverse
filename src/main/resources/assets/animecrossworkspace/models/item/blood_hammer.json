@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/powershammerweapon",
+  "textures": {
+    "0": "animecrossworkspace:blocks/bloodhamer",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

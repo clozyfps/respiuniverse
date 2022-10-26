@@ -1,0 +1,7 @@
+{
+  "parent": "animecrossworkspace:custom/thunderbreathing",
+  "textures": {
+    "4": "animecrossworkspace:blocks/thunder_breathing_nichirin",
+    "particle": "animecrossworkspace:items/air103_layer_2"
+  }
+}

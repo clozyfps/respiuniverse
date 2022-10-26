@@ -1,0 +1,32 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "thunderbreathing:default",
+    "name": "Thunder Breathing Nichirin",
+    "specialInfo": [
+      "\"R\" To Switch Between Thunder Moves."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:DemonSlayer"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 5.0,
+    "enchantability": 2,
+    "damageVsEntity": 15.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "ThunderBreathingNichirinEntitySwingsItem"
+    }
+  }
+}

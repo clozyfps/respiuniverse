@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "water_breathing",
+        "1": "water_breathing_hilt",
+        "2": "water_breathing_hilt2"
+      },
+      "name": "default"
+    }
+  }
+}

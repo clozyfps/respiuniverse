@@ -1,19 +1,9 @@
 
 package net.mcreator.animecross.client.particle;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.client.particle.TextureSheetParticle;
-import net.minecraft.client.particle.SpriteSet;
-import net.minecraft.client.particle.ParticleRenderType;
-import net.minecraft.client.particle.ParticleProvider;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.multiplayer.ClientLevel;
-
 @OnlyIn(Dist.CLIENT)
 public class StringparticleParticle extends TextureSheetParticle {
+
 	public static StringparticleParticleProvider provider(SpriteSet spriteSet) {
 		return new StringparticleParticleProvider(spriteSet);
 	}
@@ -36,14 +26,18 @@ public class StringparticleParticle extends TextureSheetParticle {
 	protected StringparticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
+
 		this.setSize(0.2f, 0.2f);
 
 		this.lifetime = (int) Math.max(1, 5 + (this.random.nextInt(10) - 5));
+
 		this.gravity = 0f;
 		this.hasPhysics = true;
+
 		this.xd = vx * 0;
 		this.yd = vy * 0;
 		this.zd = vz * 0;
+
 		this.pickSprite(spriteSet);
 	}
 
@@ -55,5 +49,7 @@ public class StringparticleParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
+
 	}
+
 }

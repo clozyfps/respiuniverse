@@ -1,21 +1,8 @@
 
 package net.mcreator.animecross.potion;
 
-import net.minecraftforge.client.EffectRenderer;
-
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
-import net.minecraft.client.gui.GuiComponent;
-
-import net.mcreator.animecross.procedures.ChokedDespawnKNOTEffectExpiresProcedure;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class ChokedDespawnKNOTMobEffect extends MobEffect {
+
 	public ChokedDespawnKNOTMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}

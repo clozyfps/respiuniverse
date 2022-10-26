@@ -1,6 +1,9 @@
 {
-  "parent": "item/handheld",
+  "parent": "animecrossworkspace:custom/waterbreathingnich",
   "textures": {
-    "layer0": "animecrossworkspace:items/waternichirin"
+    "0": "animecrossworkspace:blocks/water_breathing",
+    "1": "animecrossworkspace:blocks/water_breathing_hilt",
+    "2": "animecrossworkspace:blocks/water_breathing_hilt2",
+    "particle": "animecrossworkspace:items/waternichirin"
   }
 }

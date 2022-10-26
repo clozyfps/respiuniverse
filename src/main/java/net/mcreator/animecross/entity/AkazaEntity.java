@@ -102,6 +102,8 @@ public class AkazaEntity extends Monster {
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		AkazaEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this, source.getEntity());
+		if (source.isExplosion())
+			return false;
 		return super.hurt(source, amount);
 	}
 
@@ -136,7 +138,7 @@ public class AkazaEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 230);
 		builder = builder.add(Attributes.ARMOR, 0.2);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 24);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 30);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 3);
 		return builder;

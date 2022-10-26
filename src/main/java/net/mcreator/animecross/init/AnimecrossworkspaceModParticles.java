@@ -17,6 +17,7 @@ import net.mcreator.animecross.client.particle.SunParticleParticle;
 import net.mcreator.animecross.client.particle.StringparticleParticle;
 import net.mcreator.animecross.client.particle.SleepparticleParticle;
 import net.mcreator.animecross.client.particle.ReddemonparticleParticle;
+import net.mcreator.animecross.client.particle.PurpleParticleParticle;
 import net.mcreator.animecross.client.particle.PurgatoryFlamesParticle;
 import net.mcreator.animecross.client.particle.PikaPikaParticle2Particle;
 import net.mcreator.animecross.client.particle.PikaPikaParticle1Particle;
@@ -24,6 +25,7 @@ import net.mcreator.animecross.client.particle.MoonBreathingParticleParticle;
 import net.mcreator.animecross.client.particle.GoddessparticleParticle;
 import net.mcreator.animecross.client.particle.FireSparkParticle;
 import net.mcreator.animecross.client.particle.FireParticleParticle;
+import net.mcreator.animecross.client.particle.ElectricityparticleParticle;
 import net.mcreator.animecross.client.particle.CursedenergyParticle;
 import net.mcreator.animecross.client.particle.BlueparticleParticle;
 import net.mcreator.animecross.client.particle.BloodparticlenezukoParticle;
@@ -65,5 +67,9 @@ public class AnimecrossworkspaceModParticles {
 				MoonBreathingParticleParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.STRINGPARTICLE.get(),
 				StringparticleParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.PURPLE_PARTICLE.get(),
+				PurpleParticleParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.ELECTRICITYPARTICLE.get(),
+				ElectricityparticleParticle::provider);
 	}
 }

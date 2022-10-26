@@ -37,7 +37,7 @@ public class PikapikatickProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 999999, 1, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 999999, 3, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 999999, 1, (false), (false)));
 		}
 	}
 }

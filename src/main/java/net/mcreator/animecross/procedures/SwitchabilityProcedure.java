@@ -459,5 +459,52 @@ public class SwitchabilityProcedure {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(new TextComponent("Cat Explosion (100 Stamina)"), (true));
 		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel < 4) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel + 1;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.thunderbreathinglevel = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				double _setval = 1;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.thunderbreathinglevel = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 1
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Thunderclap and Flash (60 Stamina)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 2
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Sixfold (90 Stamina)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 3
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Godspeed (160 Stamina)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 4
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Rice Spirit (70 Stamina)"), (true));
+		}
 	}
 }

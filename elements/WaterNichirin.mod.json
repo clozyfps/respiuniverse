@@ -2,22 +2,22 @@
   "_fv": 33,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "waternichirin",
-    "customModelName": "Normal",
+    "customModelName": "waterbreathingnich:default",
     "name": "Water Nichirin",
     "specialInfo": [
       "Press \"r\" to switch between breathing forms."
     ],
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:DemonSlayer"
     },
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 8.0,
+    "damageVsEntity": 12.0,
     "usageCount": 99999,
     "blocksAffected": [],
     "hasGlow": false,

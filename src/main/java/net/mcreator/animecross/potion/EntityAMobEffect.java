@@ -1,22 +1,8 @@
 
 package net.mcreator.animecross.potion;
 
-import net.minecraftforge.client.EffectRenderer;
-
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
-import net.minecraft.client.gui.GuiComponent;
-
-import net.mcreator.animecross.procedures.StringProcedure;
-import net.mcreator.animecross.procedures.EntityAEffectExpiresProcedure;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class EntityAMobEffect extends MobEffect {
+
 	public EntityAMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}
@@ -33,13 +19,17 @@ public class EntityAMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		StringProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		StringProcedure.execute(
+
+		);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		EntityAEffectExpiresProcedure.execute(entity);
+		EntityAEffectExpiresProcedure.execute(
+
+		);
 	}
 
 	@Override
