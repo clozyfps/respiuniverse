@@ -19,6 +19,7 @@ import net.minecraft.network.chat.Component;
 import net.mcreator.animecross.procedures.WaterNichirinToolInHandTickProcedure;
 import net.mcreator.animecross.procedures.WaterNichirinRightclickedProcedure;
 import net.mcreator.animecross.procedures.WaterNichirinEntitySwingsItemProcedure;
+import net.mcreator.animecross.init.AnimecrossworkspaceModTabs;
 
 import java.util.List;
 
@@ -48,7 +49,7 @@ public class WaterNichirinItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().tab(null));
+		}, 3, -3f, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_DEMON_SLAYER));
 	}
 
 	@Override

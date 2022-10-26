@@ -37,4 +37,7 @@ public class AnimecrossworkspaceModParticleTypes {
 			() -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> MOON_BREATHING_PARTICLE = REGISTRY.register("moon_breathing_particle",
 			() -> new SimpleParticleType(false));
+	public static final RegistryObject<ParticleType<?>> PURPLE_PARTICLE = REGISTRY.register("purple_particle", () -> new SimpleParticleType(false));
+	public static final RegistryObject<ParticleType<?>> ELECTRICITYPARTICLE = REGISTRY.register("electricityparticle",
+			() -> new SimpleParticleType(false));
 }

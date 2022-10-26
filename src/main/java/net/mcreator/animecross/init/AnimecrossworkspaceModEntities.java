@@ -92,6 +92,7 @@ import net.mcreator.animecross.entity.InfernoEntity;
 import net.mcreator.animecross.entity.IchigoEntity;
 import net.mcreator.animecross.entity.HolywaterfistEntity;
 import net.mcreator.animecross.entity.HolydragonEntity;
+import net.mcreator.animecross.entity.HollowpurpleEntity;
 import net.mcreator.animecross.entity.HollowpurpkleEntity;
 import net.mcreator.animecross.entity.HanamiEntity;
 import net.mcreator.animecross.entity.GyutaroEntity;
@@ -653,6 +654,9 @@ public class AnimecrossworkspaceModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SixfoldEntity>> SIXFOLD = register("projectile_sixfold",
 			EntityType.Builder.<SixfoldEntity>of(SixfoldEntity::new, MobCategory.MISC).setCustomClientFactory(SixfoldEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HollowpurpleEntity>> HOLLOWPURPLE = register("projectile_hollowpurple",
+			EntityType.Builder.<HollowpurpleEntity>of(HollowpurpleEntity::new, MobCategory.MISC).setCustomClientFactory(HollowpurpleEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

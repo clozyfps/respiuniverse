@@ -221,5 +221,6 @@ public class AnimecrossworkspaceModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.BAT_HOLLOW.get(), BatHollowRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.THUNDERCLAPANDFLASH.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.SIXFOLD.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.HOLLOWPURPLE.get(), ThrownItemRenderer::new);
 	}
 }

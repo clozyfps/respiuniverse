@@ -1,0 +1,61 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "rengokudrip",
+    "enableLeggings": true,
+    "textureLeggings": "rengokuleg",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "RengokuOutfitBodyTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:DemonSlayer"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Rengoku Outfit Helmet",
+    "bodyName": "Rengoku Outfit Body",
+    "leggingsName": "Rengoku Outfit Pants",
+    "bootsName": "Rengoku Outfit Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelgob",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "rengoku_outfit.png",
+    "leggingsModelName": "Modelgob",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "rengoku_outfit.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 1000,
+    "damageValueHelmet": 2,
+    "damageValueBody": 7,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 1.9,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

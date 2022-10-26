@@ -493,14 +493,14 @@ public class SwitchabilityProcedure {
 				_player.displayClientMessage(new TextComponent("Sixfold (90 Stamina)"), (true));
 		}
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 2
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 3
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(new TextComponent("Godspeed (160 Stamina)"), (true));
 		}
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 3
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 4
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())

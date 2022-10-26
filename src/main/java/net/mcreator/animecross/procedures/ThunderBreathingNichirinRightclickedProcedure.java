@@ -15,25 +15,6 @@ public class ThunderBreathingNichirinRightclickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel < 5) {
-			{
-				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel + 1;
-				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.thunderbreathinglevel = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else {
-			{
-				double _setval = 1;
-				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.thunderbreathinglevel = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		}
-		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel == 1
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 60) {
@@ -53,7 +34,7 @@ public class ThunderBreathingNichirinRightclickedProcedure {
 						}
 					}.getArrow(projectileLevel, entity, 13, 1);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}
@@ -93,7 +74,7 @@ public class ThunderBreathingNichirinRightclickedProcedure {
 						}
 					}.getArrow(projectileLevel, entity, 15, 1);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}

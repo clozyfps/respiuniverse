@@ -66,6 +66,7 @@ import net.mcreator.animecross.item.SaitamaUniformItem;
 import net.mcreator.animecross.item.SSJ1Item;
 import net.mcreator.animecross.item.SSJ1ARMORItem;
 import net.mcreator.animecross.item.RequiemArrowItem;
+import net.mcreator.animecross.item.RengokuOutfitItem;
 import net.mcreator.animecross.item.RemovecooldownitemItem;
 import net.mcreator.animecross.item.RecruitFormItem;
 import net.mcreator.animecross.item.RasenganItem;
@@ -113,11 +114,14 @@ import net.mcreator.animecross.item.KiTrainingItem;
 import net.mcreator.animecross.item.KatanaItem;
 import net.mcreator.animecross.item.JujutsuSourcererItem;
 import net.mcreator.animecross.item.JewelsOfLightItem;
+import net.mcreator.animecross.item.InfinityItem;
 import net.mcreator.animecross.item.IchigoZanpakutoItem;
 import net.mcreator.animecross.item.HumanRestoreItem;
 import net.mcreator.animecross.item.HolywaterfistItem;
 import net.mcreator.animecross.item.HolydragonItem;
+import net.mcreator.animecross.item.HollowpurpleItem;
 import net.mcreator.animecross.item.HollowpurpkleItem;
+import net.mcreator.animecross.item.HollowPurpleAbilityItem;
 import net.mcreator.animecross.item.GumGumRocketItem;
 import net.mcreator.animecross.item.GumGumPistolItemItem;
 import net.mcreator.animecross.item.GumGumPistolItem;
@@ -689,6 +693,13 @@ public class AnimecrossworkspaceModItems {
 					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_BLEACH)));
 	public static final RegistryObject<Item> THUNDERCLAPANDFLASH = REGISTRY.register("thunderclapandflash", () -> new ThunderclapandflashItem());
 	public static final RegistryObject<Item> SIXFOLD = REGISTRY.register("sixfold", () -> new SixfoldItem());
+	public static final RegistryObject<Item> INFINITY = REGISTRY.register("infinity", () -> new InfinityItem());
+	public static final RegistryObject<Item> HOLLOWPURPLE = REGISTRY.register("hollowpurple", () -> new HollowpurpleItem());
+	public static final RegistryObject<Item> HOLLOW_PURPLE_ABILITY = REGISTRY.register("hollow_purple_ability", () -> new HollowPurpleAbilityItem());
+	public static final RegistryObject<Item> RENGOKU_OUTFIT_CHESTPLATE = REGISTRY.register("rengoku_outfit_chestplate",
+			() -> new RengokuOutfitItem.Chestplate());
+	public static final RegistryObject<Item> RENGOKU_OUTFIT_LEGGINGS = REGISTRY.register("rengoku_outfit_leggings",
+			() -> new RengokuOutfitItem.Leggings());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

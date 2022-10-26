@@ -39,6 +39,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.animecross.procedures.RengokuOnInitialEntitySpawnProcedure;
+import net.mcreator.animecross.procedures.RengokuEntityDiesProcedure;
 import net.mcreator.animecross.init.AnimecrossworkspaceModItems;
 import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
 
@@ -71,7 +72,7 @@ public class RengokuEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.6, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
@@ -100,6 +101,12 @@ public class RengokuEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		RengokuEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

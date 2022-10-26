@@ -4,7 +4,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.animecross.init.AnimecrossworkspaceModParticleTypes;
 
@@ -28,65 +27,7 @@ public class MoonBreathingNichirinAwakenedEntitySwingsItemProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (AnimecrossworkspaceModParticleTypes.MOON_BREATHING_PARTICLE.get()), x_pos, y_pos, z_pos,
 						20, 0.1, 0.1, 0.1, 0);
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SWEEP_ATTACK, x_pos, y_pos, z_pos, 5, 0.1, 0.1, 0.1, 0);
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.EXPLOSION, x_pos, y_pos, z_pos, 1, 0.1, 0.1, 0.1, 0);
 			degree = degree + Math.toRadians(5);
-		}
-		if (Math.random() < 0.7) {
-			degree = Math.toRadians(entity.getYRot());
-			xRadius = 3.5;
-			zRadius = -1;
-			for (int index1 = 0; index1 < (int) (36); index1++) {
-				x_pos = x + Math.cos(degree) * xRadius;
-				y_pos = y + 2;
-				z_pos = z + Math.sin(degree) * zRadius;
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (AnimecrossworkspaceModParticleTypes.MOON_BREATHING_PARTICLE.get()), x_pos, y_pos,
-							z_pos, 20, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SWEEP_ATTACK, x_pos, y_pos, z_pos, 5, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.EXPLOSION, x_pos, y_pos, z_pos, 1, 0.1, 0.1, 0.1, 0);
-				degree = degree + Math.toRadians(5);
-			}
-		}
-		if (Math.random() < 0.7) {
-			degree = Math.toRadians(entity.getYRot());
-			xRadius = 2;
-			zRadius = 1;
-			for (int index2 = 0; index2 < (int) (36); index2++) {
-				x_pos = x + Math.cos(degree) * xRadius;
-				y_pos = y + 1;
-				z_pos = z + Math.sin(degree) * zRadius;
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (AnimecrossworkspaceModParticleTypes.MOON_BREATHING_PARTICLE.get()), x_pos, y_pos,
-							z_pos, 20, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SWEEP_ATTACK, x_pos, y_pos, z_pos, 5, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.EXPLOSION, x_pos, y_pos, z_pos, 1, 0.1, 0.1, 0.1, 0);
-				degree = degree + Math.toRadians(5);
-			}
-		}
-		if (Math.random() < 0.7) {
-			degree = Math.toRadians(entity.getYRot());
-			xRadius = 2;
-			zRadius = 6;
-			for (int index3 = 0; index3 < (int) (36); index3++) {
-				x_pos = x + Math.cos(degree) * xRadius;
-				y_pos = y + 2;
-				z_pos = z + Math.sin(degree) * zRadius;
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (AnimecrossworkspaceModParticleTypes.MOON_BREATHING_PARTICLE.get()), x_pos, y_pos,
-							z_pos, 20, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SWEEP_ATTACK, x_pos, y_pos, z_pos, 5, 0.1, 0.1, 0.1, 0);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.EXPLOSION, x_pos, y_pos, z_pos, 1, 0.1, 0.1, 0.1, 0);
-				degree = degree + Math.toRadians(5);
-			}
 		}
 	}
 }

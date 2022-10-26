@@ -13865,6 +13865,266 @@
         ]
       },
       "path": "~/Demon Slayer"
+    },
+    {
+      "name": "ZenitsuEntityIsHurt",
+      "type": "procedure",
+      "sortid": 619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zenitsu_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Demon Slayer"
+    },
+    {
+      "name": "InfinityRightclicked",
+      "type": "procedure",
+      "sortid": 620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "Infinity",
+      "type": "item",
+      "sortid": 620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinity",
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "PurpleParticle",
+      "type": "particle",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_particle",
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "HollowpurpleWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollowpurple_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "HollowpurpleProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollowpurple_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "Hollowpurple",
+      "type": "rangeditem",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollowpurple",
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "HollowPurpleAbilityRightclicked",
+      "type": "procedure",
+      "sortid": 623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollow_purple_ability_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "HollowPurpleAbility",
+      "type": "item",
+      "sortid": 623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollow_purple_ability",
+      "path": "~/Jujutsu Kaisen"
+    },
+    {
+      "name": "Electricityparticle",
+      "type": "particle",
+      "sortid": 624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricityparticle",
+      "path": "~/Demon Slayer"
+    },
+    {
+      "name": "ThunderBreathingNichirinEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_breathing_nichirin_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Demon Slayer"
+    },
+    {
+      "name": "RengokuOutfitBodyTickEvent",
+      "type": "procedure",
+      "sortid": 625,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rengoku_outfit_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Demon Slayer"
+    },
+    {
+      "name": "RengokuOutfit",
+      "type": "armor",
+      "sortid": 625,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rengoku_outfit",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Demon Slayer"
+    },
+    {
+      "name": "RengokuEntityDies",
+      "type": "procedure",
+      "sortid": 626,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rengoku_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Demon Slayer"
     }
   ],
   "variable_elements": [
@@ -14997,6 +15257,7 @@
       "entity.animecross.cosmic_fear_garou": "Cosmic Fear Garou",
       "item.animecrossworkspace.black_blindfold_helmet": "Black Blindfold",
       "entity.animecrossworkspace.boros": "Boros",
+      "item.animecrossworkspace.rengoku_outfit_leggings": "Rengoku Outfit Pants",
       "entity.animecrossworkspace.saitama": "Saitama",
       "block.animecross.tv_bottom_left": "Tv Bottom Left",
       "key.animecrossworkspace.ki_blast": "Ki Blast 15 Power",
@@ -15008,6 +15269,7 @@
       "item.animecross.black_bulls_leggings": "Black Bulls Leggings",
       "block.animecrossworkspace.tvright": "Tvright",
       "item.animecrossworkspace.kiblastrangeditem": "Kiblastrangeditem",
+      "item.animecrossworkspace.rengoku_outfit_boots": "Rengoku Outfit Boots",
       "item.w.arthur_boyle_spawn_egg": "Arthur Boyle Spawn Egg",
       "item.animecross.aircanister": "Air canister",
       "item.animecrossworkspace.slime_leggings": "Slime Leggings",
@@ -15074,6 +15336,7 @@
       "item.animecrossworkspace.mikey_spawn_egg": "Mikey White Cloak Spawn Egg",
       "item.animecross.arthur_saber": "The Excalibur",
       "item.animecrossworkspace.mihawkd_chestplate": "Mihawk Chest",
+      "item.animecrossworkspace.rengoku_outfit_helmet": "Rengoku Outfit Helmet",
       "item.w.arc_armor_chestplate": "Ark",
       "item.animecross.chidori": "Chidori",
       "item.animecrossworkspace.pyrobomb": "Pyrobomb",
@@ -15224,6 +15487,7 @@
       "item.animecross.water_balloon": "Water Balloon",
       "item.w.the_world_stan_boots": "The World Stan Boots",
       "item.w.woodthrowhanami": "Woodthrowhanami",
+      "item.animecrossworkspace.hollow_purple_ability": "Hollow Purple",
       "entity.animecrossworkspace.cursed_spirit": "Weak Cursed Spirit",
       "item.w.hanami_spawn_egg": "Hanami Spawn Egg",
       "item.w.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
@@ -15467,6 +15731,7 @@
       "item.animecross.demon_mode_leggings": "Demon Mode Leggings",
       "item.animecross.purgatoryflamemove": "Purgatoryflamemove",
       "item.animecross.big_gourd": "Gourd",
+      "item.animecrossworkspace.rengoku_outfit_chestplate": "Rengoku Outfit Body",
       "biome.animecross.volcanic_grand_magic_zone": "Volcanic Grand Magic Zone",
       "item.animecrossworkspace.light_ray": "Light Ray",
       "item.w.tatsumaki_spawn_egg": "Tatsumaki Spawn Egg",
@@ -15702,6 +15967,7 @@
       "item.animecrossworkspace.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecrossworkspace.dragon_fire_technique": "Dragon Fire Technique",
       "block.w.purgatory_flame": "Purgatory Flame",
+      "item.animecrossworkspace.hollowpurple": "Hollowpurple",
       "item.w.narutoclone_spawn_egg": "Naruto Clone Spawn Egg",
       "item.w.light_ray": "Light Ray",
       "item.animecross.megumi_fushiguro_spawn_egg": "Megumi Fushiguro Spawn Egg",
@@ -15825,6 +16091,7 @@
       "item.animecross.the_gunbai": "The Gunbai",
       "item.animecross.alien_spawn_egg": "Alien Spawn Egg",
       "item.w.fireballprojectile": "Fireballprojectile",
+      "item.animecrossworkspace.infinity": "Infinity",
       "item.animecrossworkspace.marine_captain_spawn_egg": "Marine Captain Spawn Egg",
       "entity.w.sasuke_uchiha": "Sasuke Uchiha",
       "entity.w.naruto_uzumaki": "Naruto Uzumaki",
