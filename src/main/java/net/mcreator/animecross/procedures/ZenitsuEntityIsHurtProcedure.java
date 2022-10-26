@@ -1,8 +1,15 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
+import net.mcreator.animecross.entity.ThunderclapandflashEntity;
+import net.mcreator.animecross.entity.SixfoldEntity;
 
 public class ZenitsuEntityIsHurtProcedure {
 	public static void execute(Entity entity) {

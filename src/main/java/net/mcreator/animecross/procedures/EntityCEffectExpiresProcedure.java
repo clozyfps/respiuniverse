@@ -1,8 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
 
 public class EntityCEffectExpiresProcedure {
 	public static void execute(Entity entity) {

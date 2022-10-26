@@ -1,8 +1,28 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
+import net.mcreator.animecross.init.AnimecrossworkspaceModMobEffects;
+import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
+import net.mcreator.animecross.entity.KnotEntityEntity;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Comparator;
 
 public class StringAdd1Procedure {
 	public static void execute(LevelAccessor world, Entity entity) {

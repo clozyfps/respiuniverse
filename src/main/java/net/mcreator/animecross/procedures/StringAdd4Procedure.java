@@ -1,8 +1,22 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
+import net.mcreator.animecross.init.AnimecrossworkspaceModMobEffects;
+import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
+import net.mcreator.animecross.entity.KnotEntityEntity;
+
+import java.util.Comparator;
 
 public class StringAdd4Procedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -89,42 +103,7 @@ public class StringAdd4Procedure {
 												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
 										.getBlockPos().getZ())))
 						.findFirst().orElse(null)) instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(AnimecrossworkspaceModMobEffects.ENTITY_A.get(), 300, 1, (false), (false)));
-				if (((Entity) world
-						.getEntitiesOfClass(KnotEntityEntity.class, AABB.ofSize(new Vec3(
-								(entity.level.clip(new ClipContext(
-										entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
-								(entity.level.clip(
-										new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-										.getBlockPos().getY()),
-								(entity.level.clip(
-										new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-										.getBlockPos().getZ())),
-								15, 15, 15), e -> true)
-						.stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(
-								(entity.level.clip(
-										new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-										.getBlockPos().getX()),
-								(entity.level.clip(
-										new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-										.getBlockPos().getY()),
-								(entity.level.clip(
-										new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(25)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
-										.getBlockPos().getZ())))
-						.findFirst().orElse(null)) instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get(), 300, 1, (false), (false)));
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(AnimecrossworkspaceModMobEffects.ENTITY_B.get(), 300, 1, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get(), 300, 1, (false), (false)));
 			}

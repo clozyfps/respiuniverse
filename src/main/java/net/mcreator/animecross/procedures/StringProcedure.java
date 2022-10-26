@@ -1,8 +1,20 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.init.AnimecrossworkspaceModParticleTypes;
+import net.mcreator.animecross.init.AnimecrossworkspaceModMobEffects;
+import net.mcreator.animecross.entity.KnotEntityEntity;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Comparator;
 
 public class StringProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -30,9 +42,9 @@ public class StringProcedure {
 								? _livEnt.hasEffect(AnimecrossworkspaceModMobEffects.ENTITY_B.get())
 								: false) {
 							amountofentitiesallowed = amountofentitiesallowed + 1;
-							xmath = (entity.getX() - entityiterator.getX()) / 12;
-							ymath = ((entity.getY() - 2) - (entityiterator.getY() - 1)) / 15;
-							zmath = (entity.getZ() - entityiterator.getZ()) / 12;
+							xmath = (entity.getX() - entityiterator.getX()) / 5;
+							ymath = ((entity.getY() - 2) - (entityiterator.getY() - 1)) / 5;
+							zmath = (entity.getZ() - entityiterator.getZ()) / 5;
 							entityiterator.setDeltaMovement(new Vec3(xmath, ymath, zmath));
 							Xo = entity.getX() - entityiterator.getX();
 							Yo = entity.getY() - entityiterator.getY();

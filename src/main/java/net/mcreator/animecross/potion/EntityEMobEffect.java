@@ -1,8 +1,17 @@
 
 package net.mcreator.animecross.potion;
 
-public class EntityEMobEffect extends MobEffect {
+import net.minecraftforge.client.EffectRenderer;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
+import net.minecraft.client.gui.GuiComponent;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class EntityEMobEffect extends MobEffect {
 	public EntityEMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}

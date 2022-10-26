@@ -1,7 +1,19 @@
 
 package net.mcreator.animecross.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.animecross.init.AnimecrossworkspaceModTabs;
+
+import java.util.List;
 
 public class Zanpakuto1Item extends SwordItem {
 	public Zanpakuto1Item() {
@@ -29,11 +41,7 @@ public class Zanpakuto1Item extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		},
-
-				3, -1f,
-
-				new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_BLEACH));
+		}, 3, -1f, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_BLEACH));
 	}
 
 	@Override
@@ -41,5 +49,4 @@ public class Zanpakuto1Item extends SwordItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Zanpakuto"));
 	}
-
 }

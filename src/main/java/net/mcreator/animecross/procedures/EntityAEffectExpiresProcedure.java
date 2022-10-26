@@ -1,8 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.entity.KnotEntityEntity;
 
 public class EntityAEffectExpiresProcedure {
 	public static void execute(Entity entity) {

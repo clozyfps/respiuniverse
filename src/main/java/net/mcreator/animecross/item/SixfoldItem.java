@@ -1,11 +1,21 @@
 
 package net.mcreator.animecross.item;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
+
+import net.mcreator.animecross.entity.SixfoldEntity;
 
 public class SixfoldItem extends Item {
-
 	public SixfoldItem() {
 		super(new Item.Properties().tab(null).durability(100));
 	}
@@ -33,15 +43,10 @@ public class SixfoldItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-
 				SixfoldEntity entityarrow = SixfoldEntity.shoot(world, entity, world.getRandom(), 1f, 5, 5);
-
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 			}
 		}
 	}
-
 }

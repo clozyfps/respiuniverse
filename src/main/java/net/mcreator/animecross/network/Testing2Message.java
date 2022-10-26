@@ -1,11 +1,22 @@
 
 package net.mcreator.animecross.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.animecross.procedures.StringADDProcedure;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
+
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Testing2Message {
-
 	int type, pressedms;
 
 	public Testing2Message(int type, int pressedms) {
@@ -36,21 +47,17 @@ public class Testing2Message {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-
 		if (type == 0) {
 
-			StringADDProcedure.execute();
+			StringADDProcedure.execute(world, entity);
 		}
-
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		AnimecrossworkspaceMod.addNetworkMessage(Testing2Message.class, Testing2Message::buffer, Testing2Message::new, Testing2Message::handler);
 	}
-
 }

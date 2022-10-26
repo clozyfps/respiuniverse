@@ -1,9 +1,31 @@
 
 package net.mcreator.animecross.entity;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ItemSupplier;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.animecross.procedures.ThunderclapandflashProjectileHitsLivingEntityProcedure;
+import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
+
+import java.util.Random;
+
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ThunderclapandflashEntity extends AbstractArrow implements ItemSupplier {
-
 	public ThunderclapandflashEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(AnimecrossworkspaceModEntities.THUNDERCLAPANDFLASH.get(), world);
 	}
@@ -52,7 +74,6 @@ public class ThunderclapandflashEntity extends AbstractArrow implements ItemSupp
 	@Override
 	public void tick() {
 		super.tick();
-
 		if (this.inGround)
 			this.discard();
 	}
@@ -66,10 +87,8 @@ public class ThunderclapandflashEntity extends AbstractArrow implements ItemSupp
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-
 		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")),
 				SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
-
 		return entityarrow;
 	}
 
@@ -80,7 +99,6 @@ public class ThunderclapandflashEntity extends AbstractArrow implements ItemSupp
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
-
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(5);
@@ -88,8 +106,6 @@ public class ThunderclapandflashEntity extends AbstractArrow implements ItemSupp
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")),
 				SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
-
 		return entityarrow;
 	}
-
 }

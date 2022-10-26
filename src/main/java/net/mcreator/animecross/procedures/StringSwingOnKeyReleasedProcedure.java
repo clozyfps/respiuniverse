@@ -1,8 +1,16 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.animecross.init.AnimecrossworkspaceModMobEffects;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Comparator;
 
 public class StringSwingOnKeyReleasedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -14,19 +22,17 @@ public class StringSwingOnKeyReleasedProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(50 / 2d), e -> true).stream()
 						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof LivingEntity _livEnt
-							? _livEnt.hasEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get())
-							: false) {
-						if (entityiterator instanceof LivingEntity _entity)
-							_entity.removeEffect(AnimecrossworkspaceModMobEffects.ENTITY_A.get());
-						if (entityiterator instanceof LivingEntity _entity)
-							_entity.removeEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get());
-						if (entity instanceof LivingEntity _entity)
-							_entity.removeEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get());
-						if (entity instanceof LivingEntity _entity)
-							_entity.removeEffect(AnimecrossworkspaceModMobEffects.ENTITY_B.get());
-						if (!entityiterator.level.isClientSide())
-							entityiterator.discard();
+					if (!(entityiterator == entity)) {
+						if (entityiterator instanceof LivingEntity _livEnt
+								? _livEnt.hasEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get())
+								: false) {
+							if (entityiterator instanceof LivingEntity _entity)
+								_entity.removeEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get());
+							if (entity instanceof LivingEntity _entity)
+								_entity.removeEffect(AnimecrossworkspaceModMobEffects.WEB_SWINGING.get());
+							if (!entityiterator.level.isClientSide())
+								entityiterator.discard();
+						}
 					}
 				}
 			}

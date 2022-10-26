@@ -1,11 +1,23 @@
 
 package net.mcreator.animecross.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.animecross.procedures.StringSwingOnKeyReleasedProcedure;
+import net.mcreator.animecross.procedures.StringAdd4Procedure;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
+
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class StringSwingMessage {
-
 	int type, pressedms;
 
 	public StringSwingMessage(int type, int pressedms) {
@@ -36,16 +48,13 @@ public class StringSwingMessage {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-
 		if (type == 0) {
 
 			StringAdd4Procedure.execute(world, entity);
 		}
-
 		if (type == 1) {
 
 			StringSwingOnKeyReleasedProcedure.execute(world, x, y, z, entity);
@@ -57,5 +66,4 @@ public class StringSwingMessage {
 		AnimecrossworkspaceMod.addNetworkMessage(StringSwingMessage.class, StringSwingMessage::buffer, StringSwingMessage::new,
 				StringSwingMessage::handler);
 	}
-
 }

@@ -3,7 +3,7 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "Z",
-    "keyBindingName": "String Swing",
+    "keyBindingName": "String Fix Catch",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "StringAdd4"

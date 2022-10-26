@@ -39,6 +39,7 @@ import net.mcreator.animecross.item.TheWorldStanItem;
 import net.mcreator.animecross.item.TheWorldItem;
 import net.mcreator.animecross.item.TheKubikiribochoItem;
 import net.mcreator.animecross.item.TheGunbaiItem;
+import net.mcreator.animecross.item.StringFruitItem;
 import net.mcreator.animecross.item.StrawDollItem;
 import net.mcreator.animecross.item.StoneMaskItem;
 import net.mcreator.animecross.item.SteelSwordItem;
@@ -714,6 +715,7 @@ public class AnimecrossworkspaceModItems {
 	public static final RegistryObject<Item> POWER_DEVIL_HORNS_HELMET = REGISTRY.register("power_devil_horns_helmet",
 			() -> new PowerDevilHornsItem.Helmet());
 	public static final RegistryObject<Item> BLOOD_HAMMER = REGISTRY.register("blood_hammer", () -> new BloodHammerItem());
+	public static final RegistryObject<Item> STRING_FRUIT = REGISTRY.register("string_fruit", () -> new StringFruitItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

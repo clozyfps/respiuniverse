@@ -1,10 +1,33 @@
 
 package net.mcreator.animecross.item;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.client.IItemRenderProperties;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.animecross.procedures.PowerDevilHornsHelmetTickEventProcedure;
+import net.mcreator.animecross.init.AnimecrossworkspaceModTabs;
+import net.mcreator.animecross.client.model.Modelpowerhorn;
+
+import java.util.Map;
+import java.util.Collections;
 
 public abstract class PowerDevilHornsItem extends ArmorItem {
-
 	public PowerDevilHornsItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -50,9 +73,8 @@ public abstract class PowerDevilHornsItem extends ArmorItem {
 	}
 
 	public static class Helmet extends PowerDevilHornsItem {
-
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_DELETED_MOD_ELEMENT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -86,5 +108,4 @@ public abstract class PowerDevilHornsItem extends ArmorItem {
 			PowerDevilHornsHelmetTickEventProcedure.execute(entity);
 		}
 	}
-
 }
