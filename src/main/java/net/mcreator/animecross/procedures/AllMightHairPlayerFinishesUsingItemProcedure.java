@@ -1,13 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
+import javax.annotation.Nullable;
 
 public class AllMightHairPlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {

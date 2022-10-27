@@ -1,7 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.particles.ParticleTypes;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class DelawareSmashProjectileHitsLivingEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

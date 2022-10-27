@@ -1,8 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
+import javax.annotation.Nullable;
 
 public class OneforallcondiProcedure {
 	public static boolean execute(Entity entity) {

@@ -1,11 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.init.AnimecrossworkspaceModItems;
+import javax.annotation.Nullable;
 
 public class DaiEntityDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

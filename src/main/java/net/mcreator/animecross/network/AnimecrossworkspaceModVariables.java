@@ -193,12 +193,16 @@ public class AnimecrossworkspaceModVariables {
 			clone.thunderbreathinglevel = original.thunderbreathinglevel;
 			clone.oneforallswitch = original.oneforallswitch;
 			clone.combatmode = original.combatmode;
+			clone.bombFruit = original.bombFruit;
+			clone.stringFruit = original.stringFruit;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
 				clone.vampire = original.vampire;
 				clone.stringper = original.stringper;
 				clone.logiaamount = original.logiaamount;
+				clone.stringactive = original.stringactive;
+				clone.SelectingTarget = original.SelectingTarget;
 			}
 		}
 
@@ -486,6 +490,10 @@ public class AnimecrossworkspaceModVariables {
 		public double thunderbreathinglevel = 0;
 		public double oneforallswitch = 0;
 		public boolean combatmode = false;
+		public boolean stringactive = false;
+		public boolean bombFruit = false;
+		public boolean SelectingTarget = false;
+		public boolean stringFruit = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -613,6 +621,10 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putDouble("thunderbreathinglevel", thunderbreathinglevel);
 			nbt.putDouble("oneforallswitch", oneforallswitch);
 			nbt.putBoolean("combatmode", combatmode);
+			nbt.putBoolean("stringactive", stringactive);
+			nbt.putBoolean("bombFruit", bombFruit);
+			nbt.putBoolean("SelectingTarget", SelectingTarget);
+			nbt.putBoolean("stringFruit", stringFruit);
 			return nbt;
 		}
 
@@ -737,6 +749,10 @@ public class AnimecrossworkspaceModVariables {
 			thunderbreathinglevel = nbt.getDouble("thunderbreathinglevel");
 			oneforallswitch = nbt.getDouble("oneforallswitch");
 			combatmode = nbt.getBoolean("combatmode");
+			stringactive = nbt.getBoolean("stringactive");
+			bombFruit = nbt.getBoolean("bombFruit");
+			SelectingTarget = nbt.getBoolean("SelectingTarget");
+			stringFruit = nbt.getBoolean("stringFruit");
 		}
 	}
 
@@ -881,6 +897,10 @@ public class AnimecrossworkspaceModVariables {
 					variables.thunderbreathinglevel = message.data.thunderbreathinglevel;
 					variables.oneforallswitch = message.data.oneforallswitch;
 					variables.combatmode = message.data.combatmode;
+					variables.stringactive = message.data.stringactive;
+					variables.bombFruit = message.data.bombFruit;
+					variables.SelectingTarget = message.data.SelectingTarget;
+					variables.stringFruit = message.data.stringFruit;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1,37 +1,7 @@
 
 package net.mcreator.animecross.item;
 
-import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.common.ToolAction;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.animecross.procedures.PochitaChainsawRightclickedProcedure;
-import net.mcreator.animecross.init.AnimecrossworkspaceModTabs;
-
-import java.util.List;
-
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
 
 public class PochitaChainsawItem extends TieredItem {
 	public PochitaChainsawItem() {
@@ -59,7 +29,9 @@ public class PochitaChainsawItem extends TieredItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN));
+		},
+
+				new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN));
 	}
 
 	@Override
@@ -100,6 +72,7 @@ public class PochitaChainsawItem extends TieredItem {
 					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", 4, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
+
 		return super.getDefaultAttributeModifiers(equipmentSlot);
 	}
 
@@ -118,7 +91,9 @@ public class PochitaChainsawItem extends TieredItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		PochitaChainsawRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		PochitaChainsawRightclickedProcedure.execute(
+
+		);
 		return ar;
 	}
 
@@ -127,4 +102,5 @@ public class PochitaChainsawItem extends TieredItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Cut through trees like wadaa!! (Right click to put him down)"));
 	}
+
 }

@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Fruit Move 1",
+    "keyBindingCategoryKey": "misc",
+    "onKeyReleased": {
+      "name": "BombMove1OnKeyReleased"
+    }
+  }
+}

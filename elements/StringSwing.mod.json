@@ -1,0 +1,15 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "String Fix Catch",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StringAdd4"
+    },
+    "onKeyReleased": {
+      "name": "StringSwingOnKeyReleased"
+    }
+  }
+}

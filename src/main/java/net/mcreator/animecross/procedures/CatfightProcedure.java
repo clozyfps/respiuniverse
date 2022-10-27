@@ -1,8 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
+import javax.annotation.Nullable;
 
 public class CatfightProcedure {
 	public static void execute(Entity entity) {

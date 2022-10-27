@@ -1,47 +1,17 @@
 
 package net.mcreator.animecross.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.SpawnGroupData;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.nbt.Tag;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.nbt.CompoundTag;
-
-import net.mcreator.animecross.procedures.AllMightOnInitialEntitySpawnProcedure;
-import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
 
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class AllMightEntity extends Monster {
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.AMBIENT)
@@ -56,6 +26,7 @@ public class AllMightEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 	}
 
 	@Override
@@ -66,16 +37,20 @@ public class AllMightEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, true) {
+
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
+
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
+
 	}
 
 	@Override
@@ -104,6 +79,7 @@ public class AllMightEntity extends Monster {
 	public static void init() {
 		SpawnPlacements.register(AnimecrossworkspaceModEntities.ALL_MIGHT.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -113,7 +89,9 @@ public class AllMightEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0.2);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 30);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 50);
+
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
+
 		return builder;
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.animecross.client.particle.YoruswordbladeswingParticle;
 import net.mcreator.animecross.client.particle.SunParticleParticle;
+import net.mcreator.animecross.client.particle.StringparticleParticle;
 import net.mcreator.animecross.client.particle.SleepparticleParticle;
 import net.mcreator.animecross.client.particle.ReddemonparticleParticle;
 import net.mcreator.animecross.client.particle.PurpleParticleParticle;
@@ -65,6 +66,8 @@ public class AnimecrossworkspaceModParticles {
 				YoruswordbladeswingParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.MOON_BREATHING_PARTICLE.get(),
 				MoonBreathingParticleParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.STRINGPARTICLE.get(),
+				StringparticleParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.PURPLE_PARTICLE.get(),
 				PurpleParticleParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.ELECTRICITYPARTICLE.get(),

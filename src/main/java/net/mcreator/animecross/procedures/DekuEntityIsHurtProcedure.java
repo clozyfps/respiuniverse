@@ -1,18 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.network.AnimecrossworkspaceModVariables;
-import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
-import net.mcreator.animecross.entity.DetroitSmashEntity;
-import net.mcreator.animecross.entity.DelawareSmashEntity;
+import javax.annotation.Nullable;
 
 public class DekuEntityIsHurtProcedure {
 	public static void execute(Entity entity) {

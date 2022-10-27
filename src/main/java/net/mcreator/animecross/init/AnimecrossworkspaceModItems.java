@@ -40,6 +40,7 @@ import net.mcreator.animecross.item.TheWorldItem;
 import net.mcreator.animecross.item.TheKubikiribochoItem;
 import net.mcreator.animecross.item.TheGunbaiItem;
 import net.mcreator.animecross.item.SwordOfDaiItem;
+import net.mcreator.animecross.item.StringFruitItem;
 import net.mcreator.animecross.item.StrawDollItem;
 import net.mcreator.animecross.item.StoneMaskItem;
 import net.mcreator.animecross.item.SteelSwordItem;
@@ -182,6 +183,7 @@ import net.mcreator.animecross.item.ChidoriItem;
 import net.mcreator.animecross.item.BrokenSmallGourdItem;
 import net.mcreator.animecross.item.BrokenMediumGourdItem;
 import net.mcreator.animecross.item.BountyPosterItem;
+import net.mcreator.animecross.item.BombFruitItem;
 import net.mcreator.animecross.item.BloodHammerItem;
 import net.mcreator.animecross.item.BlackslashsItem;
 import net.mcreator.animecross.item.BlackSteelItem;
@@ -724,11 +726,13 @@ public class AnimecrossworkspaceModItems {
 	public static final RegistryObject<Item> ALL_MIGHT = REGISTRY.register("all_might_spawn_egg",
 			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.ALL_MIGHT, -15722099, -2421234,
 					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_OFATAB)));
+	public static final RegistryObject<Item> STRING_FRUIT = REGISTRY.register("string_fruit", () -> new StringFruitItem());
 	public static final RegistryObject<Item> MAKIMA = REGISTRY.register("makima_spawn_egg",
 			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.MAKIMA, -2438454, -10336447,
 					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN)));
 	public static final RegistryObject<Item> ALL_MIGHT_HAIR = REGISTRY.register("all_might_hair", () -> new AllMightHairItem());
 	public static final RegistryObject<Item> DETROIT_SMASH = REGISTRY.register("detroit_smash", () -> new DetroitSmashItem());
+	public static final RegistryObject<Item> BOMB_FRUIT = REGISTRY.register("bomb_fruit", () -> new BombFruitItem());
 	public static final RegistryObject<Item> DELAWARE_SMASH = REGISTRY.register("delaware_smash", () -> new DelawareSmashItem());
 	public static final RegistryObject<Item> POCHITA_CHAINSAW = REGISTRY.register("pochita_chainsaw", () -> new PochitaChainsawItem());
 	public static final RegistryObject<Item> DAI = REGISTRY.register("dai_spawn_egg", () -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.DAI,

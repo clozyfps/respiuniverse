@@ -1,13 +1,8 @@
 package net.mcreator.animecross.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.particles.ParticleTypes;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.animecross.init.AnimecrossworkspaceModParticleTypes;
+import javax.annotation.Nullable;
 
 public class DetroitSmashProjectileHitsLivingEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
