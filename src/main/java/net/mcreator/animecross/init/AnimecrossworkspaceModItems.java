@@ -178,6 +178,7 @@ import net.mcreator.animecross.item.ChidoriItem;
 import net.mcreator.animecross.item.BrokenSmallGourdItem;
 import net.mcreator.animecross.item.BrokenMediumGourdItem;
 import net.mcreator.animecross.item.BountyPosterItem;
+import net.mcreator.animecross.item.BombFruitItem;
 import net.mcreator.animecross.item.BloodHammerItem;
 import net.mcreator.animecross.item.BlackslashsItem;
 import net.mcreator.animecross.item.BlackSteelItem;
@@ -716,6 +717,7 @@ public class AnimecrossworkspaceModItems {
 			() -> new PowerDevilHornsItem.Helmet());
 	public static final RegistryObject<Item> BLOOD_HAMMER = REGISTRY.register("blood_hammer", () -> new BloodHammerItem());
 	public static final RegistryObject<Item> STRING_FRUIT = REGISTRY.register("string_fruit", () -> new StringFruitItem());
+	public static final RegistryObject<Item> BOMB_FRUIT = REGISTRY.register("bomb_fruit", () -> new BombFruitItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

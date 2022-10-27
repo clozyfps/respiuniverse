@@ -14763,6 +14763,108 @@
         ]
       },
       "path": "~/One Piece/String"
+    },
+    {
+      "name": "BombMove1",
+      "type": "keybind",
+      "sortid": 638,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_move_1",
+      "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "BombMove1OnKeyReleased",
+      "type": "procedure",
+      "sortid": 639,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_move_1_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "pressedms",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "TempMove2DELETETHIS",
+      "type": "keybind",
+      "sortid": 640,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temp_move_2_deletethis",
+      "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "TempMove2DELETETHISOnKeyPressed",
+      "type": "procedure",
+      "sortid": 641,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temp_move_2_deletethis_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "BombFruit",
+      "type": "item",
+      "sortid": 642,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_fruit",
+      "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "BombFruitOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 643,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_fruit_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece/Bomb"
     }
   ],
   "variable_elements": [
@@ -15491,6 +15593,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "bombFruit",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -15612,6 +15720,7 @@
       "entity.animecross.low_rank_evil_spirit": "Low Rank Evil Spirit",
       "item.w.cursedenergyparticle": "Cursedenergyparticle",
       "item.animecrossworkspace.uzui_tengen_drip_leggings": "Uzui Tengen Drip Leggings",
+      "key.animecrossworkspace.bomb_move_1": "Fruit Move 1",
       "item.animecross.sister_lilly_spawn_egg": "Sister Lily Spawn Egg",
       "item.animecross.lost_vayne": "Lost Vayne",
       "item.animecrossworkspace.pika_pika_fruit": "Pika Pika Fruit",
@@ -15647,6 +15756,7 @@
       "item.animecrossworkspace.gum_gum_rocket": "Gum Gum Rocket",
       "item.animecrossworkspace.goddess_healing": "Goddess Healing",
       "item.animecrossworkspace.purgatory_travel": "Purgatory Travel",
+      "item.animecrossworkspace.bomb_fruit": "Bomb Fruit",
       "item.animecross.grimoire_giver_spawn_egg": "Grimoire Giver Spawn Egg",
       "item.w.odm_equip": "ODM Equip",
       "item.w.madara_uchiha_spawn_egg": "Madara Uchiha Spawn Egg",
@@ -16154,6 +16264,7 @@
       "item.w.the_world_stan_boots": "The World Stan Boots",
       "item.w.woodthrowhanami": "Woodthrowhanami",
       "item.animecrossworkspace.hollow_purple_ability": "Hollow Purple",
+      "key.animecrossworkspace.temp_move_2_deletethis": "Fruit Move 1",
       "entity.animecrossworkspace.cursed_spirit": "Weak Cursed Spirit",
       "item.w.hanami_spawn_egg": "Hanami Spawn Egg",
       "item.w.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
@@ -16928,6 +17039,10 @@
           },
           {
             "name": "Pika Logia",
+            "children": []
+          },
+          {
+            "name": "Bomb",
             "children": []
           }
         ]

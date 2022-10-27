@@ -22,6 +22,7 @@ import net.mcreator.animecross.network.TestingMessage;
 import net.mcreator.animecross.network.Testing4Message;
 import net.mcreator.animecross.network.Testing3Message;
 import net.mcreator.animecross.network.Testing2Message;
+import net.mcreator.animecross.network.TempMove2DELETETHISMessage;
 import net.mcreator.animecross.network.SwitchAbilityBindMessage;
 import net.mcreator.animecross.network.StringSwingMessage;
 import net.mcreator.animecross.network.ShootODMStringMessage;
@@ -34,6 +35,7 @@ import net.mcreator.animecross.network.EsperFloatMessage;
 import net.mcreator.animecross.network.DivergentFistMessage;
 import net.mcreator.animecross.network.DisplaySelfEvilSpiritMessage;
 import net.mcreator.animecross.network.ChargePowerMessage;
+import net.mcreator.animecross.network.BombMove1Message;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -63,9 +65,13 @@ public class AnimecrossworkspaceModKeyMappings {
 	public static final KeyMapping TESTING_3 = new KeyMapping("key.animecrossworkspace.testing_3", GLFW.GLFW_KEY_X, "key.categories.misc");
 	public static final KeyMapping TESTING_4 = new KeyMapping("key.animecrossworkspace.testing_4", GLFW.GLFW_KEY_H, "key.categories.misc");
 	public static final KeyMapping STRING_SWING = new KeyMapping("key.animecrossworkspace.string_swing", GLFW.GLFW_KEY_Z, "key.categories.misc");
+	public static final KeyMapping BOMB_MOVE_1 = new KeyMapping("key.animecrossworkspace.bomb_move_1", GLFW.GLFW_KEY_V, "key.categories.misc");
+	public static final KeyMapping TEMP_MOVE_2_DELETETHIS = new KeyMapping("key.animecrossworkspace.temp_move_2_deletethis", GLFW.GLFW_KEY_K,
+			"key.categories.misc");
 	private static long ESPER_FLOAT_LASTPRESS = 0;
 	private static long FLY_LASTPRESS = 0;
 	private static long STRING_SWING_LASTPRESS = 0;
+	private static long BOMB_MOVE_1_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
@@ -87,6 +93,8 @@ public class AnimecrossworkspaceModKeyMappings {
 		ClientRegistry.registerKeyBinding(TESTING_3);
 		ClientRegistry.registerKeyBinding(TESTING_4);
 		ClientRegistry.registerKeyBinding(STRING_SWING);
+		ClientRegistry.registerKeyBinding(BOMB_MOVE_1);
+		ClientRegistry.registerKeyBinding(TEMP_MOVE_2_DELETETHIS);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -215,6 +223,21 @@ public class AnimecrossworkspaceModKeyMappings {
 						int dt = (int) (System.currentTimeMillis() - STRING_SWING_LASTPRESS);
 						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new StringSwingMessage(1, dt));
 						StringSwingMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+					}
+				}
+				if (event.getKey() == BOMB_MOVE_1.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						BOMB_MOVE_1_LASTPRESS = System.currentTimeMillis();
+					} else if (event.getAction() == GLFW.GLFW_RELEASE) {
+						int dt = (int) (System.currentTimeMillis() - BOMB_MOVE_1_LASTPRESS);
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new BombMove1Message(1, dt));
+						BombMove1Message.pressAction(Minecraft.getInstance().player, 1, dt);
+					}
+				}
+				if (event.getKey() == TEMP_MOVE_2_DELETETHIS.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new TempMove2DELETETHISMessage(0, 0));
+						TempMove2DELETETHISMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 					}
 				}
 			}

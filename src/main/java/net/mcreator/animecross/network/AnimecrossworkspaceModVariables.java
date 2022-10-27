@@ -192,6 +192,7 @@ public class AnimecrossworkspaceModVariables {
 			clone.df = original.df;
 			clone.stringFruit = original.stringFruit;
 			clone.thunderbreathinglevel = original.thunderbreathinglevel;
+			clone.bombFruit = original.bombFruit;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
@@ -488,6 +489,7 @@ public class AnimecrossworkspaceModVariables {
 		public boolean SelectingTarget = false;
 		public boolean stringFruit = false;
 		public double thunderbreathinglevel = 0;
+		public boolean bombFruit = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -616,6 +618,7 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putBoolean("SelectingTarget", SelectingTarget);
 			nbt.putBoolean("stringFruit", stringFruit);
 			nbt.putDouble("thunderbreathinglevel", thunderbreathinglevel);
+			nbt.putBoolean("bombFruit", bombFruit);
 			return nbt;
 		}
 
@@ -741,6 +744,7 @@ public class AnimecrossworkspaceModVariables {
 			SelectingTarget = nbt.getBoolean("SelectingTarget");
 			stringFruit = nbt.getBoolean("stringFruit");
 			thunderbreathinglevel = nbt.getDouble("thunderbreathinglevel");
+			bombFruit = nbt.getBoolean("bombFruit");
 		}
 	}
 
@@ -886,6 +890,7 @@ public class AnimecrossworkspaceModVariables {
 					variables.SelectingTarget = message.data.SelectingTarget;
 					variables.stringFruit = message.data.stringFruit;
 					variables.thunderbreathinglevel = message.data.thunderbreathinglevel;
+					variables.bombFruit = message.data.bombFruit;
 				}
 			});
 			context.setPacketHandled(true);

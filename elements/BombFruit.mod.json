@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "stringfruit2",
+    "texture": "bombfruit",
     "customModelName": "Normal",
-    "name": "String Fruit",
+    "name": "Bomb Fruit",
     "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:OnePiece"
@@ -25,14 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Eating this fruit will grant you string powers!"
+      "Eating this fruit will grant you the ability to make your body parts explode!"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onStoppedUsing": {
-      "name": "StringFruitOnPlayerStoppedUsing"
+      "name": "BombFruitOnPlayerStoppedUsing"
     },
     "isFood": true,
     "nutritionalValue": -5,
