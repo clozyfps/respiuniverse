@@ -1,0 +1,32 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "pochitaweapon:default",
+    "name": "Pochita Chainsaw",
+    "specialInfo": [
+      "Cut through trees like wadaa!! (Right click to put him down)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ChainsawMan"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 5,
+    "efficiency": 8.0,
+    "attackSpeed": 8.0,
+    "enchantability": 8,
+    "damageVsEntity": 8.0,
+    "usageCount": 10007,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "PochitaChainsawRightclicked"
+    }
+  }
+}

@@ -85,6 +85,36 @@
           "x": 218,
           "y": 67
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "One For All",
+          "color": {
+            "value": -17664,
+            "falpha": 0.0
+          },
+          "name": "One For All",
+          "x": 127,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "onClick": {
+            "name": "Clickedoneforall"
+          },
+          "displayCondition": {
+            "name": "Oneforallcondi"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 127,
+          "y": 122
+        }
       }
     ],
     "gridSettings": {

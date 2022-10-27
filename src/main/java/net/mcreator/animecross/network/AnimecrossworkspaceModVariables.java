@@ -191,6 +191,8 @@ public class AnimecrossworkspaceModVariables {
 			clone.logiamax = original.logiamax;
 			clone.df = original.df;
 			clone.thunderbreathinglevel = original.thunderbreathinglevel;
+			clone.oneforallswitch = original.oneforallswitch;
+			clone.combatmode = original.combatmode;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
@@ -482,6 +484,8 @@ public class AnimecrossworkspaceModVariables {
 		public double logiamax = 200.0;
 		public String df = "\"\"";
 		public double thunderbreathinglevel = 0;
+		public double oneforallswitch = 0;
+		public boolean combatmode = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -607,6 +611,8 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putDouble("logiamax", logiamax);
 			nbt.putString("df", df);
 			nbt.putDouble("thunderbreathinglevel", thunderbreathinglevel);
+			nbt.putDouble("oneforallswitch", oneforallswitch);
+			nbt.putBoolean("combatmode", combatmode);
 			return nbt;
 		}
 
@@ -729,6 +735,8 @@ public class AnimecrossworkspaceModVariables {
 			logiamax = nbt.getDouble("logiamax");
 			df = nbt.getString("df");
 			thunderbreathinglevel = nbt.getDouble("thunderbreathinglevel");
+			oneforallswitch = nbt.getDouble("oneforallswitch");
+			combatmode = nbt.getBoolean("combatmode");
 		}
 	}
 
@@ -871,6 +879,8 @@ public class AnimecrossworkspaceModVariables {
 					variables.logiamax = message.data.logiamax;
 					variables.df = message.data.df;
 					variables.thunderbreathinglevel = message.data.thunderbreathinglevel;
+					variables.oneforallswitch = message.data.oneforallswitch;
+					variables.combatmode = message.data.combatmode;
 				}
 			});
 			context.setPacketHandled(true);

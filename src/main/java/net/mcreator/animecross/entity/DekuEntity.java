@@ -10,6 +10,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -20,23 +21,31 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.animecross.procedures.DekuOnInitialEntitySpawnProcedure;
+import net.mcreator.animecross.procedures.DekuEntityIsHurtProcedure;
 import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class DekuEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(AnimecrossworkspaceModEntities.DEKU.get(), 1, 1, 1));
+		event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(AnimecrossworkspaceModEntities.DEKU.get(), 2, 1, 1));
 	}
 
 	public DekuEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -57,7 +66,7 @@ public class DekuEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.6, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.7, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
@@ -82,6 +91,20 @@ public class DekuEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		DekuEntityIsHurtProcedure.execute(this);
+		return super.hurt(source, amount);
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason,
+			@Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		DekuOnInitialEntitySpawnProcedure.execute(this);
+		return retval;
 	}
 
 	public static void init() {

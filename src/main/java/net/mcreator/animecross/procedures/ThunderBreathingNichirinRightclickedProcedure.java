@@ -19,6 +19,14 @@ public class ThunderBreathingNichirinRightclickedProcedure {
 				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina >= 60) {
 			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 60;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.stamina = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level;
 				if (!projectileLevel.isClientSide()) {
@@ -37,14 +45,6 @@ public class ThunderBreathingNichirinRightclickedProcedure {
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
-			}
-			{
-				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina - 60;
-				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.stamina = _setval;
-					capability.syncPlayerVariables(entity);
-				});
 			}
 		}
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)

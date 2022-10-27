@@ -40,4 +40,6 @@ public class AnimecrossworkspaceModParticleTypes {
 	public static final RegistryObject<ParticleType<?>> PURPLE_PARTICLE = REGISTRY.register("purple_particle", () -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> ELECTRICITYPARTICLE = REGISTRY.register("electricityparticle",
 			() -> new SimpleParticleType(false));
+	public static final RegistryObject<ParticleType<?>> ONE_FOR_ALL_PARTICLE = REGISTRY.register("one_for_all_particle",
+			() -> new SimpleParticleType(false));
 }

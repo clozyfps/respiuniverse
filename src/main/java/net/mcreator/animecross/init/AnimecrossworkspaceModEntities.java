@@ -75,6 +75,7 @@ import net.mcreator.animecross.entity.MegumiFushiguroEntity;
 import net.mcreator.animecross.entity.MasterRoshiEntity;
 import net.mcreator.animecross.entity.MarineEntity;
 import net.mcreator.animecross.entity.MarineCaptainEntity;
+import net.mcreator.animecross.entity.MakimaEntity;
 import net.mcreator.animecross.entity.MahitoEntity;
 import net.mcreator.animecross.entity.MagicBanditEntity;
 import net.mcreator.animecross.entity.MadaraUchihaEntity;
@@ -112,9 +113,12 @@ import net.mcreator.animecross.entity.EscanorEntity;
 import net.mcreator.animecross.entity.DragonFireEntity;
 import net.mcreator.animecross.entity.DontMoveEntity;
 import net.mcreator.animecross.entity.DioEntity;
+import net.mcreator.animecross.entity.DetroitSmashEntity;
 import net.mcreator.animecross.entity.DestructoDiskEntity;
 import net.mcreator.animecross.entity.DemonEntity;
+import net.mcreator.animecross.entity.DelawareSmashEntity;
 import net.mcreator.animecross.entity.DekuEntity;
+import net.mcreator.animecross.entity.DaiEntity;
 import net.mcreator.animecross.entity.CursedSpiritEntity;
 import net.mcreator.animecross.entity.CruelsunproEntity;
 import net.mcreator.animecross.entity.CosmicblastEntity;
@@ -131,6 +135,7 @@ import net.mcreator.animecross.entity.AstaEntity;
 import net.mcreator.animecross.entity.ArthurBoyleEntity;
 import net.mcreator.animecross.entity.ArkabilityrangeditemEntity;
 import net.mcreator.animecross.entity.AnnitypeEntity;
+import net.mcreator.animecross.entity.AllMightEntity;
 import net.mcreator.animecross.entity.AlienEntity;
 import net.mcreator.animecross.entity.AkazaEntity;
 import net.mcreator.animecross.entity.AirtyperangedEntity;
@@ -670,10 +675,31 @@ public class AnimecrossworkspaceModEntities {
 			EntityType.Builder.<PochitaEntity>of(PochitaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(PochitaEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.9f, 0.9f));
 	public static final RegistryObject<EntityType<PowerEntity>> POWER = register("power",
 			EntityType.Builder.<PowerEntity>of(PowerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(PowerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AllMightEntity>> ALL_MIGHT = register("all_might",
+			EntityType.Builder.<AllMightEntity>of(AllMightEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(AllMightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MakimaEntity>> MAKIMA = register("makima",
+			EntityType.Builder.<MakimaEntity>of(MakimaEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(MakimaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DetroitSmashEntity>> DETROIT_SMASH = register("projectile_detroit_smash",
+			EntityType.Builder.<DetroitSmashEntity>of(DetroitSmashEntity::new, MobCategory.MISC).setCustomClientFactory(DetroitSmashEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DelawareSmashEntity>> DELAWARE_SMASH = register("projectile_delaware_smash",
+			EntityType.Builder.<DelawareSmashEntity>of(DelawareSmashEntity::new, MobCategory.MISC).setCustomClientFactory(DelawareSmashEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DaiEntity>> DAI = register("dai",
+			EntityType.Builder.<DaiEntity>of(DaiEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DaiEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -770,6 +796,9 @@ public class AnimecrossworkspaceModEntities {
 			DekuEntity.init();
 			PochitaEntity.init();
 			PowerEntity.init();
+			AllMightEntity.init();
+			MakimaEntity.init();
+			DaiEntity.init();
 		});
 	}
 
@@ -861,5 +890,8 @@ public class AnimecrossworkspaceModEntities {
 		event.put(DEKU.get(), DekuEntity.createAttributes().build());
 		event.put(POCHITA.get(), PochitaEntity.createAttributes().build());
 		event.put(POWER.get(), PowerEntity.createAttributes().build());
+		event.put(ALL_MIGHT.get(), AllMightEntity.createAttributes().build());
+		event.put(MAKIMA.get(), MakimaEntity.createAttributes().build());
+		event.put(DAI.get(), DaiEntity.createAttributes().build());
 	}
 }

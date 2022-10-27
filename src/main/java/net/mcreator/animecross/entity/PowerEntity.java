@@ -52,7 +52,7 @@ public class PowerEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AnimecrossworkspaceModItems.POWER_DEVIL_HORNS_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(AnimecrossworkspaceModItems.POWER_DEVIL_HORNS_HELMET.get()));
 	}
 
 	@Override

@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "air103_layer_2",
+    "customModelName": "swordofdaiitem:default",
+    "name": "Sword Of Dai",
+    "specialInfo": [
+      "Sword of dai!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:DragonQuest"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 5.0,
+    "enchantability": 2,
+    "damageVsEntity": 17.0,
+    "usageCount": 99999,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

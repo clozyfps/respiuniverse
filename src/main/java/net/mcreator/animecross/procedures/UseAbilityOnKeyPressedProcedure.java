@@ -44,6 +44,8 @@ import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
 import net.mcreator.animecross.entity.NormalpunchEntity;
 import net.mcreator.animecross.entity.HolywaterfistEntity;
 import net.mcreator.animecross.entity.HolydragonEntity;
+import net.mcreator.animecross.entity.DetroitSmashEntity;
+import net.mcreator.animecross.entity.DelawareSmashEntity;
 
 import java.util.stream.Collectors;
 import java.util.Map;
@@ -2107,6 +2109,137 @@ public class UseAbilityOnKeyPressedProcedure {
 					}
 				}
 			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 1
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power >= 70
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power - 70;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new DetroitSmashEntity(AnimecrossworkspaceModEntities.DETROIT_SMASH.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 13, 3);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 2
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power >= 50
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power - 50;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level;
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new DelawareSmashEntity(AnimecrossworkspaceModEntities.DELAWARE_SMASH.get(), level);
+							entityToSpawn.setOwner(shooter);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, entity, 10, 2);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 3
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power >= 0.5
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power - 0.5;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).combatmode == true) {
+				{
+					boolean _setval = false;
+					entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.combatmode = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).combatmode == false) {
+				{
+					boolean _setval = true;
+					entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.combatmode = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 4
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power >= 140
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power - 140;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 160, (false), (false)));
 		}
 	}
 }

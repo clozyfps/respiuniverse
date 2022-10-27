@@ -1,0 +1,47 @@
+{
+  "_fv": 33,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "stripofhair",
+    "customModelName": "Normal",
+    "name": "All Might Hair",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:OFATAB"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Eat this! (Requirement - Level 25"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "AllMightHairPlayerFinishesUsingItem"
+    },
+    "isFood": true,
+    "nutritionalValue": 5,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

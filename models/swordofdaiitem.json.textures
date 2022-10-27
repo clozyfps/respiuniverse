@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "swordofdaitexture",
+        "1": "small_orb"
+      },
+      "name": "default"
+    }
+  }
+}

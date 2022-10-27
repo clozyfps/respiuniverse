@@ -39,6 +39,7 @@ import net.mcreator.animecross.item.TheWorldStanItem;
 import net.mcreator.animecross.item.TheWorldItem;
 import net.mcreator.animecross.item.TheKubikiribochoItem;
 import net.mcreator.animecross.item.TheGunbaiItem;
+import net.mcreator.animecross.item.SwordOfDaiItem;
 import net.mcreator.animecross.item.StrawDollItem;
 import net.mcreator.animecross.item.StoneMaskItem;
 import net.mcreator.animecross.item.SteelSwordItem;
@@ -80,12 +81,14 @@ import net.mcreator.animecross.item.PurgatoryFlamesAbilityItem;
 import net.mcreator.animecross.item.PsychicEnergyAbsorptionItem;
 import net.mcreator.animecross.item.PrideFlairItem;
 import net.mcreator.animecross.item.PowerDevilHornsItem;
+import net.mcreator.animecross.item.PochitaChainsawItem;
 import net.mcreator.animecross.item.PirateCutlassItem;
 import net.mcreator.animecross.item.PikaSaberItem;
 import net.mcreator.animecross.item.PikaPikaRangedItem;
 import net.mcreator.animecross.item.PikaPikaFruitItem;
 import net.mcreator.animecross.item.PhoenixFlowerJutsuItem;
 import net.mcreator.animecross.item.OneStarDragonBallItem;
+import net.mcreator.animecross.item.OneForAllItem;
 import net.mcreator.animecross.item.OdmstringItem;
 import net.mcreator.animecross.item.ODMGearArmorItem;
 import net.mcreator.animecross.item.ODMEquipItem;
@@ -157,6 +160,7 @@ import net.mcreator.animecross.item.DontMoveItemItem;
 import net.mcreator.animecross.item.DontMoveItem;
 import net.mcreator.animecross.item.DivineDogsItem;
 import net.mcreator.animecross.item.DisorderItem;
+import net.mcreator.animecross.item.DetroitSmashItem;
 import net.mcreator.animecross.item.DestructoDiskItemItem;
 import net.mcreator.animecross.item.DestructoDiskItem;
 import net.mcreator.animecross.item.DemonSlayerSwordItem;
@@ -164,6 +168,7 @@ import net.mcreator.animecross.item.DemonModeItem;
 import net.mcreator.animecross.item.DemonDwellerSwordItem;
 import net.mcreator.animecross.item.DemonClawItem;
 import net.mcreator.animecross.item.DemonArenaItem;
+import net.mcreator.animecross.item.DelawareSmashItem;
 import net.mcreator.animecross.item.DarkRepulserItem;
 import net.mcreator.animecross.item.CursedenergyparticleItem;
 import net.mcreator.animecross.item.CruelsunproItem;
@@ -192,6 +197,7 @@ import net.mcreator.animecross.item.ArcArmorItem;
 import net.mcreator.animecross.item.AntiMagicGrimoireItem;
 import net.mcreator.animecross.item.AnnitypeItem;
 import net.mcreator.animecross.item.AnnihilationTypeItem;
+import net.mcreator.animecross.item.AllMightHairItem;
 import net.mcreator.animecross.item.AirtyperangedItem;
 import net.mcreator.animecross.item.AircanisterItem;
 import net.mcreator.animecross.item.AirWhipItem;
@@ -703,8 +709,8 @@ public class AnimecrossworkspaceModItems {
 	public static final RegistryObject<Item> RENGOKU_OUTFIT_LEGGINGS = REGISTRY.register("rengoku_outfit_leggings",
 			() -> new RengokuOutfitItem.Leggings());
 	public static final RegistryObject<Item> DEKU = REGISTRY.register("deku_spawn_egg",
-			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.DEKU, -15319252, -8257536,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.DEKU, -15319252, -14334148,
+					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_OFATAB)));
 	public static final RegistryObject<Item> POCHITA = REGISTRY.register("pochita_spawn_egg",
 			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.POCHITA, -7250367, -16777216,
 					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN)));
@@ -714,6 +720,20 @@ public class AnimecrossworkspaceModItems {
 	public static final RegistryObject<Item> POWER_DEVIL_HORNS_HELMET = REGISTRY.register("power_devil_horns_helmet",
 			() -> new PowerDevilHornsItem.Helmet());
 	public static final RegistryObject<Item> BLOOD_HAMMER = REGISTRY.register("blood_hammer", () -> new BloodHammerItem());
+	public static final RegistryObject<Item> ONE_FOR_ALL = REGISTRY.register("one_for_all", () -> new OneForAllItem());
+	public static final RegistryObject<Item> ALL_MIGHT = REGISTRY.register("all_might_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.ALL_MIGHT, -15722099, -2421234,
+					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_OFATAB)));
+	public static final RegistryObject<Item> MAKIMA = REGISTRY.register("makima_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.MAKIMA, -2438454, -10336447,
+					new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_CHAINSAW_MAN)));
+	public static final RegistryObject<Item> ALL_MIGHT_HAIR = REGISTRY.register("all_might_hair", () -> new AllMightHairItem());
+	public static final RegistryObject<Item> DETROIT_SMASH = REGISTRY.register("detroit_smash", () -> new DetroitSmashItem());
+	public static final RegistryObject<Item> DELAWARE_SMASH = REGISTRY.register("delaware_smash", () -> new DelawareSmashItem());
+	public static final RegistryObject<Item> POCHITA_CHAINSAW = REGISTRY.register("pochita_chainsaw", () -> new PochitaChainsawItem());
+	public static final RegistryObject<Item> DAI = REGISTRY.register("dai_spawn_egg", () -> new ForgeSpawnEggItem(AnimecrossworkspaceModEntities.DAI,
+			-13331760, -391417, new Item.Properties().tab(AnimecrossworkspaceModTabs.TAB_DRAGON_QUEST)));
+	public static final RegistryObject<Item> SWORD_OF_DAI = REGISTRY.register("sword_of_dai", () -> new SwordOfDaiItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
