@@ -1,14 +1,6 @@
 
 package net.mcreator.animecross.entity;
 
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -46,11 +38,7 @@ import net.mcreator.animecross.init.AnimecrossworkspaceModItems;
 import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
 
 @Mod.EventBusSubscriber
-public class MikeyEntity extends Monster implements IAnimatable {
-	private AnimationFactory factory = new AnimationFactory(this);
-	private boolean swinging;
-	private long lastSwing;
-
+public class MikeyEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(AnimecrossworkspaceModEntities.MIKEY.get(), 20, 4, 4));
@@ -122,69 +110,5 @@ public class MikeyEntity extends Monster implements IAnimatable {
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		return builder;
-	}
-
-	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
-		event.getController().animationSpeed = 1.25;
-		event.getController().transitionLengthTicks = 5;
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
-		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
-			this.swinging = true;
-			this.lastSwing = level.getGameTime();
-		}
-		if (this.swinging && this.lastSwing + 15L <= level.getGameTime()) {
-			this.swinging = false;
-		}
-		if (this.swinging) {
-			event.getController().transitionLengthTicks = 0;
-			event.getController().animationSpeed = 0.8;
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("attack"));
-			return PlayState.CONTINUE;
-		}
-		if (event.isMoving() && !this.swinging) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", true));
-			return PlayState.CONTINUE;
-		}
-		if (this.isDeadOrDying()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("death", false));
-			return PlayState.CONTINUE;
-		}
-		if (this.isInWaterOrBubble()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("swim", true));
-			return PlayState.CONTINUE;
-		}
-		if (this.isSprinting()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("sprint", false));
-			return PlayState.CONTINUE;
-		}
-		if (this.isShiftKeyDown()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", false));
-			return PlayState.CONTINUE;
-		}
-		if (!this.swinging) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	protected void tickDeath() {
-		++this.deathTime;
-		if (this.deathTime == 20) {
-			this.remove(MikeyEntity.RemovalReason.KILLED);
-		}
-	}
-
-	@Override
-	public void registerControllers(AnimationData data) {
-		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-	}
-
-	@Override
-	public AnimationFactory getFactory() {
-		return this.factory;
 	}
 }

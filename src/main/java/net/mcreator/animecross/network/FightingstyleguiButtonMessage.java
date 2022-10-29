@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.animecross.world.inventory.FightingstyleguiMenu;
 import net.mcreator.animecross.procedures.FistofflowingrockProcedure;
+import net.mcreator.animecross.procedures.ClickedoneforallProcedure;
 import net.mcreator.animecross.procedures.CapedbaldifightingstyleselectProcedure;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
 
@@ -70,6 +71,10 @@ public class FightingstyleguiButtonMessage {
 		if (buttonID == 1) {
 
 			FistofflowingrockProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			ClickedoneforallProcedure.execute(entity);
 		}
 	}
 

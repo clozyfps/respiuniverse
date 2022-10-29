@@ -460,7 +460,7 @@ public class SwitchabilityProcedure {
 				_player.displayClientMessage(new TextComponent("Cat Explosion (100 Stamina)"), (true));
 		}
 		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel < 4) {
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel < 5) {
 			{
 				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).thunderbreathinglevel + 1;
@@ -505,6 +505,65 @@ public class SwitchabilityProcedure {
 						.getItem() == AnimecrossworkspaceModItems.THUNDER_BREATHING_NICHIRIN.get()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(new TextComponent("Rice Spirit (70 Stamina)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch < 5) {
+			{
+				double _setval = (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch + 1;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.oneforallswitch = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				double _setval = 1;
+				entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.oneforallswitch = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 1
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Detriot Smash (70 Power)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 2
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Delaware Smash (50 Power)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 3
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Combat Mode (0.5 every tick)"), (true));
+		}
+		if ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).oneforallswitch == 4
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+				&& (entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).OneForAll == true
+				&& ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).fightingstyle).equals("One For All")) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("Faux 100% (140 Power)"), (true));
 		}
 	}
 }

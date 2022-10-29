@@ -29,6 +29,8 @@ public class AnimecrossworkspaceModTabs {
 	public static CreativeModeTab TAB_SEVEN_DEADLY_SINS;
 	public static CreativeModeTab TAB_BLEACH;
 	public static CreativeModeTab TAB_CHAINSAW_MAN;
+	public static CreativeModeTab TAB_OFATAB;
+	public static CreativeModeTab TAB_DRAGON_QUEST;
 
 	public static void load() {
 		TAB_AOT = new CreativeModeTab("tabaot") {
@@ -211,6 +213,28 @@ public class AnimecrossworkspaceModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(Blocks.REDSTONE_WIRE);
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_OFATAB = new CreativeModeTab("tabofatab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(AnimecrossworkspaceModItems.ONE_FOR_ALL.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_DRAGON_QUEST = new CreativeModeTab("tabdragon_quest") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(Blocks.AMETHYST_CLUSTER);
 			}
 
 			@OnlyIn(Dist.CLIENT)

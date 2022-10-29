@@ -1,14 +1,6 @@
 
 package net.mcreator.animecross.entity;
 
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -18,6 +10,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -28,27 +21,31 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.animecross.procedures.DekuOnInitialEntitySpawnProcedure;
+import net.mcreator.animecross.procedures.DekuEntityIsHurtProcedure;
 import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
 
-@Mod.EventBusSubscriber
-public class DekuEntity extends Monster implements IAnimatable {
-	private AnimationFactory factory = new AnimationFactory(this);
-	private boolean swinging;
-	private long lastSwing;
+import javax.annotation.Nullable;
 
+@Mod.EventBusSubscriber
+public class DekuEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(AnimecrossworkspaceModEntities.DEKU.get(), 1, 1, 1));
+		event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(AnimecrossworkspaceModEntities.DEKU.get(), 2, 1, 1));
 	}
 
 	public DekuEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -69,7 +66,7 @@ public class DekuEntity extends Monster implements IAnimatable {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.6, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.7, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
@@ -96,6 +93,20 @@ public class DekuEntity extends Monster implements IAnimatable {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		DekuEntityIsHurtProcedure.execute(this);
+		return super.hurt(source, amount);
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason,
+			@Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		DekuOnInitialEntitySpawnProcedure.execute(this);
+		return retval;
+	}
+
 	public static void init() {
 		SpawnPlacements.register(AnimecrossworkspaceModEntities.DEKU.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
@@ -110,69 +121,5 @@ public class DekuEntity extends Monster implements IAnimatable {
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		return builder;
-	}
-
-	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
-		event.getController().animationSpeed = 1.25;
-		event.getController().transitionLengthTicks = 5;
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
-		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
-			this.swinging = true;
-			this.lastSwing = level.getGameTime();
-		}
-		if (this.swinging && this.lastSwing + 15L <= level.getGameTime()) {
-			this.swinging = false;
-		}
-		if (this.swinging) {
-			event.getController().transitionLengthTicks = 0;
-			event.getController().animationSpeed = 0.8;
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("attack"));
-			return PlayState.CONTINUE;
-		}
-		if (event.isMoving() && !this.swinging) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", true));
-			return PlayState.CONTINUE;
-		}
-		if (this.isDeadOrDying()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("death", false));
-			return PlayState.CONTINUE;
-		}
-		if (this.isInWaterOrBubble()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("swim", true));
-			return PlayState.CONTINUE;
-		}
-		if (this.isSprinting()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("sprint", false));
-			return PlayState.CONTINUE;
-		}
-		if (this.isShiftKeyDown()) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", false));
-			return PlayState.CONTINUE;
-		}
-		if (!this.swinging) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	protected void tickDeath() {
-		++this.deathTime;
-		if (this.deathTime == 20) {
-			this.remove(DekuEntity.RemovalReason.KILLED);
-		}
-	}
-
-	@Override
-	public void registerControllers(AnimationData data) {
-		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-	}
-
-	@Override
-	public AnimationFactory getFactory() {
-		return this.factory;
 	}
 }

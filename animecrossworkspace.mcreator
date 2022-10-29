@@ -1390,7 +1390,7 @@
       "name": "Shigeo",
       "type": "livingentity",
       "sortid": 82,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "shigeo",
       "path": "~/Mob Psycho"
@@ -2282,7 +2282,7 @@
       "name": "SandShinobi",
       "type": "livingentity",
       "sortid": 120,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sand_shinobi",
       "path": "~/Naruto"
@@ -4852,7 +4852,7 @@
       "name": "CosmicGarou",
       "type": "livingentity",
       "sortid": 227,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cosmic_garou",
       "path": "~/One Punch Man"
@@ -5756,7 +5756,7 @@
       "name": "SaoFloor1Boss",
       "type": "livingentity",
       "sortid": 269,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sao_floor_1_boss",
       "path": "~/Jujutsu Kaisen"
@@ -7635,7 +7635,7 @@
       "name": "FireForceCaptain",
       "type": "livingentity",
       "sortid": 350,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fire_force_captain",
       "path": "~/Fire Force"
@@ -7712,7 +7712,7 @@
       "name": "Kirito",
       "type": "livingentity",
       "sortid": 354,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kirito",
       "path": "~/Sword art online"
@@ -8239,7 +8239,7 @@
       "name": "Meliodas",
       "type": "livingentity",
       "sortid": 377,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "meliodas",
       "path": "~/Seven Deadly Sins"
@@ -8358,7 +8358,7 @@
       "name": "MeliodasAssaultMode",
       "type": "livingentity",
       "sortid": 383,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "meliodas_assault_mode",
       "path": "~/Seven Deadly Sins"
@@ -10680,7 +10680,7 @@
       "name": "Ichigo",
       "type": "livingentity",
       "sortid": 476,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ichigo",
       "path": "~/Bleach"
@@ -12568,7 +12568,7 @@
       "name": "Akaza",
       "type": "livingentity",
       "sortid": 562,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "akaza",
       "path": "~/Demon Slayer"
@@ -14226,7 +14226,7 @@
       "name": "Pochita",
       "type": "livingentity",
       "sortid": 628,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pochita",
       "path": "~/Chainsaw Man"
@@ -14867,89 +14867,12 @@
       "path": "~/One Piece/Bomb"
     },
     {
-      "name": "DemonKingOnEffectActiveTick",
-      "type": "procedure",
-      "sortid": 644,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "demon_king_on_effect_active_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/SDSRACES"
-    },
-    {
       "name": "DemonKing",
       "type": "potioneffect",
       "sortid": 644,
       "compiles": true,
       "locked_code": false,
       "registry_name": "demon_king",
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "SupremeDeity",
-      "type": "potioneffect",
-      "sortid": 645,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supreme_deity",
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "SupremeTick",
-      "type": "procedure",
-      "sortid": 646,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supreme_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "Commandment",
-      "type": "potioneffect",
-      "sortid": 647,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "commandment",
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "CommandmentTick",
-      "type": "procedure",
-      "sortid": 648,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "commandment_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
       "path": "~/SDSRACES"
     },
     {
@@ -14967,15 +14890,6 @@
           }
         ]
       },
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "ArchAngelPotion",
-      "type": "potioneffect",
-      "sortid": 650,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "arch_angel_potion",
       "path": "~/SDSRACES"
     },
     {
@@ -14997,15 +14911,6 @@
           }
         ]
       },
-      "path": "~/SDSRACES"
-    },
-    {
-      "name": "GiveCommandment",
-      "type": "command",
-      "sortid": 652,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_commandment",
       "path": "~/SDSRACES"
     },
     {
@@ -15034,6 +14939,24 @@
       "path": "~/SDSRACES"
     },
     {
+      "name": "GiveBlessing",
+      "type": "command",
+      "sortid": 655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_blessing",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "SupremeDeity",
+      "type": "potioneffect",
+      "sortid": 645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_deity",
+      "path": "~/SDSRACES"
+    },
+    {
       "name": "MakeArchAngel",
       "type": "procedure",
       "sortid": 654,
@@ -15055,12 +14978,89 @@
       "path": "~/SDSRACES"
     },
     {
-      "name": "GiveBlessing",
-      "type": "command",
-      "sortid": 655,
+      "name": "DemonKingOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 644,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "give_blessing",
+      "registry_name": "demon_king_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "CommandmentTick",
+      "type": "procedure",
+      "sortid": 648,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "SupremeTick",
+      "type": "procedure",
+      "sortid": 646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "GiveCommandment",
+      "type": "command",
+      "sortid": 652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_commandment",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "Commandment",
+      "type": "potioneffect",
+      "sortid": 647,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "ArchAngelPotion",
+      "type": "potioneffect",
+      "sortid": 650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arch_angel_potion",
       "path": "~/SDSRACES"
     },
     {
@@ -15079,6 +15079,545 @@
         ]
       },
       "path": "~/SDSRACES"
+    },
+    {
+      "name": "DekuEntityIsHurt",
+      "type": "procedure",
+      "sortid": 649,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DragonQuest",
+      "type": "tab",
+      "sortid": 655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_quest",
+      "path": "~/Dragon Knight"
+    },
+    {
+      "name": "AllMightOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 638,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_might_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "OneForAll",
+      "type": "item",
+      "sortid": 635,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_for_all",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Makima",
+      "type": "livingentity",
+      "sortid": 637,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "makima",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "AllMight",
+      "type": "livingentity",
+      "sortid": 635,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_might",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "DelawareSmashWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delaware_smash_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DaiEntityDies",
+      "type": "procedure",
+      "sortid": 657,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dai_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragon Knight"
+    },
+    {
+      "name": "DelawareSmashProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delaware_smash_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DetroitSmashWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 642,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detroit_smash_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Clickedoneforall",
+      "type": "procedure",
+      "sortid": 641,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clickedoneforall",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "OFATAB",
+      "type": "tab",
+      "sortid": 636,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ofatab",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Oneforallcondi",
+      "type": "procedure",
+      "sortid": 640,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneforallcondi",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DekuOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deku_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Combatmodetick",
+      "type": "procedure",
+      "sortid": 648,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combatmodetick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DetroitSmashProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 643,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detroit_smash_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Giveofa",
+      "type": "command",
+      "sortid": 651,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giveofa",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "PochitaRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 654,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pochita_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "Dai",
+      "type": "livingentity",
+      "sortid": 655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dai",
+      "path": "~/Dragon Knight"
+    },
+    {
+      "name": "SwordOfDai",
+      "type": "tool",
+      "sortid": 656,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_dai",
+      "path": "~/Dragon Knight"
+    },
+    {
+      "name": "DetroitSmashProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 644,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detroit_smash_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DelawareSmash",
+      "type": "rangeditem",
+      "sortid": 645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delaware_smash",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Givecat",
+      "type": "command",
+      "sortid": 652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givecat"
+    },
+    {
+      "name": "DetroitSmash",
+      "type": "rangeditem",
+      "sortid": 642,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detroit_smash",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Catfight",
+      "type": "procedure",
+      "sortid": 652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catfight",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PochitaChainsaw",
+      "type": "tool",
+      "sortid": 653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pochita_chainsaw",
+      "path": "~/Chainsaw Man"
+    },
+    {
+      "name": "OneForAllParticle",
+      "type": "particle",
+      "sortid": 634,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_for_all_particle",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "AllMightHair",
+      "type": "item",
+      "sortid": 639,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_might_hair",
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "Ofagive",
+      "type": "procedure",
+      "sortid": 651,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ofagive",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "AllMightHairPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 639,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_might_hair_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "DelawareSmashProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 647,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delaware_smash_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/My Hero Academia"
+    },
+    {
+      "name": "PochitaChainsawRightclicked",
+      "type": "procedure",
+      "sortid": 653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pochita_chainsaw_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Chainsaw Man"
     }
   ],
   "variable_elements": [
@@ -15815,31 +16354,7 @@
       "value": "false"
     },
     {
-      "name": "demonkingchosen",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
       "name": "isdemonking",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "supremedeitychosen",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "issupremedeity",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "isTenCommandment",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -15851,13 +16366,49 @@
       "value": "0"
     },
     {
+      "name": "issupremedeity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "demonkingchosen",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "isTenCommandment",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
       "name": "isarchangel",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
     },
     {
+      "name": "supremedeitychosen",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
       "name": "archangelchosen",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "oneforallswitch",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "combatmode",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -15892,8 +16443,8 @@
   "language_map": {
     "en_us": {
       "effect.animecrossworkspace.choked": "ClozySucksFATMEAT3",
-      "item.animecross.white_mikey_cloak_chestplate": "White Mikey Cloak",
       "item.animecross.arc_armor_boots": "Arc Armor Boots",
+      "item.animecross.white_mikey_cloak_chestplate": "White Mikey Cloak",
       "effect.animecrossworkspace.web_swinging": "ClozySucksFATMEAT3",
       "item.animecross.demon_dweller_sword": "Demon Dweller Sword",
       "item.animecrossworkspace.assault_mode_chestplate": "Assault Mode ",
@@ -15902,6 +16453,7 @@
       "entity.w.levi": "Levi Ackerman",
       "item.animecrossworkspace.blood_hammer": "Blood Hammer",
       "entity.animecross.boros_third_form": "Boros Third Form",
+      "entity.animecrossworkspace.makima": "Makima",
       "item.animecrossworkspace.smack_down_arrow": "Smack Down Arrow",
       "item.animecross.sand_shinobi_spawn_egg": "Sand Shinobi Spawn Egg",
       "item.w.gum_gum_rocket": "Gum Gum Rocket",
@@ -15942,6 +16494,7 @@
       "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
       "item.animecross.pride_flair": "Pride Flair",
       "key.animecrossworkspace.testing": "Testing",
+      "item.animecrossworkspace.one_for_all": "One For All",
       "item.animecross.wind_bomb": "Wind Bomb",
       "biome.animecrossworkspace.shinobi_forest": "Shinobi Forest",
       "item.animecrossworkspace.odm_gear_armor_boots": "ODM Gear Armor Boots",
@@ -16032,6 +16585,7 @@
       "item.w.mikey_spawn_egg": "Mikey White Cloak Spawn Egg",
       "entity.animecrossworkspace.megumi_fushiguro": "Megumi Fushiguro",
       "item.w.yami_sword": "Yami Sword",
+      "item.animecrossworkspace.sword_of_dai": "Sword Of Dai",
       "item.animecrossworkspace.jujutsu_sourcerer_boots": "Jujutsu Sourcerer Boots",
       "item.w.assault_mode_form": "Assault Mode Form",
       "key.animecross.jet_feet": "Pyro Jet Feet (Third Generation)",
@@ -16047,6 +16601,7 @@
       "entity.animecross.grimoire_giver": "Grimoire Giver",
       "effect.animecross.maxpercent": "?????????????",
       "item.w.strong_goblin_spawn_egg": "Strong Goblin Spawn Egg",
+      "item.animecrossworkspace.all_might_spawn_egg": "All Might Spawn Egg",
       "block.animecross.tvright": "Tvright",
       "item.animecross.shinra_spawn_egg": "Shinra Spawn Egg",
       "item.animecrossworkspace.dark_repulser": "Dark Repulser",
@@ -16127,6 +16682,7 @@
       "item.animecross.sao_floor_1_boss_spawn_egg": "Sao Floor 74 Boss Spawn Egg",
       "advancements.antimagic.title": "Evil Magic",
       "item.w.removecooldownitem": "Removecooldownitem",
+      "item.animecrossworkspace.pochita_chainsaw": "Pochita Chainsaw",
       "item.animecross.saitama_uniform_chestplate": "Saitama Uniform Body",
       "item.w.jiraiya_spawn_egg": "Jiraiya Spawn Egg",
       "item.animecrossworkspace.inferno_spawn_egg": "Inferno Spawn Egg",
@@ -16135,6 +16691,7 @@
       "item.animecross.arc_armor_chestplate": "Ark",
       "item.animecross.slime_boots": "Slime Boots",
       "item.w.meliodas_spawn_egg": "Meliodas Spawn Egg",
+      "item.animecrossworkspace.detroit_smash": "Detroit Smash",
       "itemGroup.tabone_punch_man": "One Punch Man",
       "entity.animecrossworkspace.son_goku": "Son Goku",
       "item.w.grimoire_giver_spawn_egg": "Grimoire Giver Spawn Egg",
@@ -16487,6 +17044,7 @@
       "item.animecross.dragon_fire": "Dragon Fire",
       "key.animecross.switch_ability_bind": "Switch Ability (Grimoires, Breathings, etc)",
       "key.animecrossworkspace.charge_power": "Charge Power",
+      "item.animecrossworkspace.all_might_hair": "All Might Hair",
       "item.animecross.purge": "Purge",
       "key.w.charge_power": "Charge Power",
       "item.animecrossworkspace.pride_flair": "Pride Flair",
@@ -16517,9 +17075,11 @@
       "entity.w.noelle_silva": "Noelle Silva",
       "item.w.salt_bottle": "Purified Salt Bottle",
       "item.animecrossworkspace.phoenix_flower_jutsu": "Phoenix Flower Jutsu",
+      "itemGroup.tabofatab": "One For All",
       "item.animecross.slime_chestplate": "Slime Body",
       "entity.animecross.white_divine_dog": "White Divine Dog",
       "item.animecrossworkspace.airtyperanged": "Airtyperanged",
+      "itemGroup.tabdragon_quest": "Dragon Quest",
       "item.animecrossworkspace.scout_regiment_cloak_chestplate": "Scout Regiment Cloak ",
       "item.animecrossworkspace.kisuke_hat_helmet": "Kisuke Hat",
       "item.w.scout_regiment_member_spawn_egg": "Scout Regiment Soldier Spawn Egg",
@@ -16688,6 +17248,7 @@
       "item.w.sasukes_sword": "Sasukes Sword",
       "block.animecrossworkspace.tv_single": "Tv Single",
       "item.animecrossworkspace.monkey_d_luffy_spawn_egg": "Monkey D Luffy Spawn Egg",
+      "item.animecrossworkspace.dai_spawn_egg": "Dai Spawn Egg",
       "item.w.scout_regiment_cloak_chestplate": "Scout Regiment Cloak ",
       "entity.animecrossworkspace.escanor": "Escanor",
       "entity.animecross.son_goku": "Son Goku",
@@ -16801,6 +17362,7 @@
       "key.animecross.fly": "Fly (Keybind for every fly ability)",
       "item.w.light_intangibility": "Light Intangibility",
       "item.animecrossworkspace.the_world_stan_boots": "The World Stan Boots",
+      "entity.animecrossworkspace.all_might": "All Might",
       "item.animecross.assault_mode_boots": "Assault Mode Boots",
       "biome.animecross.purgatory_main_biome": "Purgatory Main Biome",
       "item.animecrossworkspace.salt_bottle": "Purified Salt Bottle",
@@ -17103,6 +17665,7 @@
       "item.animecross.meliodas_assault_mode_spawn_egg": "Meliodas Assault Mode Spawn Egg",
       "item.animecrossworkspace.fireballprojectile": "Fireballprojectile",
       "item.animecross.noelle_silva_spawn_egg": "Noelle Silva Spawn Egg",
+      "item.animecrossworkspace.makima_spawn_egg": "Makima Spawn Egg",
       "item.animecross.koketsu_arrow_awakening_ability": "Koketsu Arrow Awakening Ability",
       "entity.animecrossworkspace.cosmic_fear_garou": "Cosmic Fear Garou",
       "item.animecrossworkspace.zanpakuto_1": "Zanpakuto 1",
@@ -17150,6 +17713,7 @@
       "item.animecrossworkspace.infinity": "Infinity",
       "item.animecrossworkspace.marine_captain_spawn_egg": "Marine Captain Spawn Egg",
       "entity.w.sasuke_uchiha": "Sasuke Uchiha",
+      "item.animecrossworkspace.delaware_smash": "Delaware Smash",
       "entity.w.naruto_uzumaki": "Naruto Uzumaki",
       "entity.animecrossworkspace.arthur_boyle": "Arthur Boyle",
       "item.animecross.phoenix_flower_jutsu": "Phoenix Flower Jutsu",
@@ -17199,6 +17763,7 @@
       "key.animecross.open_info": "Open Info",
       "item.w.sharingan_1_tomoe_boots": "Sharingan 1 Tomoe Boots",
       "key.animecrossworkspace.wado_bite_toggle": "Wado Bite Toggle",
+      "entity.animecrossworkspace.dai": "Dai",
       "block.w.tv_bottom_left": "Tv Bottom Left",
       "item.animecrossworkspace.zenitsu_spawn_egg": "Zenitsu Spawn Egg",
       "block.animecross.tv_top": "Tv Top",
@@ -17281,6 +17846,10 @@
         "children": []
       },
       {
+        "name": "SDSRACES",
+        "children": []
+      },
+      {
         "name": "Tensura",
         "children": []
       },
@@ -17296,6 +17865,10 @@
             "children": []
           },
           {
+            "name": "Bomb",
+            "children": []
+          },
+          {
             "name": "Gura",
             "children": []
           },
@@ -17305,10 +17878,6 @@
           },
           {
             "name": "Pika Logia",
-            "children": []
-          },
-          {
-            "name": "Bomb",
             "children": []
           }
         ]
@@ -17332,10 +17901,6 @@
       {
         "name": "Mob Psycho",
         "children": []
-      },
-      {
-        "name": "SDSRACES",
-        "children": []
       }
     ]
   },
@@ -17351,20 +17916,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "gecholib",
-      "bookshelf",
-      "caelus",
-      "posture",
-      "guidebook",
-      "curios",
-      "jade",
-      "geckolib",
-      "architectury",
-      "playeranimator",
-      "cloth-config",
-      "jei"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.animecross",

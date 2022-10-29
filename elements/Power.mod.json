@@ -27,13 +27,13 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:PowerDevilHorns.helmet"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:PowerDevilHorns.helmet"
     },
     "equipmentBody": {
       "value": ""

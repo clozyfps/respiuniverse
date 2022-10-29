@@ -58,6 +58,7 @@ import net.mcreator.animecross.client.renderer.MegumiFushiguroRenderer;
 import net.mcreator.animecross.client.renderer.MasterRoshiRenderer;
 import net.mcreator.animecross.client.renderer.MarineRenderer;
 import net.mcreator.animecross.client.renderer.MarineCaptainRenderer;
+import net.mcreator.animecross.client.renderer.MakimaRenderer;
 import net.mcreator.animecross.client.renderer.MahitoRenderer;
 import net.mcreator.animecross.client.renderer.MagicBanditRenderer;
 import net.mcreator.animecross.client.renderer.MadaraUchihaRenderer;
@@ -90,6 +91,7 @@ import net.mcreator.animecross.client.renderer.DioRenderer;
 import net.mcreator.animecross.client.renderer.DestructoDiskRenderer;
 import net.mcreator.animecross.client.renderer.DemonRenderer;
 import net.mcreator.animecross.client.renderer.DekuRenderer;
+import net.mcreator.animecross.client.renderer.DaiRenderer;
 import net.mcreator.animecross.client.renderer.CursedSpiritRenderer;
 import net.mcreator.animecross.client.renderer.CruelsunproRenderer;
 import net.mcreator.animecross.client.renderer.CosmicGarouRenderer;
@@ -104,6 +106,7 @@ import net.mcreator.animecross.client.renderer.BatHollowRenderer;
 import net.mcreator.animecross.client.renderer.AstaRenderer;
 import net.mcreator.animecross.client.renderer.ArthurBoyleRenderer;
 import net.mcreator.animecross.client.renderer.ArkabilityrangeditemRenderer;
+import net.mcreator.animecross.client.renderer.AllMightRenderer;
 import net.mcreator.animecross.client.renderer.AlienRenderer;
 import net.mcreator.animecross.client.renderer.AkazaRenderer;
 
@@ -230,5 +233,10 @@ public class AnimecrossworkspaceModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.DEKU.get(), DekuRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.POCHITA.get(), PochitaRenderer::new);
 		event.registerEntityRenderer(AnimecrossworkspaceModEntities.POWER.get(), PowerRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.ALL_MIGHT.get(), AllMightRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.MAKIMA.get(), MakimaRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.DETROIT_SMASH.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.DELAWARE_SMASH.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossworkspaceModEntities.DAI.get(), DaiRenderer::new);
 	}
 }

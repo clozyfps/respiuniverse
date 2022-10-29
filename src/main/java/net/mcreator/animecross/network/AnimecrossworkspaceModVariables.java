@@ -198,6 +198,8 @@ public class AnimecrossworkspaceModVariables {
 			clone.isTenCommandment = original.isTenCommandment;
 			clone.isarchangel = original.isarchangel;
 			clone.archangelchosen = original.archangelchosen;
+			clone.oneforallswitch = original.oneforallswitch;
+			clone.combatmode = original.combatmode;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
@@ -236,9 +238,9 @@ public class AnimecrossworkspaceModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "animecrossworkspace_worldvars";
+		public double amountofcommandmentschosen = 0;
 		public boolean demonkingchosen = false;
 		public boolean supremedeitychosen = false;
-		public double amountofcommandmentschosen = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -247,16 +249,16 @@ public class AnimecrossworkspaceModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			amountofcommandmentschosen = nbt.getDouble("amountofcommandmentschosen");
 			demonkingchosen = nbt.getBoolean("demonkingchosen");
 			supremedeitychosen = nbt.getBoolean("supremedeitychosen");
-			amountofcommandmentschosen = nbt.getDouble("amountofcommandmentschosen");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("amountofcommandmentschosen", amountofcommandmentschosen);
 			nbt.putBoolean("demonkingchosen", demonkingchosen);
 			nbt.putBoolean("supremedeitychosen", supremedeitychosen);
-			nbt.putDouble("amountofcommandmentschosen", amountofcommandmentschosen);
 			return nbt;
 		}
 
@@ -509,6 +511,8 @@ public class AnimecrossworkspaceModVariables {
 		public boolean isTenCommandment = false;
 		public boolean isarchangel = false;
 		public boolean archangelchosen = false;
+		public double oneforallswitch = 0;
+		public boolean combatmode = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -643,6 +647,8 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putBoolean("isTenCommandment", isTenCommandment);
 			nbt.putBoolean("isarchangel", isarchangel);
 			nbt.putBoolean("archangelchosen", archangelchosen);
+			nbt.putDouble("oneforallswitch", oneforallswitch);
+			nbt.putBoolean("combatmode", combatmode);
 			return nbt;
 		}
 
@@ -774,6 +780,8 @@ public class AnimecrossworkspaceModVariables {
 			isTenCommandment = nbt.getBoolean("isTenCommandment");
 			isarchangel = nbt.getBoolean("isarchangel");
 			archangelchosen = nbt.getBoolean("archangelchosen");
+			oneforallswitch = nbt.getDouble("oneforallswitch");
+			combatmode = nbt.getBoolean("combatmode");
 		}
 	}
 
@@ -925,6 +933,8 @@ public class AnimecrossworkspaceModVariables {
 					variables.isTenCommandment = message.data.isTenCommandment;
 					variables.isarchangel = message.data.isarchangel;
 					variables.archangelchosen = message.data.archangelchosen;
+					variables.oneforallswitch = message.data.oneforallswitch;
+					variables.combatmode = message.data.combatmode;
 				}
 			});
 			context.setPacketHandled(true);

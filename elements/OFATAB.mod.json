@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "One For All",
+    "icon": {
+      "value": "CUSTOM:OneForAll"
+    },
+    "showSearch": true
+  }
+}

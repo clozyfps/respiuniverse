@@ -21,6 +21,7 @@ import net.mcreator.animecross.client.particle.PurpleParticleParticle;
 import net.mcreator.animecross.client.particle.PurgatoryFlamesParticle;
 import net.mcreator.animecross.client.particle.PikaPikaParticle2Particle;
 import net.mcreator.animecross.client.particle.PikaPikaParticle1Particle;
+import net.mcreator.animecross.client.particle.OneForAllParticleParticle;
 import net.mcreator.animecross.client.particle.MoonBreathingParticleParticle;
 import net.mcreator.animecross.client.particle.GoddessparticleParticle;
 import net.mcreator.animecross.client.particle.FireSparkParticle;
@@ -71,5 +72,7 @@ public class AnimecrossworkspaceModParticles {
 				PurpleParticleParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.ELECTRICITYPARTICLE.get(),
 				ElectricityparticleParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) AnimecrossworkspaceModParticleTypes.ONE_FOR_ALL_PARTICLE.get(),
+				OneForAllParticleParticle::provider);
 	}
 }

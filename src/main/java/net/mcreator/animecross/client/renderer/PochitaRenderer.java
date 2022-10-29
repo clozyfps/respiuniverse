@@ -1,28 +1,20 @@
 
 package net.mcreator.animecross.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.animecross.entity.PochitaEntity;
+import net.mcreator.animecross.client.model.Modelpochitaentyty;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class PochitaRenderer extends GeoEntityRenderer<PochitaEntity> {
-	public PochitaRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new PochitaModelProcedure());
-		this.shadowRadius = 0.5f;
+public class PochitaRenderer extends MobRenderer<PochitaEntity, Modelpochitaentyty<PochitaEntity>> {
+	public PochitaRenderer(EntityRendererProvider.Context context) {
+		super(context, new Modelpochitaentyty(context.bakeLayer(Modelpochitaentyty.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	public RenderType getRenderType(PochitaEntity animatable, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer,
-			VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1.0F, 1.0F, 1.0F);
-		return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
+	public ResourceLocation getTextureLocation(PochitaEntity entity) {
+		return new ResourceLocation("animecrossworkspace:textures/entities/pochitaentitytexture.png");
 	}
 }

@@ -1,28 +1,24 @@
 
 package net.mcreator.animecross.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.HumanoidModel;
 
 import net.mcreator.animecross.entity.InsanePsychicEntity;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class InsanePsychicRenderer extends GeoEntityRenderer<InsanePsychicEntity> {
-	public InsanePsychicRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new InsanePsychicModelProcedure());
-		this.shadowRadius = 0.5f;
+public class InsanePsychicRenderer extends HumanoidMobRenderer<InsanePsychicEntity, HumanoidModel<InsanePsychicEntity>> {
+	public InsanePsychicRenderer(EntityRendererProvider.Context context) {
+		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
+				new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
 	}
 
 	@Override
-	public RenderType getRenderType(InsanePsychicEntity animatable, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer,
-			VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1.0F, 1.0F, 1.0F);
-		return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
+	public ResourceLocation getTextureLocation(InsanePsychicEntity entity) {
+		return new ResourceLocation("animecrossworkspace:textures/entities/crazy_dude_4.png");
 	}
 }

@@ -12,6 +12,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.animecross.world.inventory.FightingstyleguiMenu;
+import net.mcreator.animecross.procedures.OneforallcondiProcedure;
 import net.mcreator.animecross.procedures.FistofflowingbuttoncondProcedure;
 import net.mcreator.animecross.procedures.CapedbaldiconditionProcedure;
 import net.mcreator.animecross.network.FightingstyleguiButtonMessage;
@@ -82,6 +83,7 @@ public class FightingstyleguiScreen extends AbstractContainerScreen<Fightingstyl
 			this.font.draw(poseStack, "Caped Baldi", -86, 16, -16640);
 		if (FistofflowingbuttoncondProcedure.execute(entity))
 			this.font.draw(poseStack, "Fist of flowing water", -19, 16, -16640);
+		this.font.draw(poseStack, "One For All", -86, 73, -17664);
 	}
 
 	@Override
@@ -115,6 +117,18 @@ public class FightingstyleguiScreen extends AbstractContainerScreen<Fightingstyl
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (FistofflowingbuttoncondProcedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
+		this.addRenderableWidget(new Button(this.leftPos + -86, this.topPos + 85, 56, 20, new TextComponent("Select"), e -> {
+			if (OneforallcondiProcedure.execute(entity)) {
+				AnimecrossworkspaceMod.PACKET_HANDLER.sendToServer(new FightingstyleguiButtonMessage(2, x, y, z));
+				FightingstyleguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (OneforallcondiProcedure.execute(entity))
 					super.render(ms, gx, gy, ticks);
 			}
 		});

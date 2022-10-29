@@ -1,28 +1,20 @@
 
 package net.mcreator.animecross.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.animecross.entity.BlackDivineDogEntity;
+import net.mcreator.animecross.client.model.Modeldivinedog;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class BlackDivineDogRenderer extends GeoEntityRenderer<BlackDivineDogEntity> {
-	public BlackDivineDogRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new BlackDivineDogModelProcedure());
-		this.shadowRadius = 0.5f;
+public class BlackDivineDogRenderer extends MobRenderer<BlackDivineDogEntity, Modeldivinedog<BlackDivineDogEntity>> {
+	public BlackDivineDogRenderer(EntityRendererProvider.Context context) {
+		super(context, new Modeldivinedog(context.bakeLayer(Modeldivinedog.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	public RenderType getRenderType(BlackDivineDogEntity animatable, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer,
-			VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1.0F, 1.0F, 1.0F);
-		return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
+	public ResourceLocation getTextureLocation(BlackDivineDogEntity entity) {
+		return new ResourceLocation("animecrossworkspace:textures/entities/black_divine_dog.png");
 	}
 }
