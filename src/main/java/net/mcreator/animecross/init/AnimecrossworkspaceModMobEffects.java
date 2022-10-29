@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.animecross.potion.WebSwingingMobEffect;
+import net.mcreator.animecross.potion.SupremeDeityMobEffect;
 import net.mcreator.animecross.potion.SleepeffectMobEffect;
 import net.mcreator.animecross.potion.SSJ1EffectMobEffect;
 import net.mcreator.animecross.potion.RedMobEffect;
@@ -25,9 +26,12 @@ import net.mcreator.animecross.potion.EntityDMobEffect;
 import net.mcreator.animecross.potion.EntityCMobEffect;
 import net.mcreator.animecross.potion.EntityBMobEffect;
 import net.mcreator.animecross.potion.EntityAMobEffect;
+import net.mcreator.animecross.potion.DemonKingMobEffect;
+import net.mcreator.animecross.potion.CommandmentMobEffect;
 import net.mcreator.animecross.potion.ChokedMobEffect;
 import net.mcreator.animecross.potion.ChokedDespawnKNOTMobEffect;
 import net.mcreator.animecross.potion.BlueMobEffect;
+import net.mcreator.animecross.potion.ArchAngelPotionMobEffect;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
 
 public class AnimecrossworkspaceModMobEffects {
@@ -52,4 +56,8 @@ public class AnimecrossworkspaceModMobEffects {
 			() -> new ChokedDespawnKNOTMobEffect());
 	public static final RegistryObject<MobEffect> ENTITY_E = REGISTRY.register("entity_e", () -> new EntityEMobEffect());
 	public static final RegistryObject<MobEffect> WEB_SWINGING = REGISTRY.register("web_swinging", () -> new WebSwingingMobEffect());
+	public static final RegistryObject<MobEffect> DEMON_KING = REGISTRY.register("demon_king", () -> new DemonKingMobEffect());
+	public static final RegistryObject<MobEffect> SUPREME_DEITY = REGISTRY.register("supreme_deity", () -> new SupremeDeityMobEffect());
+	public static final RegistryObject<MobEffect> COMMANDMENT = REGISTRY.register("commandment", () -> new CommandmentMobEffect());
+	public static final RegistryObject<MobEffect> ARCH_ANGEL_POTION = REGISTRY.register("arch_angel_potion", () -> new ArchAngelPotionMobEffect());
 }

@@ -1,5 +1,7 @@
 package net.mcreator.animecross.client.model;
 
+import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Abs;
+
 import org.objectweb.asm.Handle;
 
 import net.minecraft.world.entity.Entity;

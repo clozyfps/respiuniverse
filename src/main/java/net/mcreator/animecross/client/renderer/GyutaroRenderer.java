@@ -1,24 +1,28 @@
 
 package net.mcreator.animecross.client.renderer;
 
+import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
+
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
-import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.animecross.entity.GyutaroEntity;
 
-public class GyutaroRenderer extends HumanoidMobRenderer<GyutaroEntity, HumanoidModel<GyutaroEntity>> {
-	public GyutaroRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
-		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
-				new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class GyutaroRenderer extends GeoEntityRenderer<GyutaroEntity> {
+	public GyutaroRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new GyutaroModelProcedure());
+		this.shadowRadius = 0.5f;
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(GyutaroEntity entity) {
-		return new ResourceLocation("animecrossworkspace:textures/entities/gyutaro_hd.png");
+	public RenderType getRenderType(GyutaroEntity animatable, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer,
+			VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
+		stack.scale(1.0F, 1.0F, 1.0F);
+		return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
 	}
 }

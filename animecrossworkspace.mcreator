@@ -1390,7 +1390,7 @@
       "name": "Shigeo",
       "type": "livingentity",
       "sortid": 82,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "shigeo",
       "path": "~/Mob Psycho"
@@ -2282,7 +2282,7 @@
       "name": "SandShinobi",
       "type": "livingentity",
       "sortid": 120,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sand_shinobi",
       "path": "~/Naruto"
@@ -4852,7 +4852,7 @@
       "name": "CosmicGarou",
       "type": "livingentity",
       "sortid": 227,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cosmic_garou",
       "path": "~/One Punch Man"
@@ -5756,7 +5756,7 @@
       "name": "SaoFloor1Boss",
       "type": "livingentity",
       "sortid": 269,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sao_floor_1_boss",
       "path": "~/Jujutsu Kaisen"
@@ -7635,7 +7635,7 @@
       "name": "FireForceCaptain",
       "type": "livingentity",
       "sortid": 350,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "fire_force_captain",
       "path": "~/Fire Force"
@@ -7712,7 +7712,7 @@
       "name": "Kirito",
       "type": "livingentity",
       "sortid": 354,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kirito",
       "path": "~/Sword art online"
@@ -8239,7 +8239,7 @@
       "name": "Meliodas",
       "type": "livingentity",
       "sortid": 377,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "meliodas",
       "path": "~/Seven Deadly Sins"
@@ -8358,7 +8358,7 @@
       "name": "MeliodasAssaultMode",
       "type": "livingentity",
       "sortid": 383,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "meliodas_assault_mode",
       "path": "~/Seven Deadly Sins"
@@ -10680,7 +10680,7 @@
       "name": "Ichigo",
       "type": "livingentity",
       "sortid": 476,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ichigo",
       "path": "~/Bleach"
@@ -12568,7 +12568,7 @@
       "name": "Akaza",
       "type": "livingentity",
       "sortid": 562,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "akaza",
       "path": "~/Demon Slayer"
@@ -14226,7 +14226,7 @@
       "name": "Pochita",
       "type": "livingentity",
       "sortid": 628,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pochita",
       "path": "~/Chainsaw Man"
@@ -14865,6 +14865,220 @@
         ]
       },
       "path": "~/One Piece/Bomb"
+    },
+    {
+      "name": "DemonKingOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 644,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_king_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "DemonKing",
+      "type": "potioneffect",
+      "sortid": 644,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_king",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "SupremeDeity",
+      "type": "potioneffect",
+      "sortid": 645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_deity",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "SupremeTick",
+      "type": "procedure",
+      "sortid": 646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "Commandment",
+      "type": "potioneffect",
+      "sortid": 647,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "CommandmentTick",
+      "type": "procedure",
+      "sortid": 648,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandment_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "ArchAngel",
+      "type": "procedure",
+      "sortid": 649,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arch_angel",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "ArchAngelPotion",
+      "type": "potioneffect",
+      "sortid": 650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arch_angel_potion",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "MakeKing",
+      "type": "procedure",
+      "sortid": 651,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_king",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "GiveCommandment",
+      "type": "command",
+      "sortid": 652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_commandment",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "MakeCommandment",
+      "type": "procedure",
+      "sortid": 653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_commandment",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "MakeArchAngel",
+      "type": "procedure",
+      "sortid": 654,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_arch_angel",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "GiveBlessing",
+      "type": "command",
+      "sortid": 655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_blessing",
+      "path": "~/SDSRACES"
+    },
+    {
+      "name": "GiveEffect",
+      "type": "procedure",
+      "sortid": 656,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SDSRACES"
     }
   ],
   "variable_elements": [
@@ -15599,6 +15813,54 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "demonkingchosen",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "isdemonking",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "supremedeitychosen",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "issupremedeity",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isTenCommandment",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "amountofcommandmentschosen",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "isarchangel",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "archangelchosen",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -15842,6 +16104,7 @@
       "itemGroup.tabmob_psycho": "Mob Psycho",
       "item.animecross.odmstring": "Odmstring",
       "item.animecrossworkspace.straw_doll": "Straw Doll",
+      "effect.animecrossworkspace.supreme_deity": "Supreme Deity",
       "item.w.odm_gear_armor_leggings": "ODM Gear Armor ",
       "itemGroup.tabgoblin_slayer": "Goblin Slayer",
       "item.animecross.fireballprojectile": "Fireballprojectile",
@@ -16208,6 +16471,7 @@
       "entity.animecrossworkspace.strong_goblin": "Strong Goblin",
       "itemGroup.tabdragon_ball": "Dragon Ball",
       "item.animecross.master_roshi_spawn_egg": "Master Roshi Spawn Egg",
+      "effect.animecrossworkspace.commandment": "Commandment",
       "item.animecross.kiblastrangeditem": "Kiblastrangeditem",
       "item.w.weak_goblin_spawn_egg": "Weak Goblin Spawn Egg",
       "item.w.purgatory_flames_ability": "Purgatory Flames",
@@ -16551,6 +16815,7 @@
       "block.animecrossworkspace.purgatory_large_spike": "Purgatory Large Spike",
       "item.w.pyrobomb": "Pyrobomb",
       "entity.animecrossworkspace.knot_entity": "Knot Entity",
+      "effect.animecrossworkspace.demon_king": "Demon King",
       "item.w.itadori_spawn_egg": "Itadori Spawn Egg",
       "item.w.kisuke_hat_chestplate": "Kisuke Hat Body",
       "item.animecrossworkspace.cursedenergyparticle": "Cursedenergyparticle",
@@ -16781,6 +17046,7 @@
       "item.animecrossworkspace.kisuke_hat_chestplate": "Kisuke Hat Body",
       "item.animecrossworkspace.fire_force_coat_boots": "Fire Force Coat Boots",
       "entity.animecross.madara_uchiha": "Madara Uchiha",
+      "effect.animecrossworkspace.arch_angel_potion": "Arch Angel",
       "entity.w.mikey": "Mikey White Cloak",
       "item.animecrossworkspace.purgatory_flames_ability": "Purgatory Flames",
       "item.w.stone_mask_chestplate": "Stone Mask Body",
@@ -17066,6 +17332,10 @@
       {
         "name": "Mob Psycho",
         "children": []
+      },
+      {
+        "name": "SDSRACES",
+        "children": []
       }
     ]
   },
@@ -17081,7 +17351,20 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "gecholib",
+      "bookshelf",
+      "caelus",
+      "posture",
+      "guidebook",
+      "curios",
+      "jade",
+      "geckolib",
+      "architectury",
+      "playeranimator",
+      "cloth-config",
+      "jei"
+    ],
     "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.animecross",

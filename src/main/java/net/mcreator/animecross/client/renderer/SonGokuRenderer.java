@@ -1,20 +1,28 @@
 
 package net.mcreator.animecross.client.renderer;
 
+import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
+
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.animecross.entity.SonGokuEntity;
-import net.mcreator.animecross.client.model.ModelGoku;
 
-public class SonGokuRenderer extends MobRenderer<SonGokuEntity, ModelGoku<SonGokuEntity>> {
-	public SonGokuRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelGoku(context.bakeLayer(ModelGoku.LAYER_LOCATION)), 0.5f);
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class SonGokuRenderer extends GeoEntityRenderer<SonGokuEntity> {
+	public SonGokuRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new SonGokuModelProcedure());
+		this.shadowRadius = 0.5f;
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(SonGokuEntity entity) {
-		return new ResourceLocation("animecrossworkspace:textures/entities/goku_base_texture.png");
+	public RenderType getRenderType(SonGokuEntity animatable, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer,
+			VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
+		stack.scale(1.0F, 1.0F, 1.0F);
+		return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
 	}
 }

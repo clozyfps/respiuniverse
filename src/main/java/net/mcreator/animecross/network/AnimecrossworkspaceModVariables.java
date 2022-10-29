@@ -193,6 +193,11 @@ public class AnimecrossworkspaceModVariables {
 			clone.stringFruit = original.stringFruit;
 			clone.thunderbreathinglevel = original.thunderbreathinglevel;
 			clone.bombFruit = original.bombFruit;
+			clone.isdemonking = original.isdemonking;
+			clone.issupremedeity = original.issupremedeity;
+			clone.isTenCommandment = original.isTenCommandment;
+			clone.isarchangel = original.isarchangel;
+			clone.archangelchosen = original.archangelchosen;
 			if (!event.isWasDeath()) {
 				clone.doingdojoquest = original.doingdojoquest;
 				clone.bangquestnumber = original.bangquestnumber;
@@ -231,6 +236,9 @@ public class AnimecrossworkspaceModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "animecrossworkspace_worldvars";
+		public boolean demonkingchosen = false;
+		public boolean supremedeitychosen = false;
+		public double amountofcommandmentschosen = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -239,10 +247,16 @@ public class AnimecrossworkspaceModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			demonkingchosen = nbt.getBoolean("demonkingchosen");
+			supremedeitychosen = nbt.getBoolean("supremedeitychosen");
+			amountofcommandmentschosen = nbt.getDouble("amountofcommandmentschosen");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("demonkingchosen", demonkingchosen);
+			nbt.putBoolean("supremedeitychosen", supremedeitychosen);
+			nbt.putDouble("amountofcommandmentschosen", amountofcommandmentschosen);
 			return nbt;
 		}
 
@@ -490,6 +504,11 @@ public class AnimecrossworkspaceModVariables {
 		public boolean stringFruit = false;
 		public double thunderbreathinglevel = 0;
 		public boolean bombFruit = false;
+		public boolean isdemonking = false;
+		public boolean issupremedeity = false;
+		public boolean isTenCommandment = false;
+		public boolean isarchangel = false;
+		public boolean archangelchosen = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -619,6 +638,11 @@ public class AnimecrossworkspaceModVariables {
 			nbt.putBoolean("stringFruit", stringFruit);
 			nbt.putDouble("thunderbreathinglevel", thunderbreathinglevel);
 			nbt.putBoolean("bombFruit", bombFruit);
+			nbt.putBoolean("isdemonking", isdemonking);
+			nbt.putBoolean("issupremedeity", issupremedeity);
+			nbt.putBoolean("isTenCommandment", isTenCommandment);
+			nbt.putBoolean("isarchangel", isarchangel);
+			nbt.putBoolean("archangelchosen", archangelchosen);
 			return nbt;
 		}
 
@@ -745,6 +769,11 @@ public class AnimecrossworkspaceModVariables {
 			stringFruit = nbt.getBoolean("stringFruit");
 			thunderbreathinglevel = nbt.getDouble("thunderbreathinglevel");
 			bombFruit = nbt.getBoolean("bombFruit");
+			isdemonking = nbt.getBoolean("isdemonking");
+			issupremedeity = nbt.getBoolean("issupremedeity");
+			isTenCommandment = nbt.getBoolean("isTenCommandment");
+			isarchangel = nbt.getBoolean("isarchangel");
+			archangelchosen = nbt.getBoolean("archangelchosen");
 		}
 	}
 
@@ -891,6 +920,11 @@ public class AnimecrossworkspaceModVariables {
 					variables.stringFruit = message.data.stringFruit;
 					variables.thunderbreathinglevel = message.data.thunderbreathinglevel;
 					variables.bombFruit = message.data.bombFruit;
+					variables.isdemonking = message.data.isdemonking;
+					variables.issupremedeity = message.data.issupremedeity;
+					variables.isTenCommandment = message.data.isTenCommandment;
+					variables.isarchangel = message.data.isarchangel;
+					variables.archangelchosen = message.data.archangelchosen;
 				}
 			});
 			context.setPacketHandled(true);

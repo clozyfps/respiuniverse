@@ -39,7 +39,7 @@ public class EntityDiesProcedure {
 					capability.exp = _setval;
 					capability.syncPlayerVariables(sourceentity);
 				});
-			}
+			} /*c3254325235234654rthtgfhfghfghfghode*/
 		}
 	}
 }
