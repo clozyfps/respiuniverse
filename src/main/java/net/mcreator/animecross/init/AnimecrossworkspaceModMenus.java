@@ -12,32 +12,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
-import net.mcreator.animecross.world.inventory.YamiguiMenu;
-import net.mcreator.animecross.world.inventory.TALKTOMUZANMenu;
-import net.mcreator.animecross.world.inventory.TALKGUIFIREFORCECAPTAINMenu;
-import net.mcreator.animecross.world.inventory.Silverfanggui1Menu;
-import net.mcreator.animecross.world.inventory.ShenronGifMenu;
-import net.mcreator.animecross.world.inventory.SaiyanTrainingMenu;
-import net.mcreator.animecross.world.inventory.SaitamaguiMenu;
-import net.mcreator.animecross.world.inventory.RedruitpapersguiMenu;
-import net.mcreator.animecross.world.inventory.NobaraguiMenu;
-import net.mcreator.animecross.world.inventory.Meliodas2Menu;
-import net.mcreator.animecross.world.inventory.MasteryguiMenu;
-import net.mcreator.animecross.world.inventory.MasterroshiguiMenu;
-import net.mcreator.animecross.world.inventory.Masterroshigui2Menu;
-import net.mcreator.animecross.world.inventory.MainInfoMenu;
-import net.mcreator.animecross.world.inventory.LadyTamayoGUIMenu;
-import net.mcreator.animecross.world.inventory.Kitrainingpaper1Menu;
-import net.mcreator.animecross.world.inventory.JiraiyaguiMenu;
-import net.mcreator.animecross.world.inventory.InfoguiMenu;
-import net.mcreator.animecross.world.inventory.GojobecomeasourcererMenu;
-import net.mcreator.animecross.world.inventory.FireReleaseGuiMenu;
-import net.mcreator.animecross.world.inventory.FightingstyleguiMenu;
-import net.mcreator.animecross.world.inventory.EscanorteachsunshineMenu;
-import net.mcreator.animecross.world.inventory.EscanoriseeMenu;
-import net.mcreator.animecross.world.inventory.ESCANORGETSUNSHINEMenu;
-import net.mcreator.animecross.world.inventory.BountyPaperMenu;
-
 import java.util.List;
 import java.util.ArrayList;
 

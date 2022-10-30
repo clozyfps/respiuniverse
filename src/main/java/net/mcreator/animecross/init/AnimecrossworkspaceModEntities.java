@@ -85,7 +85,6 @@ import net.mcreator.animecross.entity.LeafShinobiEntity;
 import net.mcreator.animecross.entity.LadyTamayoEntity;
 import net.mcreator.animecross.entity.KokushiboEntity;
 import net.mcreator.animecross.entity.KoketsuArrowAwakeningEntity;
-import net.mcreator.animecross.entity.KnotEntityEntity;
 import net.mcreator.animecross.entity.KiritoEntity;
 import net.mcreator.animecross.entity.KidBuuEntity;
 import net.mcreator.animecross.entity.KiblastrangeditemEntity;
@@ -652,9 +651,6 @@ public class AnimecrossworkspaceModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SoulReaperEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<KnotEntityEntity>> KNOT_ENTITY = register("knot_entity",
-			EntityType.Builder.<KnotEntityEntity>of(KnotEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(KnotEntityEntity::new).fireImmune().sized(0.4f, 0.6f));
 	public static final RegistryObject<EntityType<BatHollowEntity>> BAT_HOLLOW = register("bat_hollow",
 			EntityType.Builder.<BatHollowEntity>of(BatHollowEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BatHollowEntity::new)
@@ -796,7 +792,6 @@ public class AnimecrossworkspaceModEntities {
 			ShanksEntity.init();
 			ZenitsuEntity.init();
 			SoulReaperEntity.init();
-			KnotEntityEntity.init();
 			BatHollowEntity.init();
 			DekuEntity.init();
 			PochitaEntity.init();
@@ -891,7 +886,6 @@ public class AnimecrossworkspaceModEntities {
 		event.put(SHANKS.get(), ShanksEntity.createAttributes().build());
 		event.put(ZENITSU.get(), ZenitsuEntity.createAttributes().build());
 		event.put(SOUL_REAPER.get(), SoulReaperEntity.createAttributes().build());
-		event.put(KNOT_ENTITY.get(), KnotEntityEntity.createAttributes().build());
 		event.put(BAT_HOLLOW.get(), BatHollowEntity.createAttributes().build());
 		event.put(DEKU.get(), DekuEntity.createAttributes().build());
 		event.put(POCHITA.get(), PochitaEntity.createAttributes().build());

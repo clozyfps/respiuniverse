@@ -26,15 +26,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.animecross.init.AnimecrossworkspaceModTabs;
-import net.mcreator.animecross.init.AnimecrossworkspaceModParticleTypes;
-import net.mcreator.animecross.init.AnimecrossworkspaceModMobEffects;
-import net.mcreator.animecross.init.AnimecrossworkspaceModItems;
-import net.mcreator.animecross.init.AnimecrossworkspaceModFeatures;
-import net.mcreator.animecross.init.AnimecrossworkspaceModEntities;
-import net.mcreator.animecross.init.AnimecrossworkspaceModBlocks;
-import net.mcreator.animecross.init.AnimecrossworkspaceModBiomes;
-
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
