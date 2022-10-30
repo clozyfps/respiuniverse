@@ -46,21 +46,7 @@ public class PowershowOverlay {
 								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_power)
 								+ "",
-						posX + -207, posY + 106, -12840381);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(),
-						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).power) + "/"
-								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_power)
-								+ "",
-						posX + -208, posY + 105, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(),
-						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina) + "/"
-								+ (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_stamina)
-								+ "",
-						posX + -207, posY + 83, -12814622);
+						posX + -207, posY + 98, -1);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossworkspaceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).stamina) + "/"
@@ -68,10 +54,6 @@ public class PowershowOverlay {
 										.orElse(new AnimecrossworkspaceModVariables.PlayerVariables())).max_stamina)
 								+ "",
 						posX + -208, posY + 82, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Stamina", posX + -206, posY + 73, -12814622);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Stamina", posX + -207, posY + 72, -1);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Power", posX + -206, posY + 97, -12843183);
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), "Power", posX + -207, posY + 96, -1);
 			}
 		}
 	}

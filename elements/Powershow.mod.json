@@ -9,38 +9,12 @@
         "data": {
           "text": "<VAR:integer:power>/<VAR:integer:max_power>",
           "color": {
-            "value": -12840381,
-            "falpha": 0.0
-          },
-          "name": "<VAR:integer:power>/<VAR:integer:max_power>",
-          "x": 6,
-          "y": 226
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:integer:power>/<VAR:integer:max_power>",
-          "color": {
             "value": -1,
             "falpha": 0.0
           },
           "name": "<VAR:integer:power>/<VAR:integer:max_power>",
-          "x": 5,
-          "y": 225
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:integer:stamina>/<VAR:integer:max_stamina>",
-          "color": {
-            "value": -12814622,
-            "falpha": 0.0
-          },
-          "name": "<VAR:integer:stamina>/<VAR:integer:max_stamina>",
           "x": 6,
-          "y": 203
+          "y": 218
         }
       },
       {
@@ -54,58 +28,6 @@
           "name": "<VAR:integer:stamina>/<VAR:integer:max_stamina>",
           "x": 5,
           "y": 202
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Stamina",
-          "color": {
-            "value": -12814622,
-            "falpha": 0.0
-          },
-          "name": "Stamina",
-          "x": 7,
-          "y": 193
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Stamina",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "Stamina",
-          "x": 6,
-          "y": 192
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Power",
-          "color": {
-            "value": -12843183,
-            "falpha": 0.0
-          },
-          "name": "Power",
-          "x": 7,
-          "y": 217
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Power",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "Power",
-          "x": 6,
-          "y": 216
         }
       }
     ],
