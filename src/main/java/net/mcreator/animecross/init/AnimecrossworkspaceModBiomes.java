@@ -30,6 +30,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.animecross.world.biome.VolcanicGrandMagicZoneBiome;
+import net.mcreator.animecross.world.biome.ShinobiForestBiome;
+import net.mcreator.animecross.world.biome.PurgatoryMainBiomeBiome;
 import net.mcreator.animecross.AnimecrossworkspaceMod;
 
 import java.util.Map;
